@@ -1,0 +1,14 @@
+{
+  "name": "sssdp",
+  "version": "1.0.0",
+  "description": "sssdp production",
+  "main": "index.js",
+  "scripts": {
+    "cs": "node-sass sass/main.scss assets/css/styles.css -w"
+  },
+  "author": "Ajish T Mohan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

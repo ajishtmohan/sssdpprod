@@ -1,0 +1,30 @@
+.section-home {
+  width: 100%;
+  height: auto;
+}
+
+.homepagephoto {
+  border: 2px soild $color-primary;
+
+  &__photo {
+    width: 30rem;
+    height: 40rem;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    outline: 0.3rem solid $color-primary-dark-1;
+
+    img {
+      width: 100%;
+      // height: 100%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    h3 {
+      color: $color-secondary-dark;
+    }
+  }
+}

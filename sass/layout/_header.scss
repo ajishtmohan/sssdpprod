@@ -1,0 +1,100 @@
+.header {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  background-color: rgba($color-primary, 0.05);
+  z-index: 100;
+
+  &__logobox {
+    width: $site-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    padding: 2rem 0;
+    @include u-center-div;
+
+    a:link {
+      text-decoration: none;
+    }
+
+    &--img {
+      height: 9rem;
+    }
+
+    &--title {
+      font-size: 4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $color-primary;
+    }
+  }
+
+  &__navigation {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: $color-primary-dark-1;
+    border-top: 3px solid $color-secondary-dark;
+
+    &--container {
+      width: $site-width;
+      @include u-center-div;
+
+      .headernav {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        font-size: $nav-font-size;
+        font-weight: 500;
+
+        a:link {
+          display: block;
+          color: $color-white;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding: 1.5rem 1.5rem 1.3rem 1.5rem;
+          transition: all 0.2s ease-in;
+
+          &:hover,
+          &:active {
+            color: $color-primary-light-2;
+          }
+        }
+
+        &__sub {
+          width: auto;
+          height: auto;
+          display: block;
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.4s;
+          background-color: $color-primary-dark-1;
+          border-top: 3px solid $color-secondary-dark;
+
+          &--l2 {
+            border-bottom: 1px solid $color-primary-dark-2;
+          }
+        }
+
+        &__item {
+          list-style-type: none;
+          display: inline-block;
+
+          &:hover .headernav__sub {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}

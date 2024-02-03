@@ -1,0 +1,17 @@
+body {
+  font-size: $default-font-size;
+  color: $color-grey-dark;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  line-height: 2.2rem;
+}
+
+.articleul {
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.articleimg {
+  max-width: 100%;
+}
