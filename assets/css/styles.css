@@ -58,7 +58,7 @@ body {
   width: 40rem;
   background-color: #f7f7f7f7;
   text-align: center;
-  padding: 3rem;
+  padding: 4rem;
   text-transform: uppercase;
   border-radius: 5px; }
   .boothform p {
@@ -91,7 +91,8 @@ body {
       border: 2px solid #c91f0c; }
     .boothform__select option {
       font-size: 1.6rem; }
-  .boothform__option {
+  .boothform__option,
+  .boothform .boothform__option--dis {
     font-size: 1.6rem;
     color: #0cb6c9;
     padding: 1rem;
