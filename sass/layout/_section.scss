@@ -12,6 +12,7 @@ main {
 
   @include respond(phone) {
     width: 100%;
+    padding: 3rem;
   }
 }
 

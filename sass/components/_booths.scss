@@ -1,0 +1,17 @@
+.booth-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.boothcard {
+  display: block;
+  position: relative;
+  width: calc(100% - 20rem);
+  height: 20rem;
+  background-color: $color-grey-light-1;
+}

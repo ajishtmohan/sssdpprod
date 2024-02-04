@@ -36,10 +36,14 @@
     @include respond(phone) {
       display: flex;
       z-index: 1000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     &__line {
       display: block;
+      position: relative;
       width: 3rem;
       height: 2px;
       background-color: $color-white;
@@ -53,6 +57,22 @@
   .check:checked ~ .header__navigation {
     visibility: visible;
     opacity: 1;
+  }
+
+  .check:checked ~ * .icon-burger__line:nth-child(1) {
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+  }
+
+  .check:checked ~ * .icon-burger__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .check:checked ~ * .icon-burger__line:nth-child(3) {
+    transform: rotate(-45deg);
+    display: block;
+    position: absolute;
   }
 
   &__logobox {
