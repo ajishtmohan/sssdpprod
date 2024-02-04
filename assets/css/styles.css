@@ -179,14 +179,17 @@ body {
         color: #fff;
         font-size: 1.4rem;
         font-weight: 500; }
-        .header__navigation--container .headernav a:link {
+        .header__navigation--container .headernav a:link,
+        .header__navigation--container .headernav a:visited {
           display: block;
           color: #fff;
           text-decoration: none;
           text-transform: uppercase;
           padding: 1.5rem 1.5rem 1.3rem 1.5rem;
           transition: all 0.2s ease-in; }
-          .header__navigation--container .headernav a:link:hover, .header__navigation--container .headernav a:link:active {
+          .header__navigation--container .headernav a:link:hover, .header__navigation--container .headernav a:link:active,
+          .header__navigation--container .headernav a:visited:hover,
+          .header__navigation--container .headernav a:visited:active {
             color: #88e6f1; }
         .header__navigation--container .headernav__sub {
           width: auto;

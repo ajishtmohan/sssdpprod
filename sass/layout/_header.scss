@@ -55,7 +55,8 @@
         font-size: $nav-font-size;
         font-weight: 500;
 
-        a:link {
+        a:link,
+        a:visited {
           display: block;
           color: $color-white;
           text-decoration: none;
