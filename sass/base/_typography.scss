@@ -17,6 +17,7 @@ article {
 
     @include respond(phone) {
       font-size: 3.5rem;
+      line-height: normal;
     }
   }
 

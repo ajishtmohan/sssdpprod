@@ -59,7 +59,8 @@ article .text__h2 {
   font-size: 1.6rem; }
   @media (max-width: 37.5em) {
     article .text__h2 {
-      font-size: 3.5rem; } }
+      font-size: 3.5rem;
+      line-height: normal; } }
 
 article .text__p {
   font-size: 1.6rem; }
