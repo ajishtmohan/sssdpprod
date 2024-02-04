@@ -58,11 +58,10 @@ body {
   width: 40rem;
   background-color: #f7f7f7f7;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
   text-transform: uppercase;
   border-radius: 5px; }
   .boothform p {
-    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     text-align: center;
     color: blue !important; }
@@ -76,7 +75,6 @@ body {
   .boothform__select {
     width: 100%;
     height: 5rem;
-    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -92,24 +90,31 @@ body {
       outline: none;
       border: 2px solid #c91f0c; }
     .boothform__select option {
-      font-family: "Roboto", sans-serif;
       font-size: 1.6rem; }
   .boothform__option {
-    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     color: #0cb6c9;
     padding: 1rem;
     text-transform: uppercase; }
-  .boothform #mandala,
+  .boothform #constituency,
   .boothform #policestation,
   .boothform #village,
   .boothform #pollingbooth {
-    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     color: #0cb6c9;
     padding: 1rem;
     text-transform: uppercase;
     margin-top: 1rem; }
+  .boothform input[type='submit'] {
+    background-color: #037f8d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; }
 
 .footer {
   width: 100%;
