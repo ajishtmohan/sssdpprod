@@ -6,6 +6,55 @@
   background-color: rgba($color-primary, 0.05);
   z-index: 100;
 
+  @include respond(phone) {
+    border-bottom: 2px solid $color-primary-dark-1;
+  }
+
+  #nav-toggle {
+    display: block;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 1001;
+    margin-top: -500px;
+  }
+
+  .icon-burger {
+    display: none;
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: $color-primary-dark-2;
+    top: 3rem;
+    right: 3rem;
+
+    @include respond(phone) {
+      display: flex;
+      z-index: 1000;
+    }
+
+    &__line {
+      display: block;
+      width: 3rem;
+      height: 2px;
+      background-color: $color-white;
+      margin: 3px;
+      border-radius: 10px;
+      opacity: 1;
+      transition: all 0.3s;
+    }
+  }
+
+  .check:checked ~ .header__navigation {
+    visibility: visible;
+    opacity: 1;
+  }
+
   &__logobox {
     width: $site-width;
     display: flex;
@@ -17,12 +66,28 @@
     padding: 2rem 0;
     @include u-center-div;
 
+    @include respond(phone) {
+      width: 100%;
+      flex-direction: column;
+      padding: 3rem 2rem 1.5rem;
+      gap: 1rem;
+    }
+
     a:link {
       text-decoration: none;
+
+      @include respond(phone) {
+        text-decoration: none;
+        text-align: center;
+      }
     }
 
     &--img {
       height: 9rem;
+
+      @include respond(phone) {
+        height: 12rem;
+      }
     }
 
     &--title {
@@ -30,6 +95,10 @@
       font-weight: 600;
       text-transform: uppercase;
       color: $color-primary;
+
+      @include respond(phone) {
+        line-height: 5rem;
+      }
     }
   }
 
@@ -40,6 +109,19 @@
     position: relative;
     background-color: $color-primary-dark-1;
     border-top: 3px solid $color-secondary-dark;
+
+    @include respond(phone) {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 500;
+    }
 
     &--container {
       width: $site-width;
@@ -55,6 +137,19 @@
         font-size: $nav-font-size;
         font-weight: 500;
 
+        @include respond(phone) {
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 5rem;
+        }
+
         a:link,
         a:visited {
           display: block;
@@ -63,6 +158,15 @@
           text-transform: uppercase;
           padding: 1.5rem 1.5rem 1.3rem 1.5rem;
           transition: all 0.2s ease-in;
+
+          @include respond(phone) {
+            padding: 3rem;
+            border-top: 1px solid $color-primary-light-1;
+
+            &:last-child {
+              border-bottom: 1px solid $color-primary-light-1;
+            }
+          }
 
           &:hover,
           &:active {
@@ -81,8 +185,20 @@
           background-color: $color-primary-dark-1;
           border-top: 3px solid $color-secondary-dark;
 
+          @include respond(phone) {
+            display: block;
+            border: none;
+            opacity: 0;
+          }
+
           &--l2 {
             border-bottom: 1px solid $color-primary-dark-2;
+
+            @include respond(phone) {
+              background-color: $color-primary-dark-2;
+              list-style-type: none;
+              border-bottom: 1px solid $color-primary-dark-2;
+            }
           }
         }
 
@@ -90,9 +206,20 @@
           list-style-type: none;
           display: inline-block;
 
+          @include respond(phone) {
+            width: 100%;
+            text-align: center;
+          }
+
           &:hover .headernav__sub {
             opacity: 1;
             visibility: visible;
+
+            @include respond(phone) {
+              display: block;
+              position: relative;
+              height: auto;
+            }
           }
         }
       }

@@ -9,6 +9,10 @@ main {
   justify-content: center;
   align-items: center;
   @include u-center-div;
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 .section-header {
@@ -22,6 +26,11 @@ main {
   @include u-center-div;
   margin-bottom: 5rem;
 
+  @include respond(phone) {
+    width: 100%;
+    height: 30rem;
+  }
+
   img {
     width: 100%;
     overflow: hidden;
@@ -32,9 +41,24 @@ main {
   }
 }
 
+.section-content {
+  width: $site-width;
+  @include u-center-div;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
 article {
   width: $site-width;
   @include u-center-div;
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 3rem;
+    font-size: 2rem;
+  }
 
   h2 {
     color: $color-primary;
@@ -53,6 +77,10 @@ article {
   flex-wrap: wrap;
   gap: 3rem;
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   &__item {
     display: block;
     position: relative;
@@ -62,9 +90,17 @@ article {
     background-color: $color-grey-light-1;
     border-radius: 5px;
 
+    @include respond(phone) {
+      width: 100%;
+    }
+
     &--title {
       color: $color-primary;
       margin-bottom: 1rem;
+
+      @include respond(phone) {
+        font-size: $mobile-font-size;
+      }
     }
 
     &--number {

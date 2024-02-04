@@ -7,11 +7,40 @@ body {
   line-height: 2.2rem;
 }
 
-.articleul {
-  margin-left: 3rem;
-  margin-bottom: 3rem;
-}
+article {
+  .articleimg {
+    max-width: 100%;
+  }
 
-.articleimg {
-  max-width: 100%;
+  .text__h2 {
+    font-size: $default-font-size;
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .text__p {
+    font-size: $default-font-size;
+
+    @include respond(phone) {
+      font-size: $mobile-font-size;
+      line-height: 3rem;
+    }
+  }
+  ul {
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    li {
+      font-size: $mobile-font-size;
+      margin-left: 0rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
