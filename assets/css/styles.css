@@ -196,6 +196,9 @@ article ul {
       .boothcard__demograph--details .demoblock {
         display: inline-block;
         position: relative; }
+        @media (max-width: 37.5em) {
+          .boothcard__demograph--details .demoblock {
+            text-align: center; } }
         .boothcard__demograph--details .demoblock__name {
           display: block;
           margin-bottom: 1rem; }
