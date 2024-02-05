@@ -104,10 +104,6 @@
 
     &--img {
       height: 9rem;
-
-      @include respond(phone) {
-        height: 12rem;
-      }
     }
 
     &--title {
@@ -117,7 +113,8 @@
       color: $color-primary;
 
       @include respond(phone) {
-        line-height: 5rem;
+        font-size: 4rem;
+        line-height: 4rem;
       }
     }
   }
