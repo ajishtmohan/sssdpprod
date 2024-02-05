@@ -1,6 +1,17 @@
 main {
   min-height: calc(100vh - 22rem);
 }
+
+.section-content {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0;
+
+  @include respond(phone) {
+    padding: 5rem 2rem;
+  }
+}
+
 .section-gally {
   width: $site-width;
   height: calc(100vh - 20rem);
