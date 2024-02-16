@@ -58,6 +58,7 @@ article .articleimg {
 article .text__h2 {
   font-size: 3rem; }
   article .text__h2--centered {
+    line-height: 3rem;
     text-align: center; }
   @media (max-width: 37.5em) {
     article .text__h2 {
@@ -343,6 +344,13 @@ article ul {
     transition: all 0.2s ease-in; }
     .loginform input[type='submit']:hover {
       background-color: #035761; }
+  .loginform a {
+    background-color: #037f8d;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    display: inline-block; }
 
 .sectionpolice {
   width: 100%;

@@ -142,4 +142,14 @@
       background-color: $color-primary-dark-2;
     }
   }
+
+  a {
+    background-color: $color-primary-dark-1;
+    color: $color-white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    display: inline-block;
+    // margin-top: 1rem;
+  }
 }
