@@ -13,7 +13,11 @@ article {
   }
 
   .text__h2 {
-    font-size: $default-font-size;
+    font-size: 3rem;
+
+    &--centered {
+      text-align: center;
+    }
 
     @include respond(phone) {
       font-size: 3.5rem;
@@ -23,6 +27,12 @@ article {
 
   .text__p {
     font-size: $default-font-size;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+
+    &--centered {
+      text-align: center;
+    }
 
     @include respond(phone) {
       font-size: $mobile-font-size;
@@ -39,9 +49,11 @@ article {
     }
 
     li {
-      font-size: $mobile-font-size;
-      margin-left: 0rem;
-      margin-bottom: 0.5rem;
+      @include respond(phone) {
+        font-size: $mobile-font-size;
+        margin-left: 0rem;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }

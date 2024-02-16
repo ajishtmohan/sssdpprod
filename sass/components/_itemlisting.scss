@@ -1,0 +1,87 @@
+.sectionpolice {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.policestations {
+  width: $site-width;
+  height: 50rem;
+  @include u-center-div;
+  padding: 5rem 0;
+}
+
+.itemlistingflex {
+  width: $site-width;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  gap: 5rem;
+  @include u-center-div;
+
+  &__el {
+    width: calc((100% - 10rem) / 3);
+    height: 8rem;
+    display: block;
+    position: relative;
+    background-color: $color-primary;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: $color-primary-dark-1;
+    }
+
+    &--text {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+      line-height: 3rem;
+      color: $color-white;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // text-wrap: nowrap;
+    }
+  }
+}
+
+.pollingflex {
+  width: $site-width;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  gap: 5rem;
+  @include u-center-div;
+
+  &__el {
+    width: calc((100% - 10rem) / 3);
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: $color-grey-light-1;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: $color-grey-light-2;
+    }
+  }
+}
+
+.inactive {
+  background-color: $color-grey-dark !important;
+}

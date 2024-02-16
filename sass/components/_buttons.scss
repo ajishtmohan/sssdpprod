@@ -1,0 +1,10 @@
+.btn-login {
+  background-color: $color-secondary-dark;
+
+  a:link {
+    color: $color-white !important;
+    &:hover {
+      color: $color-secondary-light !important;
+    }
+  }
+}

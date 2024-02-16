@@ -56,14 +56,20 @@ article .articleimg {
   max-width: 100%; }
 
 article .text__h2 {
-  font-size: 1.6rem; }
+  font-size: 3rem; }
+  article .text__h2--centered {
+    text-align: center; }
   @media (max-width: 37.5em) {
     article .text__h2 {
       font-size: 3.5rem;
       line-height: 4rem; } }
 
 article .text__p {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 2.5rem; }
+  article .text__p--centered {
+    text-align: center; }
   @media (max-width: 37.5em) {
     article .text__p {
       font-size: 2rem;
@@ -76,10 +82,11 @@ article ul {
     article ul {
       font-size: 2rem;
       line-height: 3rem; } }
-  article ul li {
-    font-size: 2rem;
-    margin-left: 0rem;
-    margin-bottom: 0.5rem; }
+  @media (max-width: 37.5em) {
+    article ul li {
+      font-size: 2rem;
+      margin-left: 0rem;
+      margin-bottom: 0.5rem; } }
 
 .u-center-text {
   text-align: center; }
@@ -196,9 +203,6 @@ article ul {
       .boothcard__demograph--details .demoblock {
         display: inline-block;
         position: relative; }
-        @media (max-width: 37.5em) {
-          .boothcard__demograph--details .demoblock {
-            text-align: center; } }
         .boothcard__demograph--details .demoblock__name {
           display: block;
           margin-bottom: 1rem; }
@@ -218,6 +222,13 @@ article ul {
       display: block;
       position: absolute;
       bottom: 0; }
+
+.btn-login {
+  background-color: #c91f0c; }
+  .btn-login a:link {
+    color: #fff !important; }
+    .btn-login a:link:hover {
+      color: #eda618 !important; }
 
 .boothform {
   width: 40rem;
@@ -284,6 +295,167 @@ article ul {
     border-radius: 5px;
     border: none;
     cursor: pointer; }
+
+.loginform {
+  width: 40rem;
+  background-color: #f7f7f7f7;
+  text-align: center;
+  padding: 4rem;
+  text-transform: uppercase;
+  border-radius: 5px; }
+  @media (max-width: 37.5em) {
+    .loginform {
+      width: 100%; } }
+  .loginform__label {
+    color: #037f8d;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 1.5rem; }
+  .loginform #username,
+  .loginform #password {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    border: 2px solid #88e6f1;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.2s ease-in;
+    padding: 1rem; }
+    .loginform #username:focus, .loginform #username:hover,
+    .loginform #password:focus,
+    .loginform #password:hover {
+      outline: none;
+      border: 2px solid #c91f0c; }
+  .loginform input[type='submit'] {
+    background-color: #037f8d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in; }
+    .loginform input[type='submit']:hover {
+      background-color: #035761; }
+
+.sectionpolice {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative; }
+
+.policestations {
+  width: 114rem;
+  height: 50rem;
+  margin: 0 auto;
+  padding: 5rem 0; }
+
+.itemlistingflex {
+  width: 114rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0 auto; }
+  .itemlistingflex__el {
+    width: calc((100% - 10rem) / 3);
+    height: 8rem;
+    display: block;
+    position: relative;
+    background-color: #0cb6c9;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in; }
+    .itemlistingflex__el:hover {
+      background-color: #037f8d; }
+    .itemlistingflex__el--text {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 300;
+      line-height: 3rem;
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.pollingflex {
+  width: 114rem;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0 auto; }
+  .pollingflex__el {
+    width: calc((100% - 10rem) / 3);
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: #f7f7f7f7;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in; }
+    .pollingflex__el:hover {
+      background-color: #eee; }
+
+.inactive {
+  background-color: #777 !important; }
+
+.mandalam {
+  width: 100%;
+  height: calc(100vh - 20rem);
+  display: block;
+  position: relative; }
+  .mandalam .mandalamflex {
+    width: 114rem;
+    height: auto;
+    top: 45%;
+    transform: translateY(-50%);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 auto; }
+    .mandalam .mandalamflex__el {
+      width: calc((100% - 10rem) / 3);
+      height: 12rem;
+      display: block;
+      position: relative;
+      background-color: #0cb6c9;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s ease-in; }
+      .mandalam .mandalamflex__el:hover {
+        background-color: #037f8d; }
+      .mandalam .mandalamflex__el--text {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-wrap: nowrap; }
 
 .footer {
   width: 100%;
@@ -521,7 +693,7 @@ main {
   padding: 5rem 0; }
   @media (max-width: 37.5em) {
     .section-content {
-      padding: 5rem 2rem; } }
+      padding: 0rem; } }
 
 .section-gally {
   width: 114rem;
@@ -534,7 +706,7 @@ main {
   @media (max-width: 37.5em) {
     .section-gally {
       width: 100%;
-      padding: 3rem; } }
+      padding: 0rem; } }
 
 .section-header {
   width: 114rem;
@@ -549,7 +721,8 @@ main {
   @media (max-width: 37.5em) {
     .section-header {
       width: 100%;
-      height: 30rem; } }
+      height: 30rem;
+      margin-bottom: 1rem; } }
   .section-header img {
     width: 100%;
     overflow: hidden;
@@ -610,6 +783,24 @@ article {
     .helplineflex__item--number {
       color: #777;
       font-size: 2.5rem; }
+
+.section__title {
+  width: 100%;
+  min-height: 8rem;
+  background-color: #0cb6c9;
+  display: block;
+  position: relative; }
+  .section__title--text {
+    font-weight: 300;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .section-home {
   width: 100%;
