@@ -8,17 +8,19 @@ main {
   padding: 5rem 0;
 
   @include respond(phone) {
-    padding: 0rem;
+    padding: 5rem 0 2rem;
   }
 }
 
 .section-gally {
   width: $site-width;
-  height: calc(100vh - 20rem);
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5rem;
+
   @include u-center-div;
 
   @include respond(phone) {
