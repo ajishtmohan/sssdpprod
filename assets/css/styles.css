@@ -498,7 +498,9 @@ article ul {
         .footer__content--text {
           text-align: center;
           font-weight: 400;
-          padding: 1rem 0; } }
+          padding: 1rem 0; }
+          .footer__content--text:last-child {
+            background-color: #035761; } }
       .footer__content--text a {
         color: #fff;
         text-decoration: none; }
