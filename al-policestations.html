@@ -112,24 +112,44 @@
     </header>
 
     <main>
-      <section class="sectionpolice">
+      <div class="section-home">
         <div class="section__title">
-          <h2 class="section__title--text">Police Stations in Dharmavaram</h2>
+          <h2 class="section__title--text">Police Stations</h2>
         </div>
-        <div class="policestations">
-          <div class="itemlistingflex">
-            <a class="itemlistingflex__el" href="al-villages.html">
-              <h2 class="itemlistingflex__el--text">Dharmavaram Rural PS</h2>
-            </a>
-            <a class="itemlistingflex__el inactive" href="villages.html">
-              <h2 class="itemlistingflex__el--text">Dharmavaram I Town PS</h2>
-            </a>
-            <a class="itemlistingflex__el inactive" href="villages.html">
-              <h2 class="itemlistingflex__el--text">Dharmavaram II Town PS</h2>
-            </a>
+
+        <article>
+          <div class="section-content">
+            <div class="constnavflex">
+              <a class="constnavflex__el" href="al-villages.html">
+                <h2 class="constnavflex__el--text">Dharmavaram Rural PS</h2>
+              </a>
+              <a class="constnavflex__el" href="al-villages.html">
+                <h2 class="constnavflex__el--text">Dharmavaram I Town PS</h2>
+              </a>
+              <a class="constnavflex__el" href="al-villages.html">
+                <h2 class="constnavflex__el--text">Dharmavaram II Town PS</h2>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </article>
+      </div>
     </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content--rights">
+          <script>
+            (function () {
+              document.querySelector(
+                '.footer__content--rights'
+              ).textContent = `© All Right Reserved | SSS District Police ${new Date().getFullYear()}`;
+            })();
+          </script>
+        </p>
+        <p class="footer__content--dev">
+          <a href="mailto:ajishtmohan@gmail.com">Contact the Developer</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
