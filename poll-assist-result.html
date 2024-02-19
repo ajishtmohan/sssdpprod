@@ -90,23 +90,59 @@
     </header>
 
     <main>
+      <div class="section__title">
+        <h2 class="section__title--text">BOOTHS</h2>
+      </div>
       <section class="section-content">
         <article>
-          <h2 class="text__h2--centered">EDA login</h2>
-          <div class="section-gally">
-            <!-- form -->
-            <form class="loginform" action="" method="post">
-              <!-- mandala -->
-              <label class="loginform__label" for="username">User Name</label>
-              <input type="text" name="username" id="username" />
-              <br />
-
-              <label class="loginform__label" for="password">Password</label>
-              <input type="password" name="password" id="password" />
-              <br />
-              <!-- <input type="submit" value="submit" /> -->
-              <a class="btn-form" href="al-index.html">submit</a>
-            </form>
+          <div class="section-content">
+            <div class="booth-container">
+              <div class="boothcard">
+                <div class="boothcard__number">
+                  <div class="boothcard__number--text">
+                    <span class="boothno">booth number</span>
+                    <span class="boothnumber">134</span>
+                  </div>
+                </div>
+                <div class="boothcard__details">
+                  <div class="boothcard__details--name">
+                    <p class="boothna">Booth Name</p>
+                    <p class="boothname">Mandal Parishad Primary School</p>
+                  </div>
+                  <div class="boothcard__demograph">
+                    <p class="demographtitle">Demography</p>
+                    <div class="boothcard__demograph--details">
+                      <p class="demoblock">
+                        <span class="demoblock__name">Male Voters</span>
+                        <span class="demoblock__number">490</span>
+                      </p>
+                      <p class="demoblock">
+                        <span class="demoblock__name">Female Voters</span>
+                        <span class="demoblock__number">520</span>
+                      </p>
+                      <p class="demoblock">
+                        <span class="demoblock__name">Total Voters</span>
+                        <span class="demoblock__number">1010</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="boothcard__redirect">
+                    <p>Get more information</p>
+                  </div>
+                </div>
+              </div>
+              <div class="boothcard">
+                <iframe
+                  class="boothcard__map"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?q=14.178101,76.955684&hl=en&z=14&amp;output=embed"
+                >
+                </iframe>
+              </div>
+            </div>
           </div>
         </article>
       </section>

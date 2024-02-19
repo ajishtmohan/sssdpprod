@@ -210,6 +210,8 @@
 
           &--l2 {
             border-bottom: 1px solid $color-primary-dark-2;
+            list-style-type: none;
+            min-width: 15rem;
 
             @include respond(phone) {
               background-color: $color-primary-dark-2;

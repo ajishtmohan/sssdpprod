@@ -223,6 +223,9 @@ article ul {
       display: block;
       position: absolute;
       bottom: 0; }
+  .boothcard__map {
+    width: 100%;
+    height: 100%; }
 
 .btn-login {
   background-color: #c91f0c; }
@@ -230,6 +233,16 @@ article ul {
     color: #fff !important; }
     .btn-login a:link:hover {
       color: #eda618 !important; }
+
+.btn-form {
+  background-color: #037f8d;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  transition: all 0.3s ease; }
+  .btn-form:hover {
+    background-color: #035761; }
 
 .constnavflex {
   width: 114rem;
@@ -677,7 +690,9 @@ article ul {
               border: none;
               opacity: 0; } }
           .header__navigation--container .headernav__sub--l2 {
-            border-bottom: 1px solid #035761; }
+            border-bottom: 1px solid #035761;
+            list-style-type: none;
+            min-width: 15rem; }
             @media (max-width: 37.5em) {
               .header__navigation--container .headernav__sub--l2 {
                 background-color: #035761;
@@ -704,11 +719,11 @@ main {
 
 .section-content {
   width: 100%;
-  height: auto;
+  min-height: calc(100vh - 19rem);
   padding: 5rem 0; }
   @media (max-width: 37.5em) {
     .section-content {
-      padding: 5rem 0 2rem; } }
+      padding: 0; } }
 
 .section-gally {
   width: 114rem;
@@ -823,9 +838,49 @@ article {
         line-height: 3rem;
         font-weight: 400; } }
 
+.constdetails {
+  width: 114rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .constdetails {
+      width: 100%; } }
+  .constdetails__namnum {
+    width: calc((100% - 3rem) / 2);
+    height: auto;
+    background-color: #f7f7f7f7;
+    padding: 3rem;
+    border-radius: 3px; }
+    @media (max-width: 37.5em) {
+      .constdetails__namnum {
+        width: 100%; } }
+    .constdetails__namnum--title {
+      margin-bottom: 1rem; }
+    .constdetails__namnum--name {
+      margin: 0; }
+
+.policedetails {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 3rem;
+  border-radius: 3px;
+  background-color: #f7f7f7f7;
+  margin-bottom: 3rem; }
+  .policedetails__title {
+    margin-bottom: 1rem; }
+  .policedetails__name {
+    margin: 0;
+    text-transform: capitalize; }
+
 .section-home {
   width: 100%;
-  height: auto; }
+  min-height: calc(100vh - 20rem); }
 
 .homepagephoto {
   border: 2px soild #0cb6c9; }

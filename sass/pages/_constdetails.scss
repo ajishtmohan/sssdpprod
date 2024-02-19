@@ -1,0 +1,53 @@
+.constdetails {
+  width: $site-width;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  &__namnum {
+    width: calc((100% - 3rem) / 2);
+    height: auto;
+    background-color: $color-grey-light-1;
+    padding: 3rem;
+    border-radius: 3px;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    &--title {
+      margin-bottom: 1rem;
+    }
+
+    &--name {
+      margin: 0;
+    }
+  }
+}
+
+.policedetails {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 3rem;
+  border-radius: 3px;
+  background-color: $color-grey-light-1;
+  margin-bottom: 3rem;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    margin: 0;
+    text-transform: capitalize;
+  }
+}

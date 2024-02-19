@@ -4,11 +4,11 @@ main {
 
 .section-content {
   width: 100%;
-  height: auto;
+  min-height: calc(100vh - 19rem);
   padding: 5rem 0;
 
   @include respond(phone) {
-    padding: 5rem 0 2rem;
+    padding: 0;
   }
 }
 
