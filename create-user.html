@@ -98,15 +98,18 @@
             <form class="loginform" action="" method="post">
               <!-- mandala -->
               <label class="loginform__label" for="username">User Name</label>
-              <input type="text" name="username" id="username" />
+              <input type="text" name="username" id="username" required />
               <br />
 
               <label class="loginform__label" for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input type="password" name="password" id="password" required />
               <br />
 
               <label class="loginform__label" for="userrole">user role</label>
-              <select name="" id="">
+              <select name="" id="" required>
+                <option value="admin" hidden selected disabled default>
+                  ~ select role ~
+                </option>
                 <option value="admin">admin</option>
                 <option value="admin">fdpo</option>
                 <option value="admin">enforcement</option>

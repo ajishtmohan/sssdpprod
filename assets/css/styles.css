@@ -516,8 +516,7 @@ article ul {
     transition: all 0.2s ease-in;
     padding: 1rem;
     color: #3bd2e3;
-    text-align: center;
-    text-transform: uppercase; }
+    text-align: center; }
     .loginform select:focus, .loginform select:hover,
     .loginform input[type='text']:focus,
     .loginform input[type='text']:hover,
@@ -526,7 +525,10 @@ article ul {
     .loginform input[type='password']:focus,
     .loginform input[type='password']:hover {
       outline: none;
-      border: 2px solid #c91f0c; }
+      border: 2px solid #c91f0c;
+      color: #037f8d; }
+  .loginform select {
+    text-transform: uppercase; }
   .loginform input[type='submit'] {
     background-color: #037f8d;
     color: #fff;

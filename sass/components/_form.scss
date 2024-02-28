@@ -126,13 +126,16 @@
     padding: 1rem;
     color: $color-primary-light-1;
     text-align: center;
-    text-transform: uppercase;
 
     &:focus,
     &:hover {
       outline: none;
       border: 2px solid $color-secondary-dark;
+      color: $color-primary-dark-1;
     }
+  }
+  select {
+    text-transform: uppercase;
   }
 
   input[type='submit'] {
