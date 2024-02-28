@@ -1,0 +1,154 @@
+.booth_entry_form {
+  width: $site-width;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 3rem;
+  background-color: $color-grey-light-1;
+  border-radius: 3px;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    color: $color-primary-dark-1;
+    text-transform: uppercase;
+    margin-bottom: -1.5rem;
+    display: block;
+  }
+
+  select,
+  input[type='text'],
+  input[type='number'] {
+    width: 100%;
+    font-size: $default-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-primary-light-1;
+    border-radius: 5px;
+    border: 2px solid $color-primary-light-2;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 2px solid $color-secondary-dark;
+    }
+
+    option {
+      font-size: $default-font-size;
+      margin: 2rem;
+    }
+
+    input[type='text'] {
+      padding: 2rem;
+    }
+  }
+
+  input[type='reset'],
+  input[type='submit'] {
+    width: 10rem;
+    background-color: $color-primary-dark-1;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 1rem;
+  }
+
+  input[type='reset'] {
+    background-color: $color-secondary-dark;
+  }
+}
+
+.asmb_details_flex {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem;
+
+  &__item {
+    width: calc((100% - 6rem) / 3);
+    height: 100px;
+  }
+}
+
+.poll_details__inputs {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem;
+
+  &--number {
+    width: calc((100% - 6rem) / 3);
+  }
+
+  &--name {
+    width: calc(100% - ((100% - 6rem) / 3) - 3rem);
+  }
+}
+
+.poll_location {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 4rem;
+
+  label {
+    margin-bottom: 0.8rem;
+  }
+
+  &__item {
+    width: calc((100% - 6rem) / 3);
+  }
+}
+
+.voter_demography {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem;
+
+  label {
+    margin-bottom: 0.8rem;
+  }
+
+  &__item {
+    width: calc((100% - 9rem) / 4);
+  }
+}
+
+.submit_btns {
+  display: flex;
+  width: 100%;
+  margin: 5rem auto;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}

@@ -1,16 +1,16 @@
-1,1,Dharmavaram I Town PS 
-2,1,Dharmavaram II Town PS
-3,1,Dharmavaram Rural PS
+1,1,DMM I Town PS
+2,1,DMM II Town PS
+3,1,DMM Rural PS
 4,1,Bathalapalli PS
 5,1,Mudigubba PS
 6,1,Tadimarri PS
-7,2,Hindupur I Town PS
+7,1,Hindupur I Town PS
 8,2,Hindupur II Town PS
 9,2,Hindupur Rural UG PS
 10,2,Lepakshi PS
 11,2,Chilamathur PS
-12,3,Kadiri Town PS
-13,3,Kadiri Rural U/G PS
+12,2,Kadiri Town PS
+13,2,Kadiri Rural U/G PS
 14,3,Talupula PS
 15,3,Tanakal PS
 16,3,Nallacheruvu PS
@@ -27,14 +27,13 @@
 27,5,KIA PS
 28,5,Parigi PS
 29,5,Gorantla UGPS
-30,6,Amadaguru PS
+30,5,Amadaguru PS
 31,6,OD Cheruvu PS
 32,6,Nallamada PS
-33,6,Nallamada PS
-34,6,Kothacheruvu PS
-35,6,Bukkapatnam PS
-36,6,Puttaparthy Rural PS
-37,6,Puttaparthy Urban
-38,7,C.K.Palli PS
-39,7,Ramagiri PS
-40,7,K.G.Palli PS
+33,6,Kothacheruvu PS
+34,6,Bukkapatnam PS
+35,6,Puttaparthy Rural PS
+36,6,Puttaparthy Urban
+37,6,C.K.Palli PS
+38,6,Ramagiri PS
+39,7,K.G.Palli PS

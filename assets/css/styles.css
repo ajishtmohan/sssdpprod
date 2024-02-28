@@ -110,6 +110,131 @@ article ul {
 .u-center-div {
   text-align: center; }
 
+.booth_entry_form {
+  width: 114rem;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 3rem;
+  background-color: #f7f7f7f7;
+  border-radius: 3px; }
+  .booth_entry_form h2 {
+    margin-bottom: 1rem; }
+  .booth_entry_form label {
+    color: #037f8d;
+    text-transform: uppercase;
+    margin-bottom: -1.5rem;
+    display: block; }
+  .booth_entry_form select,
+  .booth_entry_form input[type='text'],
+  .booth_entry_form input[type='number'] {
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3bd2e3;
+    border-radius: 5px;
+    border: 2px solid #88e6f1;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer; }
+    .booth_entry_form select:focus, .booth_entry_form select:hover,
+    .booth_entry_form input[type='text']:focus,
+    .booth_entry_form input[type='text']:hover,
+    .booth_entry_form input[type='number']:focus,
+    .booth_entry_form input[type='number']:hover {
+      outline: none;
+      border: 2px solid #c91f0c; }
+    .booth_entry_form select option,
+    .booth_entry_form input[type='text'] option,
+    .booth_entry_form input[type='number'] option {
+      font-size: 1.6rem;
+      margin: 2rem; }
+    .booth_entry_form select input[type='text'],
+    .booth_entry_form input[type='text'] input[type='text'],
+    .booth_entry_form input[type='number'] input[type='text'] {
+      padding: 2rem; }
+  .booth_entry_form input[type='reset'],
+  .booth_entry_form input[type='submit'] {
+    width: 10rem;
+    background-color: #037f8d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 1rem; }
+  .booth_entry_form input[type='reset'] {
+    background-color: #c91f0c; }
+
+.asmb_details_flex {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem; }
+  .asmb_details_flex__item {
+    width: calc((100% - 6rem) / 3);
+    height: 100px; }
+
+.poll_details__inputs {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem; }
+  .poll_details__inputs--number {
+    width: calc((100% - 6rem) / 3); }
+  .poll_details__inputs--name {
+    width: calc(100% - ((100% - 6rem) / 3) - 3rem); }
+
+.poll_location {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 4rem; }
+  .poll_location label {
+    margin-bottom: 0.8rem; }
+  .poll_location__item {
+    width: calc((100% - 6rem) / 3); }
+
+.voter_demography {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem; }
+  .voter_demography label {
+    margin-bottom: 0.8rem; }
+  .voter_demography__item {
+    width: calc((100% - 9rem) / 4); }
+
+.submit_btns {
+  display: flex;
+  width: 100%;
+  margin: 5rem auto;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
 .booth-container {
   display: flex;
   position: relative;
@@ -374,23 +499,32 @@ article ul {
     text-transform: uppercase;
     display: block;
     padding-bottom: 1.5rem; }
-  .loginform #username,
-  .loginform #password {
+  .loginform select,
+  .loginform input[type='text'],
+  .loginform input[type='number'],
+  .loginform input[type='password'] {
     width: 100%;
     height: 5rem;
     font-size: 1.6rem;
     margin-bottom: 3rem;
     border-radius: 5px;
-    border: 2px solid #88e6f1;
+    border: 2px solid #3bd2e3;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     transition: all 0.2s ease-in;
-    padding: 1rem; }
-    .loginform #username:focus, .loginform #username:hover,
-    .loginform #password:focus,
-    .loginform #password:hover {
+    padding: 1rem;
+    color: #3bd2e3;
+    text-align: center;
+    text-transform: uppercase; }
+    .loginform select:focus, .loginform select:hover,
+    .loginform input[type='text']:focus,
+    .loginform input[type='text']:hover,
+    .loginform input[type='number']:focus,
+    .loginform input[type='number']:hover,
+    .loginform input[type='password']:focus,
+    .loginform input[type='password']:hover {
       outline: none;
       border: 2px solid #c91f0c; }
   .loginform input[type='submit'] {
