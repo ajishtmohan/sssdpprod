@@ -1,0 +1,48 @@
+.enforcement-flex {
+  width: $site-content;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+
+  &__item {
+    display: block;
+    position: relative;
+    width: calc((100% - 6rem) / 3);
+    height: auto;
+    background-color: $color-primary-dark-1;
+    padding: 2rem;
+    border-radius: 3px;
+
+    &--title {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      text-transform: uppercase;
+
+      &:first-child {
+        border-bottom: 1px solid $color-primary-light-1;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .enf_title {
+        color: $color-primary-light-1;
+        display: block;
+        position: relative;
+      }
+
+      .enf_entity {
+        color: $color-white;
+        font-weight: 300;
+        font-size: 5rem;
+        line-height: 5rem;
+      }
+    }
+  }
+}
