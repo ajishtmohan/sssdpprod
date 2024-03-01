@@ -685,6 +685,37 @@ article ul {
     border-radius: 5px;
     border: none;
     cursor: pointer; }
+  .villagesearch .radioholder {
+    width: 30rem;
+    height: 10rem;
+    display: block;
+    position: relative;
+    background-color: #037f8d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in; }
+    .villagesearch .radioholder:hover {
+      background-color: #035761; }
+    .villagesearch .radioholder label {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .villagesearch .radioholder input[type='radio'] {
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: -100;
+      opacity: 0;
+      background-color: #0cb6c9;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer; }
 
 .footer {
   width: 100%;
