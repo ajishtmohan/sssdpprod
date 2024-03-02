@@ -661,7 +661,7 @@ article ul {
   background-color: #777 !important; }
 
 .villagesearch {
-  width: 130rem;
+  width: 114rem;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -669,11 +669,6 @@ article ul {
   justify-content: center;
   gap: 5rem;
   margin: 0 auto; }
-  .villagesearch h2 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-weight: 300; }
   .villagesearch button[type='submit'] {
     width: calc((100% - 10rem) / 3);
     height: 10rem;
@@ -686,7 +681,7 @@ article ul {
     border: none;
     cursor: pointer; }
   .villagesearch .radioholder {
-    width: 30rem;
+    width: calc((100% - 10rem) / 3);
     height: 10rem;
     display: block;
     position: relative;
@@ -696,16 +691,21 @@ article ul {
     transition: all 0.2s ease-in; }
     .villagesearch .radioholder:hover {
       background-color: #035761; }
-    .villagesearch .radioholder label {
-      display: block;
+    .villagesearch .radioholder label h2 {
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translateY(-50%);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-weight: 300;
+      line-height: 2.5rem;
+      width: 100%;
+      display: block;
+      text-align: center; }
     .villagesearch .radioholder input[type='radio'] {
       width: 100%;
       height: 100%;
-      display: block;
       z-index: -100;
       opacity: 0;
       background-color: #0cb6c9;
