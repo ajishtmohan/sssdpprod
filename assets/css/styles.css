@@ -111,13 +111,14 @@ article ul {
   text-align: center; }
 
 .booth_entry_form {
-  width: 130rem;
+  width: 100rem;
   height: auto;
   display: block;
   position: relative;
   padding: 3rem;
   background-color: #f7f7f7f7;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin: 0 auto; }
   .booth_entry_form h2 {
     margin-bottom: 1rem; }
   .booth_entry_form label {

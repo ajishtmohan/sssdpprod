@@ -1,11 +1,12 @@
 .booth_entry_form {
-  width: $site-width;
+  width: $form-width;
   height: auto;
   display: block;
   position: relative;
   padding: 3rem;
   background-color: $color-grey-light-1;
   border-radius: 3px;
+  @include u-center-div;
 
   h2 {
     margin-bottom: 1rem;
