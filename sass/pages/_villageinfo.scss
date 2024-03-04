@@ -1,0 +1,168 @@
+.villageinfo {
+  width: $site-content-width;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: $color-grey-light-1;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+
+  &__titles {
+    margin-bottom: 3rem;
+  }
+
+  &__h2 {
+    width: 100%;
+    color: $color-primary;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+  .villageDetailFLex {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    &__item {
+      width: calc((100% - 9rem) / 4);
+
+      &--title {
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+
+      &--name {
+        font-size: 2rem;
+        // font-weight: 300;
+        color: $color-primary-dark-1;
+      }
+    }
+  }
+
+  .predominant {
+    margin-bottom: 3rem;
+  }
+
+  .populationdata {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    &__data {
+      width: calc((100% - 9rem) / 4);
+
+      .popblock {
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: $color-grey-light-2;
+        padding: 1rem;
+        border-radius: 5px;
+
+        &__item {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .pilflex {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
+
+.pipinfo {
+  width: $site-content-width;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba($color-secondary-dark, 0.05);
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+
+  &__titles {
+    margin-bottom: 3rem;
+  }
+
+  &__h2 {
+    width: 100%;
+    color: $color-secondary-dark;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--centered {
+      text-align: center;
+    }
+  }
+
+  .pipflex {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    &__item {
+      background-color: $color-white;
+      display: block;
+      width: calc((100% - 3rem) / 2);
+      height: 10rem;
+      padding: 2rem;
+
+      .pipindividualflex {
+        width: calc((100% - 3rem) / 2);
+        height: 5rem;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem;
+        background-color: green;
+
+        &__photo {
+          width: calc((100% - 3) / 2);
+          height: 10rem;
+          display: block;
+          position: relative;
+          background-color: red;
+        }
+
+        &__info {
+          width: calc((100% - 3) / 2);
+          height: 10rem;
+          display: block;
+          position: relative;
+          background-color: red;
+        }
+      }
+    }
+  }
+}

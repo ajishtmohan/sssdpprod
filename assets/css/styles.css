@@ -1005,7 +1005,7 @@ main {
       width: 100%; } }
 
 article {
-  width: 130rem;
+  width: 100%;
   margin: 0 auto; }
   @media (max-width: 37.5em) {
     article {
@@ -1162,3 +1162,129 @@ article {
     .photogallery__photo img {
       width: 100%;
       height: auto; }
+
+.villageinfo {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f7f7f7f7;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem; }
+  .villageinfo__titles {
+    margin-bottom: 3rem; }
+  .villageinfo__h2 {
+    width: 100%;
+    color: #0cb6c9;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center; }
+    .villageinfo__h2--centered {
+      text-align: center; }
+  .villageinfo .villageDetailFLex {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem; }
+    .villageinfo .villageDetailFLex__item {
+      width: calc((100% - 9rem) / 4); }
+      .villageinfo .villageDetailFLex__item--title {
+        text-transform: uppercase;
+        margin-bottom: 0.5rem; }
+      .villageinfo .villageDetailFLex__item--name {
+        font-size: 2rem;
+        color: #037f8d; }
+  .villageinfo .predominant {
+    margin-bottom: 3rem; }
+  .villageinfo .populationdata {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem; }
+    .villageinfo .populationdata__data {
+      width: calc((100% - 9rem) / 4); }
+      .villageinfo .populationdata__data .popblock {
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: #eee;
+        padding: 1rem;
+        border-radius: 5px; }
+        .villageinfo .populationdata__data .popblock__item {
+          text-align: center; }
+  .villageinfo .pilflex {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem; }
+
+.pipinfo {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(201, 31, 12, 0.05);
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem; }
+  .pipinfo__titles {
+    margin-bottom: 3rem; }
+  .pipinfo__h2 {
+    width: 100%;
+    color: #c91f0c;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center; }
+    .pipinfo__h2--centered {
+      text-align: center; }
+  .pipinfo .pipflex {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem; }
+    .pipinfo .pipflex__item {
+      background-color: #fff;
+      display: block;
+      width: calc((100% - 3rem) / 2);
+      height: 10rem;
+      padding: 2rem; }
+      .pipinfo .pipflex__item .pipindividualflex {
+        width: calc((100% - 3rem) / 2);
+        height: 5rem;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem;
+        background-color: green; }
+        .pipinfo .pipflex__item .pipindividualflex__photo {
+          width: calc((100% - 3) / 2);
+          height: 10rem;
+          display: block;
+          position: relative;
+          background-color: red; }
+        .pipinfo .pipflex__item .pipindividualflex__info {
+          width: calc((100% - 3) / 2);
+          height: 10rem;
+          display: block;
+          position: relative;
+          background-color: red; }
