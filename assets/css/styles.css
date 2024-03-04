@@ -1014,7 +1014,6 @@ article {
       font-size: 2rem; } }
   article h2 {
     color: #0cb6c9;
-    margin-bottom: 2rem;
     font-weight: 500;
     text-transform: uppercase; }
 
@@ -1172,119 +1171,176 @@ article {
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem; }
-  .villageinfo__titles {
-    margin-bottom: 3rem; }
-  .villageinfo__h2 {
+  .villageinfo__title {
     width: 100%;
-    color: #0cb6c9;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center; }
-    .villageinfo__h2--centered {
+    margin-bottom: 3rem; }
+    .villageinfo__title--h2 {
+      margin-bottom: 1rem;
       text-align: center; }
-  .villageinfo .villageDetailFLex {
+  .villageinfo .villageDesc {
     width: 100%;
+    height: auto;
     display: flex;
-    position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 3rem; }
-    .villageinfo .villageDetailFLex__item {
-      width: calc((100% - 9rem) / 4); }
-      .villageinfo .villageDetailFLex__item--title {
-        text-transform: uppercase;
-        margin-bottom: 0.5rem; }
-      .villageinfo .villageDetailFLex__item--name {
-        font-size: 2rem;
-        color: #037f8d; }
-  .villageinfo .predominant {
-    margin-bottom: 3rem; }
-  .villageinfo .populationdata {
-    width: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem; }
-    .villageinfo .populationdata__data {
-      width: calc((100% - 9rem) / 4); }
-      .villageinfo .populationdata__data .popblock {
-        width: 100%;
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        background-color: #eee;
-        padding: 1rem;
-        border-radius: 5px; }
-        .villageinfo .populationdata__data .popblock__item {
-          text-align: center; }
-  .villageinfo .pilflex {
-    width: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem; }
-
-.pipinfo {
-  width: 114rem;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  background-color: rgba(201, 31, 12, 0.05);
-  border-radius: 5px;
-  padding: 3rem;
-  margin-bottom: 3rem; }
-  .pipinfo__titles {
-    margin-bottom: 3rem; }
-  .pipinfo__h2 {
-    width: 100%;
-    color: #c91f0c;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center; }
-    .pipinfo__h2--centered {
-      text-align: center; }
-  .pipinfo .pipflex {
-    width: 100%;
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem; }
-    .pipinfo .pipflex__item {
-      background-color: #fff;
+    .villageinfo .villageDesc__item {
+      width: calc((100% - 9rem) / 4);
       display: block;
-      width: calc((100% - 3rem) / 2);
-      height: 10rem;
-      padding: 2rem; }
-      .pipinfo .pipflex__item .pipindividualflex {
-        width: calc((100% - 3rem) / 2);
-        height: 5rem;
+      background-color: #fff;
+      padding: 1rem 1.5rem;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+      border-radius: 5px; }
+  .villageinfo .predominant {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-bottom: 3rem; }
+  .villageinfo .populationinfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem; }
+    .villageinfo .populationinfo .populationinfoblock {
+      width: calc((100% - 9rem) / 4);
+      height: auto;
+      padding: 1rem 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+      border-radius: 5px; }
+      .villageinfo .populationinfo .populationinfoblock .popnumberflex {
+        width: 100%;
+        height: auto;
         display: flex;
-        position: relative;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 3rem;
-        background-color: green; }
-        .pipinfo .pipflex__item .pipindividualflex__photo {
-          width: calc((100% - 3) / 2);
-          height: 10rem;
-          display: block;
-          position: relative;
-          background-color: red; }
-        .pipinfo .pipflex__item .pipindividualflex__info {
-          width: calc((100% - 3) / 2);
-          height: 10rem;
-          display: block;
-          position: relative;
-          background-color: red; }
+        text-align: center; }
+
+.polimportpeopleinfo {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(201, 31, 12, 0.1);
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem; }
+  .polimportpeopleinfo__title {
+    width: 100%;
+    margin-bottom: 3rem; }
+    .polimportpeopleinfo__title--h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #c91f0c; }
+  .polimportpeopleinfo .polimportcardflex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem; }
+    .polimportpeopleinfo .polimportcardflex__item {
+      width: calc((100% - 3rem) / 2);
+      display: block;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 2rem; }
+      .polimportpeopleinfo .polimportcardflex__item .politicperson {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem; }
+        .polimportpeopleinfo .polimportcardflex__item .politicperson__photo {
+          width: calc((100% - 3rem) / 2);
+          height: 30rem;
+          overflow: hidden;
+          border-radius: 3px; }
+          .polimportpeopleinfo .polimportcardflex__item .politicperson__photo--img {
+            width: 100%; }
+        .polimportpeopleinfo .polimportcardflex__item .politicperson__info {
+          width: calc((100% - 3rem) / 2); }
+          .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts {
+            margin-bottom: 1.5rem; }
+            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .prop {
+              text-transform: uppercase;
+              color: #000; }
+            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .valu {
+              font-size: 2rem;
+              color: #c91f0c;
+              font-weight: 500; }
+
+.polileaders {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f7f7f7f7;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem; }
+  .polileaders__title {
+    width: 100%;
+    margin-bottom: 3rem; }
+    .polileaders__title--h2 {
+      margin-bottom: 1rem;
+      text-align: center; }
+  .polileaders .polimportcardflex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem; }
+    .polileaders .polimportcardflex__item {
+      width: calc((100% - 3rem) / 2);
+      display: block;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 2rem; }
+      .polileaders .polimportcardflex__item .politicperson {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem; }
+        .polileaders .polimportcardflex__item .politicperson__photo {
+          width: calc((100% - 3rem) / 2);
+          height: 30rem;
+          overflow: hidden;
+          border-radius: 3px; }
+          .polileaders .polimportcardflex__item .politicperson__photo--img {
+            width: 100%; }
+        .polileaders .polimportcardflex__item .politicperson__info {
+          width: calc((100% - 3rem) / 2); }
+          .polileaders .polimportcardflex__item .politicperson__info--facts {
+            margin-bottom: 1.5rem; }
+            .polileaders .polimportcardflex__item .politicperson__info--facts .prop {
+              text-transform: uppercase; }
+            .polileaders .polimportcardflex__item .politicperson__info--facts .valu {
+              font-size: 2rem;
+              color: #037f8d;
+              font-weight: 500; }
+
+.prop {
+  text-transform: uppercase;
+  margin-bottom: 0.3rem; }
+
+.valu {
+  font-size: 2rem;
+  color: #037f8d;
+  font-weight: 500; }
