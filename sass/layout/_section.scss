@@ -79,6 +79,7 @@ article {
     color: $color-primary;
     font-weight: 500;
     text-transform: uppercase;
+    margin-bottom: 2rem;
   }
 }
 
@@ -148,5 +149,42 @@ article {
       line-height: 3rem;
       font-weight: 400;
     }
+  }
+}
+
+.warning {
+  width: 40rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: $color-grey-light-1;
+  text-align: center;
+  border-radius: 5px;
+
+  h2 {
+    color: $color-secondary-dark;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+  }
+  .permLogout {
+    background-color: $color-secondary-dark;
+  }
+  .permRedirect {
+    background-color: $color-primary-dark-1;
   }
 }

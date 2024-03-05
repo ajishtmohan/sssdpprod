@@ -1015,7 +1015,8 @@ article {
   article h2 {
     color: #0cb6c9;
     font-weight: 500;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
 
 .helplineflex {
   width: 100%;
@@ -1071,6 +1072,36 @@ article {
         font-size: 3rem;
         line-height: 3rem;
         font-weight: 400; } }
+
+.warning {
+  width: 40rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: #f7f7f7f7;
+  text-align: center;
+  border-radius: 5px; }
+  .warning h2 {
+    color: #c91f0c;
+    font-weight: 600;
+    margin-bottom: 1rem; }
+  .warning a {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer; }
+  .warning .permLogout {
+    background-color: #c91f0c; }
+  .warning .permRedirect {
+    background-color: #037f8d; }
 
 .constdetails {
   width: 130rem;
@@ -1335,6 +1366,22 @@ article {
               font-size: 2rem;
               color: #037f8d;
               font-weight: 500; }
+
+.pollingstations {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f7f7f7f7;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem; }
+  .pollingstations__title {
+    width: 100%;
+    margin-bottom: 3rem; }
+    .pollingstations__title--h2 {
+      margin-bottom: 1rem;
+      text-align: center; }
 
 .prop {
   text-transform: uppercase;
