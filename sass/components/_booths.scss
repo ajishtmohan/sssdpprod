@@ -5,11 +5,16 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
+  padding: 3rem;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+  background-color: $color-white;
+  border-radius: 5px;
+  margin-bottom: 3rem;
 }
 
 .boothcard {
-  width: calc((100% - 5rem) / 2);
+  width: calc((100% - 3rem) / 2);
   height: 30rem;
   display: flex;
   flex-direction: row;
@@ -29,6 +34,7 @@
     text-align: center;
     display: block;
     position: relative;
+    background-color: $color-grey-light-1;
 
     @include respond(phone) {
       width: 12rem;
@@ -70,7 +76,7 @@
     }
 
     &--name {
-      height: 10.5rem;
+      height: auto;
       border-bottom: 1px solid $color-primary-light-1;
       margin-bottom: 1.5rem;
 
@@ -84,9 +90,10 @@
       }
 
       .boothname {
-        font-size: 3rem;
-        line-height: 3.5rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
         font-weight: 600;
+        margin-bottom: 1.5rem;
 
         @include respond(phone) {
           font-size: 2.5rem;
@@ -123,7 +130,7 @@
 
         &__name {
           display: block;
-          margin-bottom: 1rem;
+          // margin-bottom: 1rem;
         }
 
         &__number {

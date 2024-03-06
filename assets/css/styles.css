@@ -243,10 +243,15 @@ article ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5rem; }
+  gap: 3rem;
+  padding: 3rem;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 3rem; }
 
 .boothcard {
-  width: calc((100% - 5rem) / 2);
+  width: calc((100% - 3rem) / 2);
   height: 30rem;
   display: flex;
   flex-direction: row;
@@ -263,7 +268,8 @@ article ul {
     text-transform: uppercase;
     text-align: center;
     display: block;
-    position: relative; }
+    position: relative;
+    background-color: #f7f7f7f7; }
     @media (max-width: 37.5em) {
       .boothcard__number {
         width: 12rem; } }
@@ -293,7 +299,7 @@ article ul {
       .boothcard__details {
         width: calc(100% - 12rem); } }
     .boothcard__details--name {
-      height: 10.5rem;
+      height: auto;
       border-bottom: 1px solid #3bd2e3;
       margin-bottom: 1.5rem; }
       @media (max-width: 37.5em) {
@@ -303,9 +309,10 @@ article ul {
       .boothcard__details--name .boothna {
         color: #3bd2e3; }
       .boothcard__details--name .boothname {
-        font-size: 3rem;
-        line-height: 3.5rem;
-        font-weight: 600; }
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem; }
         @media (max-width: 37.5em) {
           .boothcard__details--name .boothname {
             font-size: 2.5rem;
@@ -331,8 +338,7 @@ article ul {
         display: inline-block;
         position: relative; }
         .boothcard__demograph--details .demoblock__name {
-          display: block;
-          margin-bottom: 1rem; }
+          display: block; }
         .boothcard__demograph--details .demoblock__number {
           display: block;
           font-size: 3rem;
@@ -560,11 +566,12 @@ article ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem; }
+  gap: 3rem;
+  margin-bottom: 5rem; }
   .enforcement-flex__item {
     display: block;
     position: relative;
-    width: calc((100% - 6rem) / 3);
+    width: calc((100% - 15rem) / 6);
     height: auto;
     background-color: #037f8d;
     padding: 2rem;
@@ -582,12 +589,34 @@ article ul {
       .enforcement-flex__item--title .enf_title {
         color: #3bd2e3;
         display: block;
-        position: relative; }
+        position: relative;
+        font-size: 1.2rem; }
       .enforcement-flex__item--title .enf_entity {
         color: #fff;
         font-weight: 300;
-        font-size: 5rem;
-        line-height: 5rem; }
+        font-size: 2.5rem;
+        line-height: 2.5rem; }
+
+.adminmap {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; }
+  .adminmap__map {
+    width: 100%;
+    height: 60rem;
+    border: none;
+    margin-top: -80px; }
+
+.welcome {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  background-color: #035761;
+  text-align: center;
+  color: #3bd2e3;
+  text-transform: uppercase; }
 
 .sectionpolice {
   width: 100%;
@@ -1193,6 +1222,118 @@ article {
       width: 100%;
       height: auto; }
 
+.pipinfoflex {
+  width: 114rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem; }
+  .pipinfoflex__item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 3rem;
+    background-color: #f7f7f7f7; }
+    .pipinfoflex__item--photo {
+      width: 28%;
+      display: block;
+      height: 100%;
+      border-radius: 3px;
+      overflow: hidden; }
+      .pipinfoflex__item--photo img {
+        width: 100%; }
+    .pipinfoflex__item--details {
+      width: calc(72% - 3rem);
+      display: block;
+      height: 100%;
+      border-radius: 3px; }
+      .pipinfoflex__item--details .namedetailsflex {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        margin-bottom: 3rem; }
+        .pipinfoflex__item--details .namedetailsflex__item {
+          background-color: #fff;
+          padding: 1rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+        .pipinfoflex__item--details .namedetailsflex__name, .pipinfoflex__item--details .namedetailsflex__fname {
+          width: 45%; }
+        .pipinfoflex__item--details .namedetailsflex__age {
+          width: 10%; }
+      .pipinfoflex__item--details .ageadddetailsflex {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-bottom: 3rem; }
+        .pipinfoflex__item--details .ageadddetailsflex__phone {
+          width: 28%;
+          background-color: #fff;
+          padding: 1rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+        .pipinfoflex__item--details .ageadddetailsflex__address {
+          width: 72%;
+          background-color: #fff;
+          padding: 1rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+      .pipinfoflex__item--details .crimedetails {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 3px;
+        box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+        margin-bottom: 3rem; }
+      .pipinfoflex__item--details .chargesheetflex {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-bottom: 3rem; }
+        .pipinfoflex__item--details .chargesheetflex__item {
+          width: calc((100% - 3rem) / 2);
+          background-color: #fff;
+          padding: 1rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+      .pipinfoflex__item--details .category {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 3px;
+        box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+        margin-bottom: 3rem; }
+      .pipinfoflex__item--details .polpartyflex {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem; }
+        .pipinfoflex__item--details .polpartyflex__item {
+          width: calc((100% - 3rem) / 2);
+          background-color: #fff;
+          padding: 1rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+
 .villageinfo {
   width: 114rem;
   display: block;
@@ -1284,35 +1425,59 @@ article {
       display: block;
       background-color: #fff;
       border-radius: 5px;
-      padding: 2rem; }
+      padding: 2rem;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
       .polimportpeopleinfo .polimportcardflex__item .politicperson {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 3rem; }
+        flex-wrap: wrap; }
         .polimportpeopleinfo .polimportcardflex__item .politicperson__photo {
-          width: calc((100% - 3rem) / 2);
-          height: 30rem;
+          width: 35%;
+          height: 22rem;
           overflow: hidden;
           border-radius: 3px; }
           .polimportpeopleinfo .polimportcardflex__item .politicperson__photo--img {
             width: 100%; }
         .polimportpeopleinfo .polimportcardflex__item .politicperson__info {
-          width: calc((100% - 3rem) / 2); }
+          width: 60%;
+          position: relative; }
           .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts {
-            margin-bottom: 1.5rem; }
+            margin-bottom: 0.5rem; }
             .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .prop {
               text-transform: uppercase;
-              color: #000; }
+              color: #000;
+              font-size: 1.2rem;
+              margin-bottom: -3px; }
             .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .valu {
-              font-size: 2rem;
+              font-size: 1.8rem;
               color: #c91f0c;
               font-weight: 500; }
+            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .address {
+              font-size: 1.4rem;
+              line-height: 2rem; }
+            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts a:link,
+            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts a:visited {
+              font-size: 1.2rem;
+              display: block;
+              position: absolute;
+              background-color: #c91f0c;
+              color: #fff;
+              padding: 0.5rem 1rem;
+              border-radius: 3px;
+              text-decoration: none;
+              text-transform: uppercase;
+              right: 0;
+              bottom: 0; }
+          .polimportpeopleinfo .polimportcardflex__item .politicperson__info .fatherageflex {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
 
-.polileaders {
+.politleaderinfo {
   width: 114rem;
   display: block;
   position: relative;
@@ -1321,13 +1486,13 @@ article {
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem; }
-  .polileaders__title {
+  .politleaderinfo__title {
     width: 100%;
     margin-bottom: 3rem; }
-    .polileaders__title--h2 {
+    .politleaderinfo__title--h2 {
       margin-bottom: 1rem;
       text-align: center; }
-  .polileaders .polimportcardflex {
+  .politleaderinfo .politleadercardflex {
     width: 100%;
     height: auto;
     display: flex;
@@ -1335,39 +1500,64 @@ article {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 3rem; }
-    .polileaders .polimportcardflex__item {
+    .politleaderinfo .politleadercardflex__item {
       width: calc((100% - 3rem) / 2);
       display: block;
       background-color: #fff;
       border-radius: 5px;
-      padding: 2rem; }
-      .polileaders .polimportcardflex__item .politicperson {
+      padding: 2rem;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+      .politleaderinfo .politleadercardflex__item .politicperson {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 3rem; }
-        .polileaders .polimportcardflex__item .politicperson__photo {
-          width: calc((100% - 3rem) / 2);
-          height: 30rem;
+        flex-wrap: wrap; }
+        .politleaderinfo .politleadercardflex__item .politicperson__photo {
+          width: 35%;
+          height: 22rem;
           overflow: hidden;
           border-radius: 3px; }
-          .polileaders .polimportcardflex__item .politicperson__photo--img {
+          .politleaderinfo .politleadercardflex__item .politicperson__photo--img {
             width: 100%; }
-        .polileaders .polimportcardflex__item .politicperson__info {
-          width: calc((100% - 3rem) / 2); }
-          .polileaders .polimportcardflex__item .politicperson__info--facts {
-            margin-bottom: 1.5rem; }
-            .polileaders .polimportcardflex__item .politicperson__info--facts .prop {
-              text-transform: uppercase; }
-            .polileaders .polimportcardflex__item .politicperson__info--facts .valu {
-              font-size: 2rem;
+        .politleaderinfo .politleadercardflex__item .politicperson__info {
+          width: 60%;
+          position: relative; }
+          .politleaderinfo .politleadercardflex__item .politicperson__info--facts {
+            margin-bottom: 0.5rem; }
+            .politleaderinfo .politleadercardflex__item .politicperson__info--facts .prop {
+              text-transform: uppercase;
+              color: #000;
+              font-size: 1.2rem;
+              margin-bottom: -3px; }
+            .politleaderinfo .politleadercardflex__item .politicperson__info--facts .valu {
+              font-size: 1.8rem;
               color: #037f8d;
               font-weight: 500; }
+            .politleaderinfo .politleadercardflex__item .politicperson__info--facts .address {
+              font-size: 1.4rem;
+              line-height: 2rem; }
+            .politleaderinfo .politleadercardflex__item .politicperson__info--facts a:link,
+            .politleaderinfo .politleadercardflex__item .politicperson__info--facts a:visited {
+              font-size: 1.2rem;
+              display: block;
+              position: absolute;
+              background-color: #037f8d;
+              color: #fff;
+              padding: 0.5rem 1rem;
+              border-radius: 3px;
+              text-decoration: none;
+              text-transform: uppercase;
+              right: 0;
+              bottom: 0; }
+          .politleaderinfo .politleadercardflex__item .politicperson__info .fatherageflex {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
 
-.pollingstations {
+.pollingbooths {
   width: 114rem;
   display: block;
   position: relative;
@@ -1376,18 +1566,120 @@ article {
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem; }
-  .pollingstations__title {
+  .pollingbooths__title {
     width: 100%;
     margin-bottom: 3rem; }
-    .pollingstations__title--h2 {
+    .pollingbooths__title--h2 {
       margin-bottom: 1rem;
       text-align: center; }
+  .pollingbooths .ind_pollingbooth {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+    gap: 3rem; }
+    .pollingbooths .ind_pollingbooth__block {
+      width: calc((100% - 3rem) / 2);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden; }
+      .pollingbooths .ind_pollingbooth__block--number {
+        width: 25%;
+        display: inline-block;
+        position: relative;
+        float: left;
+        color: #000;
+        background-color: #f7f7f7f7; }
+        .pollingbooths .ind_pollingbooth__block--number .numberblock {
+          display: block;
+          position: absolute;
+          text-align: center;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+          .pollingbooths .ind_pollingbooth__block--number .numberblock__name {
+            text-transform: uppercase;
+            margin-bottom: 1.5rem; }
+          .pollingbooths .ind_pollingbooth__block--number .numberblock__numb {
+            font-size: 5rem;
+            font-weight: 600; }
+      .pollingbooths .ind_pollingbooth__block--details {
+        width: 75%;
+        display: block;
+        height: 20rem;
+        display: block;
+        background-color: antiquewhite;
+        padding: 2rem; }
 
 .prop {
-  text-transform: uppercase;
-  margin-bottom: 0.3rem; }
+  text-transform: uppercase; }
 
 .valu {
-  font-size: 2rem;
   color: #037f8d;
   font-weight: 500; }
+
+.infrastructure {
+  display: block;
+  position: relative;
+  padding: 3rem;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: left;
+  margin-bottom: 3rem; }
+  .infrastructure__prop {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.2rem; }
+  .infrastructure__valu {
+    font-size: 1.8rem;
+    color: #037f8d;
+    font-weight: 500; }
+
+.forcedeployment {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 3rem;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+  .forcedeployment__title {
+    width: 100%;
+    margin-bottom: 3rem; }
+    .forcedeployment__title--h2 {
+      margin-bottom: 1rem;
+      text-align: center; }
+  .forcedeployment .forceblockflex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .forcedeployment .forceblockflex__item {
+      width: calc((100% - 6rem) / 3);
+      background-color: #f7f7f7f7;
+      padding: 1rem;
+      border-radius: 3px; }
+      .forcedeployment .forceblockflex__item .force-head {
+        text-transform: uppercase;
+        margin-bottom: 0.5rem; }
+      .forcedeployment .forceblockflex__item .officer-title {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 1.2rem; }
+      .forcedeployment .forceblockflex__item .officer-name {
+        font-size: 1.8rem;
+        color: #037f8d;
+        font-weight: 500; }
+        .forcedeployment .forceblockflex__item .officer-name:not(:last-child) {
+          margin-bottom: 0.5rem; }

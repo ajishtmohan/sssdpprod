@@ -8,11 +8,12 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
+  margin-bottom: 5rem;
 
   &__item {
     display: block;
     position: relative;
-    width: calc((100% - 6rem) / 3);
+    width: calc((100% - 15rem) / 6);
     height: auto;
     background-color: $color-primary-dark-1;
     padding: 2rem;
@@ -35,14 +36,40 @@
         color: $color-primary-light-1;
         display: block;
         position: relative;
+        font-size: 1.2rem;
       }
 
       .enf_entity {
         color: $color-white;
         font-weight: 300;
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
       }
     }
   }
+}
+
+.adminmap {
+  width: $site-content-width;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__map {
+    width: 100%;
+    height: 60rem;
+    border: none;
+    margin-top: -80px;
+  }
+}
+
+.welcome {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  background-color: $color-primary-dark-2;
+  text-align: center;
+  color: $color-primary-light-1;
+  text-transform: uppercase;
 }
