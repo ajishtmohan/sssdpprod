@@ -110,132 +110,6 @@ article ul {
 .u-center-div {
   text-align: center; }
 
-.booth_entry_form {
-  width: 100rem;
-  height: auto;
-  display: block;
-  position: relative;
-  padding: 3rem;
-  background-color: #f7f7f7f7;
-  border-radius: 3px;
-  margin: 0 auto; }
-  .booth_entry_form h2 {
-    margin-bottom: 1rem; }
-  .booth_entry_form label {
-    color: #037f8d;
-    text-transform: uppercase;
-    margin-bottom: -1.5rem;
-    display: block; }
-  .booth_entry_form select,
-  .booth_entry_form input[type='text'],
-  .booth_entry_form input[type='number'] {
-    width: 100%;
-    font-size: 1.6rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #3bd2e3;
-    border-radius: 5px;
-    border: 2px solid #88e6f1;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 1.5rem;
-    transition: all 0.2s ease-in;
-    cursor: pointer; }
-    .booth_entry_form select:focus, .booth_entry_form select:hover,
-    .booth_entry_form input[type='text']:focus,
-    .booth_entry_form input[type='text']:hover,
-    .booth_entry_form input[type='number']:focus,
-    .booth_entry_form input[type='number']:hover {
-      outline: none;
-      border: 2px solid #c91f0c; }
-    .booth_entry_form select option,
-    .booth_entry_form input[type='text'] option,
-    .booth_entry_form input[type='number'] option {
-      font-size: 1.6rem;
-      margin: 2rem; }
-    .booth_entry_form select input[type='text'],
-    .booth_entry_form input[type='text'] input[type='text'],
-    .booth_entry_form input[type='number'] input[type='text'] {
-      padding: 2rem; }
-  .booth_entry_form input[type='reset'],
-  .booth_entry_form input[type='submit'] {
-    width: 10rem;
-    background-color: #037f8d;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin: 0 1rem; }
-  .booth_entry_form input[type='reset'] {
-    background-color: #c91f0c; }
-
-.asmb_details_flex {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  margin-bottom: 2rem; }
-  .asmb_details_flex__item {
-    width: calc((100% - 6rem) / 3);
-    height: 100px; }
-
-.poll_details__inputs {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  margin-bottom: 2rem; }
-  .poll_details__inputs--number {
-    width: calc((100% - 6rem) / 3); }
-  .poll_details__inputs--name {
-    width: calc(100% - ((100% - 6rem) / 3) - 3rem); }
-
-.poll_location {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  margin-bottom: 4rem; }
-  .poll_location label {
-    margin-bottom: 0.8rem; }
-  .poll_location__item {
-    width: calc((100% - 6rem) / 3); }
-
-.voter_demography {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  margin-bottom: 2rem; }
-  .voter_demography label {
-    margin-bottom: 0.8rem; }
-  .voter_demography__item {
-    width: calc((100% - 9rem) / 4); }
-
-.submit_btns {
-  display: flex;
-  width: 100%;
-  margin: 5rem auto;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 2rem; }
-
 .booth-container {
   display: flex;
   position: relative;
@@ -423,60 +297,67 @@ article ul {
           line-height: 3.5rem;
           font-weight: 400; } }
 
-.boothform {
-  width: 40rem;
+form {
+  width: 100rem;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 3rem;
   background-color: #f7f7f7f7;
-  text-align: center;
-  padding: 4rem;
-  text-transform: uppercase;
-  border-radius: 5px; }
-  @media (max-width: 37.5em) {
-    .boothform {
-      width: 100%; } }
-  .boothform p {
-    font-size: 1.6rem;
-    text-align: center;
-    color: blue !important; }
-  .boothform .boothfinderform select {
-    background-color: red;
-    color: red; }
-  .boothform__label {
+  border-radius: 6px;
+  margin: 0 auto; }
+  form label {
     color: #037f8d;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    padding-bottom: 5rem; }
-  .boothform__select {
-    width: 100%;
-    height: 5rem;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
+    display: block; }
+  form select {
     text-align: center;
+    text-transform: uppercase; }
+  form select,
+  form input[type='text'],
+  form input[type='number'] {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    color: #3bd2e3;
     border-radius: 5px;
     border: 2px solid #88e6f1;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    padding: 1rem 1.5rem;
     transition: all 0.2s ease-in;
-    cursor: pointer; }
-    .boothform__select:focus, .boothform__select:hover {
+    cursor: pointer;
+    text-align: left;
+    font-weight: 500; }
+    form select:focus, form select:hover,
+    form input[type='text']:focus,
+    form input[type='text']:hover,
+    form input[type='number']:focus,
+    form input[type='number']:hover {
       outline: none;
-      border: 2px solid #c91f0c; }
-    .boothform__select option {
-      font-size: 1.6rem; }
-  .boothform__option,
-  .boothform .boothform__option--dis {
-    font-size: 1.6rem;
-    color: #0cb6c9;
-    padding: 1rem;
-    text-transform: uppercase; }
-  .boothform select {
-    font-size: 1.6rem;
-    color: #0cb6c9;
-    padding: 1rem;
-    text-transform: uppercase;
-    margin-top: 1rem; }
-  .boothform input[type='reset'],
-  .boothform input[type='submit'] {
+      border: 2px solid #c91f0c;
+      color: #037f8d; }
+    form select option,
+    form input[type='text'] option,
+    form input[type='number'] option {
+      font-size: 1.6rem;
+      margin: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      margin: 0.8rem; }
+    form select input[type='text'],
+    form input[type='text'] input[type='text'],
+    form input[type='number'] input[type='text'] {
+      padding: 2rem;
+      text-align: left; }
+  form input[type='reset'],
+  form input[type='submit'] {
     width: 10rem;
     background-color: #037f8d;
     color: #fff;
@@ -486,76 +367,168 @@ article ul {
     padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
-    margin: 0 1rem; }
-  .boothform input[type='reset'] {
+    cursor: pointer; }
+  form input[type='reset'] {
     background-color: #c91f0c; }
-
-.loginform {
-  width: 40rem;
-  background-color: #f7f7f7f7;
-  text-align: center;
-  padding: 4rem;
-  text-transform: uppercase;
-  border-radius: 5px; }
-  @media (max-width: 37.5em) {
-    .loginform {
-      width: 100%; } }
-  .loginform__label {
-    color: #037f8d;
-    text-transform: uppercase;
-    display: block;
-    padding-bottom: 1.5rem; }
-  .loginform select,
-  .loginform input[type='text'],
-  .loginform input[type='number'],
-  .loginform input[type='password'] {
+  form .section_form {
     width: 100%;
-    height: 5rem;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
-    border-radius: 5px;
-    border: 2px solid #3bd2e3;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    transition: all 0.2s ease-in;
-    padding: 1rem;
-    color: #3bd2e3;
-    text-align: center; }
-    .loginform select:focus, .loginform select:hover,
-    .loginform input[type='text']:focus,
-    .loginform input[type='text']:hover,
-    .loginform input[type='number']:focus,
-    .loginform input[type='number']:hover,
-    .loginform input[type='password']:focus,
-    .loginform input[type='password']:hover {
-      outline: none;
-      border: 2px solid #c91f0c;
-      color: #037f8d; }
-  .loginform select {
-    text-transform: uppercase; }
-  .loginform input[type='submit'] {
-    background-color: #037f8d;
-    color: #fff;
+    margin-bottom: 3rem; }
+  form .form_h2 {
+    margin-bottom: 1rem; }
+  form .form_h3 {
     text-transform: uppercase;
-    font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in; }
-    .loginform input[type='submit']:hover {
-      background-color: #035761; }
-  .loginform a {
-    background-color: #037f8d;
-    color: #fff;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 3px;
-    display: inline-block; }
+    font-weight: 500;
+    margin-bottom: 1rem; }
+  form .checkboxes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    form .checkboxes__item {
+      width: auto;
+      height: 1.6rem;
+      display: inline-block;
+      align-items: center; }
+      form .checkboxes__item input[type='checkbox'] {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        float: left;
+        margin-top: 0.3rem;
+        margin-right: 0.5rem; }
+      form .checkboxes__item label {
+        display: inline-block; }
+  form .formbtns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem; }
+
+.popdemography {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem; }
+  .popdemography__item {
+    width: calc((100% - 3rem) / 2);
+    background-color: #fff;
+    padding: 1rem; }
+    .popdemography__item .popflex {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .popdemography__item .popflex__item {
+        width: calc((100% - 4rem) / 3); }
+
+.boothform {
+  width: 40rem;
+  height: auto; }
+  .boothform label {
+    text-align: center; }
+  .boothform select {
+    margin-bottom: 2.5rem; }
+
+.asmb_details_flex {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem 0;
+  margin-bottom: 2rem; }
+  .asmb_details_flex__item {
+    width: calc((100% - 6rem) / 3); }
+
+.poll_details__inputs {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem; }
+  .poll_details__inputs--number {
+    width: calc((100% - 6rem) / 3); }
+  .poll_details__inputs--name {
+    width: calc(100% - ((100% - 6rem) / 3) - 3rem); }
+
+.poll_location {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-bottom: 4rem; }
+  .poll_location__item {
+    width: calc((100% - 6rem) / 3); }
+
+.pollinfra {
+  display: block;
+  position: relative;
+  margin-bottom: 4rem; }
+  .pollinfra::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .pollinfra .pollinfrarow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem; }
+    .pollinfra .pollinfrarow__item label,
+    .pollinfra .pollinfrarow__item input {
+      display: inline-block;
+      position: relative;
+      width: auto;
+      float: left; }
+    .pollinfra .pollinfrarow__item input {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem; }
+
+.voter_demography {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem; }
+  .voter_demography__item {
+    width: calc((100% - 9rem) / 4); }
+
+.server_report {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 2rem; }
+
+.submit_btns {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 2rem;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.village_details_flex {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem 0;
+  margin-bottom: 2rem; }
+  .village_details_flex__item {
+    width: calc((100% - 6rem) / 3); }
 
 .enforcement-flex {
   width: 114rem;
@@ -988,20 +961,6 @@ main {
   @media (max-width: 37.5em) {
     .section-content {
       padding: 0; } }
-
-.section-gally {
-  width: 130rem;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5rem;
-  margin: 0 auto; }
-  @media (max-width: 37.5em) {
-    .section-gally {
-      width: 100%;
-      padding: 0rem; } }
 
 .section-header {
   width: 130rem;

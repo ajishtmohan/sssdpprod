@@ -1,0 +1,305 @@
+form {
+  width: $form-width;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 3rem;
+  background-color: $color-grey-light-1;
+  border-radius: 6px;
+  @include u-center-div;
+
+  label {
+    color: $color-primary-dark-1;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  select {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  select,
+  input[type='text'],
+  input[type='number'] {
+    width: 100%;
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+    color: $color-primary-light-1;
+    border-radius: 5px;
+    border: 2px solid $color-primary-light-2;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    text-align: left;
+    font-weight: 500;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 2px solid $color-secondary-dark;
+      color: $color-primary-dark-1;
+    }
+
+    option {
+      font-size: $default-font-size;
+      margin: 2rem;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $default-font-family;
+      font-weight: 500;
+      margin: 0.8rem;
+    }
+
+    input[type='text'] {
+      padding: 2rem;
+      text-align: left;
+    }
+  }
+
+  input[type='reset'],
+  input[type='submit'] {
+    width: 10rem;
+    background-color: $color-primary-dark-1;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type='reset'] {
+    background-color: $color-secondary-dark;
+  }
+
+  .section_form {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .section_form_last {
+  }
+
+  .form_h2 {
+    margin-bottom: 1rem;
+  }
+
+  .form_h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .checkboxes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    &__item {
+      width: auto;
+      height: 1.6rem;
+      display: inline-block;
+      align-items: center;
+
+      input[type='checkbox'] {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-block;
+        float: left;
+        margin-top: 0.3rem;
+        margin-right: 0.5rem;
+      }
+
+      label {
+        display: inline-block;
+      }
+    }
+  }
+
+  .formbtns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+// VILLAGE FORM
+.popdemography {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+
+  &__item {
+    width: calc((100% - 3rem) / 2);
+    // height: 20rem;
+    background-color: $color-white;
+    padding: 1rem;
+
+    .popflex {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__item {
+        width: calc((100% - 4rem) / 3);
+      }
+    }
+  }
+}
+
+// POLLING STATION FINDER
+.boothform {
+  width: 40rem;
+  height: auto;
+
+  label {
+    text-align: center;
+  }
+  select {
+    margin-bottom: 2.5rem;
+  }
+}
+
+// Booth Form
+
+.asmb_details_flex {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem 0;
+  margin-bottom: 2rem;
+
+  &__item {
+    width: calc((100% - 6rem) / 3);
+  }
+}
+
+.poll_details__inputs {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem;
+
+  &--number {
+    width: calc((100% - 6rem) / 3);
+  }
+
+  &--name {
+    width: calc(100% - ((100% - 6rem) / 3) - 3rem);
+  }
+}
+
+.poll_location {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-bottom: 4rem;
+
+  &__item {
+    width: calc((100% - 6rem) / 3);
+  }
+}
+
+.pollinfra {
+  display: block;
+  position: relative;
+  margin-bottom: 4rem;
+  @include clearfix;
+
+  .pollinfrarow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+
+    &__item {
+      label,
+      input {
+        display: inline-block;
+        position: relative;
+        width: auto;
+        float: left;
+      }
+
+      input {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.voter_demography {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  // margin-bottom: 2rem;
+
+  &__item {
+    width: calc((100% - 9rem) / 4);
+  }
+}
+
+.server_report {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 2rem;
+  // background-color: antiquewhite;
+}
+
+.submit_btns {
+  display: flex;
+  width: 100%;
+  margin: 0 auto 2rem;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+// VILLAGE FORM
+.village_details_flex {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem 0;
+  margin-bottom: 2rem;
+
+  &__item {
+    width: calc((100% - 6rem) / 3);
+  }
+}

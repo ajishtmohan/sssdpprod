@@ -133,155 +133,138 @@
     </header>
 
     <main>
-      <section class="pollboothfinder">
-        <div class="section-gally">
-          <!-- form -->
-          <form class="boothform" action="" method="post">
-            <!-- mandala -->
-            <label class="boothform__label" for="constituency"
-              >Assembly Constituency</label
-            ><br />
-            <select
-              class="boothform__select"
-              name="constituency"
-              id="constituency"
+      <section class="section-content">
+        <!-- form -->
+        <form class="boothform" action="" method="post">
+          <!-- mandala -->
+          <label class="boothform__label" for="constituency"
+            >Assembly Constituency</label
+          >
+          <select
+            class="boothform__select"
+            name="constituency"
+            id="constituency"
+          >
+            <option
+              disabled
+              selected
+              class="boothform__option--dis"
+              default
+              value=""
             >
-              <option
-                disabled
-                selected
-                class="boothform__option--dis"
-                default
-                value=""
-              >
-                ~ select Constituency ~
-              </option>
+              ~ select Constituency ~
+            </option>
+            <option class="boothform__option" value="madakasira">
+              Madakasira
+            </option>
+          </select>
 
-              <!-- <option class="boothform__option" value="dharmavaram">
-                Dharmavaram
-              </option>
-              <option class="boothform__option" value="hindupur">
-                Hindupur
-              </option>
-              <option class="boothform__option" value="kadiri">Kadiri</option> -->
-              <option class="boothform__option" value="madakasira">
-                Madakasira
-              </option>
-              <!-- <option class="boothform__option" value="penukonda">
-                Penukonda
-              </option>
-              <option class="boothform__option" value="puttaparthi">
-                Puttaparthi
-              </option>
-              <option class="boothform__option" value="raptaddu">
-                Raptaddu
-              </option> -->
-            </select>
+          <!-- police station -->
+          <label class="boothform__label" for="policestation"
+            >Police Station</label
+          >
+          <select
+            class="boothform__select"
+            name="policestation"
+            id="policestation"
+          >
+            <option
+              disabled
+              selected
+              class="boothform__option--dis"
+              default
+              value=""
+            >
+              ~ select Police Station ~
+            </option>
+            <option class="boothform__option" value="policestation1">
+              Amarapuram PS
+            </option>
+            <option class="boothform__option" value="policestation2">
+              Gudibanda
+            </option>
+            <option class="boothform__option" value="policestation3">
+              Rolla
+            </option>
+            <option class="boothform__option" value="policestation4">
+              Agali
+            </option>
+            <option class="boothform__option" value="policestation4">
+              Madakasira PS
+            </option>
+          </select>
 
-            <br />
-            <!-- police station -->
-            <label class="boothform__label" for="policestation"
-              >Police Station</label
-            ><br />
-            <select
-              class="boothform__select"
-              name="policestation"
-              id="policestation"
+          <!-- villages -->
+          <label class="boothform__label" for="village">Village</label>
+          <select class="boothform__select" name="village" id="village">
+            <option
+              disabled
+              selected
+              class="boothform__option--dis"
+              default
+              value=""
             >
-              <option
-                disabled
-                selected
-                class="boothform__option--dis"
-                default
-                value=""
-              >
-                ~ select Police Station ~
-              </option>
-              <option class="boothform__option" value="policestation1">
-                Amarapuram PS
-              </option>
-              <option class="boothform__option" value="policestation2">
-                Gudibanda
-              </option>
-              <option class="boothform__option" value="policestation3">
-                Rolla
-              </option>
-              <option class="boothform__option" value="policestation4">
-                Agali
-              </option>
-              <option class="boothform__option" value="policestation4">
-                Madakasira PS
-              </option>
-            </select>
-            <br />
-            <!-- villages -->
-            <label class="boothform__label" for="village">Village</label><br />
-            <select class="boothform__select" name="village" id="village">
-              <option
-                disabled
-                selected
-                class="boothform__option--dis"
-                default
-                value=""
-              >
-                ~ Select Village ~
-              </option>
-              <option class="boothform__option" value="village1">
-                Agraharam
-              </option>
-              <option class="boothform__option" value="village2">
-                Akkampalli
-              </option>
-              <option class="boothform__option" value="village3">
-                Aldapalli
-              </option>
-              <option class="boothform__option" value="village4">Aludi</option>
-              <option class="boothform__option" value="village4">
-                Alupanapalli
-              </option>
-              <option class="boothform__option" value="village4">
-                Amarapuram
-              </option>
-              <option class="boothform__option" value="village4">
-                Amidalagondi
-              </option>
-            </select>
-            <br />
-            <!-- polling booth -->
-            <label class="boothform__label" for="pollingbooth"
-              >Polling Booth</label
-            ><br />
-            <select
-              class="boothform__select"
-              name="pollingbooth"
-              id="pollingbooth"
-              placeholder="hi"
+              ~ Select Village ~
+            </option>
+            <option class="boothform__option" value="village1">
+              Agraharam
+            </option>
+            <option class="boothform__option" value="village2">
+              Akkampalli
+            </option>
+            <option class="boothform__option" value="village3">
+              Aldapalli
+            </option>
+            <option class="boothform__option" value="village4">Aludi</option>
+            <option class="boothform__option" value="village4">
+              Alupanapalli
+            </option>
+            <option class="boothform__option" value="village4">
+              Amarapuram
+            </option>
+            <option class="boothform__option" value="village4">
+              Amidalagondi
+            </option>
+          </select>
+
+          <!-- polling booth -->
+          <label class="boothform__label" for="pollingbooth"
+            >Polling Booth</label
+          >
+          <select
+            class="boothform__select"
+            name="pollingbooth"
+            id="pollingbooth"
+            placeholder="hi"
+          >
+            <option
+              disabled
+              selected
+              class="boothform__option--dis"
+              default
+              value=""
             >
-              <option
-                disabled
-                selected
-                class="boothform__option--dis"
-                default
-                value=""
-              >
-                ~ select Polling Booth ~
-              </option>
-              <option class="boothform__option" value="pollingbooth1">
-                Mandal Parishad Primary School Virupasamudram
-              </option>
-              <option class="boothform__option" value="pollingbooth2">
-                Mandal Parishad Primary School V.Agraharam
-              </option>
-              <option class="boothform__option" value="pollingbooth3">
-                Mandal Parishad Primary School V.Agraharam
-              </option>
-              <option class="boothform__option" value="pollingbooth4">
-                Mandal Parishad Primary School Tammade Palli
-              </option>
-            </select>
-            <br />
+              ~ select Polling Booth ~
+            </option>
+            <option class="boothform__option" value="pollingbooth1">
+              Mandal Parishad Primary School Virupasamudram
+            </option>
+            <option class="boothform__option" value="pollingbooth2">
+              Mandal Parishad Primary School V.Agraharam
+            </option>
+            <option class="boothform__option" value="pollingbooth3">
+              Mandal Parishad Primary School V.Agraharam
+            </option>
+            <option class="boothform__option" value="pollingbooth4">
+              Mandal Parishad Primary School Tammade Palli
+            </option>
+          </select>
+
+          <div class="formbtns">
+            <input type="reset" value="reset" />
             <input type="submit" value="submit" />
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
     </main>
 

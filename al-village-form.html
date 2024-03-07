@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSSDP Portal</title>
+    <meta name="description" content="" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="SSS District Police" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon-32x32.png" />
+
+    <meta name="theme-color" content="#0cb6c9" />
+  </head>
+
+  <body>
+    <header class="header">
+      <input type="checkbox" class="check" name="" id="nav-toggle" />
+      <label for="nav-toggle" class="icon-burger">
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+      </label>
+
+      <div class="header__logobox">
+        <a href="al-index.html">
+          <img
+            class="header__logobox--img"
+            src="assets/img/appolice_logo.png"
+            alt=""
+          />
+        </a>
+        <a href="al-index.html">
+          <h1 class="header__logobox--title">SSSDP PORTAL</h1>
+        </a>
+      </div>
+      <!-- MENU -->
+      <div class="header__navigation">
+        <div class="header__navigation--container">
+          <ul class="headernav">
+            <li class="headernav__item">
+              <a href="al-ass-const.html">assemblies</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-poll-station.html">Polling Stations</a>
+            </li>
+            <li class="headernav__item">
+              <a href="#">Enforcement ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Cash</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Liquor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">NBWS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">Force Deployment ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2019</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2024</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="al-under-construction.html">training</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-under-construction.html">route maps</a>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">check-posts ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-state</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-district</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">forms ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="#">lor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">deployment</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">poll booth</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">PIP</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">leaders</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MENU -->
+    </header>
+
+    <main>
+      <section class="sectionhome">
+        <div class="section__title">
+          <h2 class="section__title--text">village information FORM</h2>
+        </div>
+        <article>
+          <div class="section-content">
+            <form action="" method="post" id="village_entry_form">
+              <section class="section_form">
+                <h2 class="form_h2">village details</h2>
+                <div class="village_details_flex">
+                  <div class="village_details_flex__item">
+                    <label for="v_form_constituency"
+                      >assembly constituency</label
+                    >
+                    <select name="" id="v_form_constituency" required>
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select constituency ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_circle">circle</label>
+                    <select name="" id="v_form_circle" required>
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select circle ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_mandala">Mandala</label>
+                    <select name="" id="v_form_mandala" required>
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select mandala ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_policestation">Police Station</label>
+                    <select name="" id="v_form_policestation" required>
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select Police Station ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_main">Main / hamlet</label>
+                    <select name="" id="v_form_main" required>
+                      <option value="">select option</option>
+                      <option value="">Main</option>
+                      <option value="">Hamlet</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_sensiti">Sensitivity</label>
+                    <select name="" id="v_form_sensiti" required>
+                      <option value="">select village</option>
+                      <option value="">Normal</option>
+                      <option value="">Faction</option>
+                      <option value="">Politically Sensitive</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="poll_details__inputs">
+                  <div class="poll_details__inputs--name">
+                    <label for="v_form_villagename">village name</label>
+                    <input type="text" id="v_form_villagename" required />
+                  </div>
+                </div>
+              </section>
+
+              <section class="section_form">
+                <h2 class="form_h2">predominant castes</h2>
+                <div class="checkboxes">
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="reddy" id="reddy" />
+                    <label for="reddy">Reddy</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Kamma" id="Kamma" />
+                    <label for="Kamma">Kamma</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Balija" id="Balija" />
+                    <label for="Balija">Balija</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Besta" id="Besta" />
+                    <label for="Besta">Besta</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Kuruba" id="Kuruba" />
+                    <label for="Kuruba">Kuruba</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input
+                      type="checkbox"
+                      name="gollayadava"
+                      id="gollayadava"
+                    />
+                    <label for="gollayadava">Golla (Yadav)</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Boya" id="Boya" />
+                    <label for="Boya">Boya</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Vadde" id="Vadde" />
+                    <label for="Vadde">Vadde</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Bramhin" id="Bramhin" />
+                    <label for="Bramhin">Bramhin</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input
+                      type="checkbox"
+                      name="nayibramhin"
+                      id="nayibramhin"
+                    />
+                    <label for="nayibramhin">Nayi Bramhin</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Dudekula" id="Dudekula" />
+                    <label for="Dudekula">Dudekula</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Muslim" id="Muslim" />
+                    <label for="Muslim">Muslim</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Nese" id="Nese" />
+                    <label for="Nese">Nese</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Mala" id="Mala" />
+                    <label for="Mala">Mala</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Madiga" id="Madiga" />
+                    <label for="Madiga">Madiga</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Erukula" id="Erukula" />
+                    <label for="Erukula">Erukula</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Dommara" id="Dommara" />
+                    <label for="Dommara">Dommara</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Sugali" id="Sugali" />
+                    <label for="Sugali">Sugali</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input type="checkbox" name="Kummara" id="Kummara" />
+                    <label for="Kummara">Kummara</label>
+                  </div>
+                  <div class="checkboxes__item">
+                    <input
+                      type="checkbox"
+                      name="rajakachakali"
+                      id="rajakachakali"
+                    />
+                    <label for="rajakachakali">Rajaka (Chakali)</label>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section_form_last">
+                <h2 class="form_h2">population demographics</h2>
+                <div class="popdemography">
+                  <div class="popdemography__item">
+                    <h3 class="form_h3">SC Population</h3>
+                    <div class="popflex">
+                      <div class="popflex__item">
+                        <label for="sc_pop_male">Male</label>
+                        <input type="number" name="" id="sc_pop_male" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="sc_pop_female">Male</label>
+                        <input type="number" name="" id="sc_pop_female" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="sc_pop_total">Male</label>
+                        <input type="number" name="" id="sc_pop_total" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="popdemography__item">
+                    <h3 class="form_h3">ST Population</h3>
+                    <div class="popflex">
+                      <div class="popflex__item">
+                        <label for="st_pop_male">Male</label>
+                        <input type="number" name="" id="st_pop_male" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="st_pop_female">Male</label>
+                        <input type="number" name="" id="st_pop_female" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="st_pop_total">Male</label>
+                        <input type="number" name="" id="st_pop_total" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="popdemography__item">
+                    <h3 class="form_h3">SC Population</h3>
+                    <div class="popflex">
+                      <div class="popflex__item">
+                        <label for="oth_pop_male">Male</label>
+                        <input type="number" name="" id="oth_pop_male" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="oth_pop_female">Male</label>
+                        <input type="number" name="" id="oth_pop_female" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="oth_pop_total">Male</label>
+                        <input type="number" name="" id="oth_pop_total" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="popdemography__item">
+                    <h3 class="form_h3">SC Population</h3>
+                    <div class="popflex">
+                      <div class="popflex__item">
+                        <label for="tot_pop_male">Male</label>
+                        <input type="number" name="" id="tot_pop_male" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="tot_pop_female">Male</label>
+                        <input type="number" name="" id="tot_pop_female" />
+                      </div>
+                      <div class="popflex__item">
+                        <label for="tot_pop_total">Male</label>
+                        <input type="number" name="" id="tot_pop_total" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="server_report">&nbsp;</div>
+              <div class="formbtns">
+                <input type="reset" value="reset" />
+                <input type="submit" value="submit" />
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content--rights">
+          <script>
+            (function () {
+              document.querySelector(
+                '.footer__content--rights'
+              ).textContent = `© All Right Reserved | SSS District Police ${new Date().getFullYear()}`;
+            })();
+          </script>
+        </p>
+        <p class="footer__content--dev">
+          <a href="mailto:ajishtmohan@gmail.com">Contact the Developer</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

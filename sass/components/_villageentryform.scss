@@ -1,4 +1,4 @@
-.booth_entry_form {
+#village_entry_form {
   width: $form-width;
   height: auto;
   display: block;
@@ -9,13 +9,13 @@
   @include u-center-div;
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   label {
     color: $color-primary-dark-1;
     text-transform: uppercase;
-    margin-bottom: -1.5rem;
+    margin-bottom: 0.5rem;
     display: block;
   }
 
@@ -61,7 +61,7 @@
     text-transform: uppercase;
     font-size: $default-font-size;
     font-family: 'Montserrat', sans-serif;
-    padding: 1rem 2rem;
+    // padding: 0.5rem 1.5rem;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -84,7 +84,6 @@
 
   &__item {
     width: calc((100% - 6rem) / 3);
-    height: 100px;
   }
 }
 
@@ -111,16 +110,42 @@
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 3rem;
   margin-bottom: 4rem;
 
-  label {
-    margin-bottom: 0.8rem;
-  }
-
   &__item {
     width: calc((100% - 6rem) / 3);
+  }
+}
+
+.pollinfra {
+  display: block;
+  position: relative;
+  margin-bottom: 4rem;
+  @include clearfix;
+
+  .pollinfrarow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+
+    &__item {
+      label,
+      input {
+        display: inline-block;
+        position: relative;
+        width: auto;
+        float: left;
+      }
+
+      input {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+      }
+    }
   }
 }
 
@@ -131,25 +156,27 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 3rem;
-  margin-bottom: 2rem;
-
-  label {
-    margin-bottom: 0.8rem;
-  }
+  // margin-bottom: 2rem;
 
   &__item {
     width: calc((100% - 9rem) / 4);
   }
 }
 
+.server_report {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 2rem;
+  // background-color: antiquewhite;
+}
+
 .submit_btns {
   display: flex;
   width: 100%;
-  margin: 5rem auto;
+  margin: 0 auto 2rem;
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
-  margin-bottom: 2rem;
 }
