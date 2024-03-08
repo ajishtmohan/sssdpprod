@@ -140,10 +140,9 @@
         <article>
           <div class="section-content">
             <form action="" method="post" id="booth_entry_form">
-              <div class="asmb_details">
-                <div class="asmb_details__heading">
-                  <h2>assembly details</h2>
-                </div>
+              <section class="section_form">
+                <h2 class="form_h2">assembly details</h2>
+
                 <div class="asmb_details_flex">
                   <div class="asmb_details_flex__item">
                     <label for="b_form_constituency"
@@ -172,15 +171,15 @@
                     </select>
                   </div>
                 </div>
-                <div class="asmb_details__heading">
-                  <h2>Polling Station details</h2>
-                </div>
+              </section>
+
+              <section class="section_form">
+                <h2 class="form_h2">Polling Station details</h2>
                 <div class="poll_details__inputs">
                   <div class="poll_details__inputs--number">
                     <label for="b_form_pollnumber"
                       >Polling Station Number</label
                     >
-
                     <input type="number" id="b_form_pollnumber" required />
                   </div>
                   <div class="poll_details__inputs--name">
@@ -198,12 +197,13 @@
                     <input type="number" id="b_form_longitude" required />
                   </div>
                 </div>
+              </section>
+
+              <section class="section_form">
                 <div class="pollinfra">
-                  <div class="asmb_details__heading">
-                    <h2>Infrastructure absent</h2>
-                  </div>
-                  <div class="pollinfrarow">
-                    <div class="pollinfrarow__item">
+                  <h2 class="form_h2">Infrastructure absent</h2>
+                  <div class="checkboxes">
+                    <div class="checkboxes__item">
                       <input
                         type="checkbox"
                         name="compoundwall"
@@ -211,19 +211,19 @@
                       />
                       <label for="compoundwall">compound wall</label>
                     </div>
-                    <div class="pollinfrarow__item">
+                    <div class="checkboxes__item">
                       <input type="checkbox" name="ramp" id="ramp" />
                       <label for="ramp">ramp</label>
                     </div>
-                    <div class="pollinfrarow__item">
+                    <div class="checkboxes__item">
                       <input type="checkbox" name="doors" id="doors" />
                       <label for="doors">doors</label>
                     </div>
-                    <div class="pollinfrarow__item">
+                    <div class="checkboxes__item">
                       <input type="checkbox" name="windows" id="windows" />
                       <label for="windows">windows</label>
                     </div>
-                    <div class="pollinfrarow__item">
+                    <div class="checkboxes__item">
                       <input
                         type="checkbox"
                         name="electricity"
@@ -231,15 +231,16 @@
                       />
                       <label for="electricity">electricity</label>
                     </div>
-                    <div class="pollinfrarow__item">
+                    <div class="checkboxes__item">
                       <input type="checkbox" name="mobile" id="mobile" />
                       <label for="mobile">mobile connectivity</label>
                     </div>
                   </div>
                 </div>
-                <div class="asmb_details__heading">
-                  <h2>voter demographics</h2>
-                </div>
+              </section>
+
+              <section class="section_form_last">
+                <h2 class="form_h2">voter demographics</h2>
                 <div class="voter_demography">
                   <div class="voter_demography__item">
                     <label for="b_form_voters_male">Male Voters</label>
@@ -258,11 +259,12 @@
                     <input type="number" id="b_form_voters_total" required />
                   </div>
                 </div>
-                <div class="server_report">&nbsp;</div>
-                <div class="submit_btns">
-                  <input type="reset" value="reset" />
-                  <input type="submit" value="submit" />
-                </div>
+              </section>
+
+              <div class="server_report">&nbsp;</div>
+              <div class="formbtns">
+                <input type="reset" value="reset" />
+                <input type="submit" value="submit" />
               </div>
             </form>
           </div>
