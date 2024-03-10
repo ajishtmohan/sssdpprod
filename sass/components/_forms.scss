@@ -105,7 +105,7 @@ form {
   .form_h3 {
     text-transform: uppercase;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .checkboxes {
@@ -184,6 +184,7 @@ form {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      gap: 1rem;
 
       &__item {
         width: calc((100% - 4rem) / 3);
@@ -285,7 +286,8 @@ form {
 
 // LOGIN FORM
 .loginform {
-  width: 40rem;
+  width: 35rem;
+  margin-bottom: 3rem;
 
   label {
     text-align: center;

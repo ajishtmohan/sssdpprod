@@ -389,7 +389,7 @@ form {
   form .form_h3 {
     text-transform: uppercase;
     font-weight: 500;
-    margin-bottom: 1rem; }
+    margin-bottom: 0.5rem; }
   form .checkboxes {
     width: 100%;
     height: auto;
@@ -447,7 +447,8 @@ form {
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-between; }
+      justify-content: space-between;
+      gap: 1rem; }
       .popdemography__item .popflex__item {
         width: calc((100% - 4rem) / 3); }
 
@@ -517,7 +518,8 @@ form {
     width: calc((100% - 6rem) / 3); }
 
 .loginform {
-  width: 40rem; }
+  width: 35rem;
+  margin-bottom: 3rem; }
   .loginform label {
     text-align: center; }
   .loginform input[type='text'],
@@ -1346,8 +1348,13 @@ article {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 1rem;
         text-align: center; }
+        .villageinfo .populationinfo .populationinfoblock .popnumberflex .prop {
+          text-transform: uppercase;
+          color: #000;
+          font-size: 1.2rem;
+          margin-bottom: -3px; }
 
 .polimportpeopleinfo {
   width: 114rem;
