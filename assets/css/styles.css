@@ -1289,6 +1289,13 @@ article {
           border-radius: 3px;
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
 
+.village_info_box {
+  width: 114rem;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 0 auto; }
+
 .villageinfo {
   width: 114rem;
   display: block;
@@ -1355,6 +1362,24 @@ article {
           color: #000;
           font-size: 1.2rem;
           margin-bottom: -3px; }
+
+.villageinfowarn {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f7f7f7f7;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem; }
+  .villageinfowarn__title {
+    width: 100%; }
+    .villageinfowarn__title--h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #c91f0c; }
+    .villageinfowarn__title p {
+      text-align: center; }
 
 .polimportpeopleinfo {
   width: 114rem;
