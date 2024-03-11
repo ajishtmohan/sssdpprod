@@ -550,35 +550,53 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 2.5rem;
   margin-bottom: 5rem; }
   .enforcement-flex__item {
-    display: block;
+    display: flex;
+    flex-direction: row;
     position: relative;
-    width: calc((100% - 15rem) / 6);
+    width: calc((100% - 5rem) / 3);
     height: auto;
     background-color: #037f8d;
-    padding: 2rem;
-    border-radius: 3px; }
+    padding: 1.5rem;
+    border-radius: 5px; }
     .enforcement-flex__item--title {
       width: 100%;
       height: auto;
       display: block;
       position: relative;
       text-transform: uppercase; }
-      .enforcement-flex__item--title:first-child {
-        border-bottom: 1px solid #3bd2e3;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem; }
       .enforcement-flex__item--title .enf_title {
         color: #3bd2e3;
         display: block;
         position: relative;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem; }
       .enforcement-flex__item--title .enf_entity {
         color: #fff;
         font-weight: 300;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+        line-height: 2.5rem; }
+    .enforcement-flex__item--qty {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      text-transform: uppercase;
+      text-align: right; }
+      .enforcement-flex__item--qty .enf_title {
+        color: #3bd2e3;
+        display: block;
+        position: relative;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        margin-bottom: 1rem; }
+      .enforcement-flex__item--qty .enf_entity {
+        color: #fff;
+        font-weight: 300;
+        font-size: 3.5rem;
         line-height: 2.5rem; }
 
 .adminmap {
@@ -586,12 +604,15 @@ form {
   display: block;
   position: relative;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #035761;
+  background-color: #f7f7f7f7; }
   .adminmap__map {
     width: 100%;
-    height: 60rem;
+    height: 70rem;
     border: none;
-    margin-top: -80px; }
+    margin-top: -60px; }
 
 .welcome {
   width: 100%;
