@@ -388,28 +388,51 @@
 // });
 
 // CASTE TABLE SELECTION FUNCTION
-// 1. Select all input names
-// 2. Create Event Listeners
-
 let checkboxes = document.getElementsByClassName('caste');
-console.log(checkboxes);
-var buttons = document.getElementsByTagName('button');
-console.log(buttons);
-
-const predoms = [];
 const caste1 = document.getElementById('pred1caste');
 const caste2 = document.getElementById('pred2caste');
-// caste1.innerHTML = 'Reddy';
-console.log(caste1);
+const predoms = [];
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', function (e) {
-    buttons[i].style.backgroundColor = '#037f8d';
-    buttons[i].style.color = 'white';
-    predoms.push(buttons[i].value);
-    caste1.innerHTML = predoms[0];
-    caste1.style.color = '#037f8d';
-    // console.log(buttons[i].value);
-    console.log(predoms);
+const checkPredoms = function () {
+  if (predoms[0] === predoms[1]) {
+    predoms.length = 0;
+  }
+};
+
+const updateCheckedCasteNames = function () {
+  caste1.innerHTML = predoms[0];
+  caste2.innerHTML = predoms[1] || 'Predominant Caste';
+};
+
+const updateUncheckedCasteNames = function () {
+  caste1.innerHTML = `${predoms[0]}`;
+  caste2.innerHTML = `${predoms[1]}`;
+};
+
+for (let i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener('click', function (e) {
+    checkboxes[i].checked ? action1() : action2();
+
+    function action1() {
+      const checkedValue = checkboxes[i].name;
+      if (predoms.length < 2 && !predoms.includes(checkedValue)) {
+        predoms.push(checkboxes[i].name);
+        let label = document.querySelectorAll('label');
+      } else if (predoms.includes('Predominant Caste')) {
+        let index = predoms.indexOf('Predominant Caste');
+        predoms[index] = checkedValue;
+      }
+      updateCheckedCasteNames();
+    }
+
+    function action2() {
+      const uncheckedValue = checkboxes[i].name;
+      if (predoms.includes(uncheckedValue)) {
+        let index = predoms.indexOf(uncheckedValue);
+        predoms[index] = `Predominant Caste`;
+        updateUncheckedCasteNames();
+        checkPredoms();
+      }
+    }
   });
 }
