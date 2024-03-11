@@ -389,6 +389,27 @@
 
 // CASTE TABLE SELECTION FUNCTION
 // 1. Select all input names
-var checkboxes = document.querySelectorAll('.caste');
-console.log(checkboxes);
 // 2. Create Event Listeners
+
+let checkboxes = document.getElementsByClassName('caste');
+console.log(checkboxes);
+var buttons = document.getElementsByTagName('button');
+console.log(buttons);
+
+const predoms = [];
+const caste1 = document.getElementById('pred1caste');
+const caste2 = document.getElementById('pred2caste');
+// caste1.innerHTML = 'Reddy';
+console.log(caste1);
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function (e) {
+    buttons[i].style.backgroundColor = '#037f8d';
+    buttons[i].style.color = 'white';
+    predoms.push(buttons[i].value);
+    caste1.innerHTML = predoms[0];
+    caste1.style.color = '#037f8d';
+    // console.log(buttons[i].value);
+    console.log(predoms);
+  });
+}

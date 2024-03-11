@@ -424,6 +424,21 @@ form {
         cursor: pointer; }
         form .checkboxes__item label:hover {
           color: #88e6f1; }
+  form .button-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    form .button-div__item {
+      padding: 0.3rem 0.8rem;
+      text-transform: uppercase;
+      border-radius: 3px;
+      border: none;
+      background-color: rgba(59, 210, 227, 0.5);
+      font-family: "Montserrat", sans-serif;
+      cursor: pointer; }
   form .server_report {
     width: 100%;
     height: auto;
