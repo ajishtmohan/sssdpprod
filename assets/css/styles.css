@@ -414,6 +414,24 @@ form {
       form .checkboxes__item input[type='checkbox']:checked ~ label {
         background-color: #0cb6c9;
         color: #fff; }
+      form .checkboxes__item .defaultLabel {
+        display: inline-block;
+        position: relative;
+        padding: 0.3rem 0.8rem;
+        margin: 0;
+        transition: all 0.1s ease-in;
+        border-radius: 3px;
+        cursor: pointer; }
+      form .checkboxes__item .predomLabel {
+        display: inline-block;
+        position: relative;
+        padding: 0.3rem 0.8rem;
+        margin: 0;
+        transition: all 0.1s ease-in;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: red;
+        color: white; }
       form .checkboxes__item label {
         display: inline-block;
         position: relative;
