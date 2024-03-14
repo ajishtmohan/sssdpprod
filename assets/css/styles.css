@@ -110,128 +110,146 @@ article ul {
 .u-center-div {
   text-align: center; }
 
+.pollingbooths {
+  width: 114rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #f7f7f7f7;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem; }
+  .pollingbooths__title {
+    width: 100%;
+    margin-bottom: 3rem; }
+    .pollingbooths__title--h2 {
+      margin-bottom: 1rem;
+      text-align: center; }
+
 .booth-container {
+  height: auto;
   display: flex;
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 3rem;
   padding: 3rem;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
   background-color: #fff;
   border-radius: 5px;
   margin-bottom: 3rem; }
-
-.boothcard {
-  width: calc((100% - 3rem) / 2);
-  height: 30rem;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  background-color: #f7f7f7f7;
-  border-radius: 5px;
-  overflow: hidden; }
-  @media (max-width: 37.5em) {
-    .boothcard {
-      width: 100%; } }
-  .boothcard__number {
-    width: 15rem;
-    height: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
+  .booth-container .boothcard {
+    width: calc((100% - 3rem) / 2);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    background-color: #f7f7f7f7; }
+    background-color: #f7f7f7f7;
+    border-radius: 5px;
+    overflow: hidden; }
     @media (max-width: 37.5em) {
-      .boothcard__number {
-        width: 12rem; } }
-    .boothcard__number--text {
+      .booth-container .boothcard {
+        width: 100%; } }
+    .booth-container .boothcard__number {
       display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      .boothcard__number--text .boothno {
-        margin-bottom: 2rem;
-        display: block; }
-      .boothcard__number--text .boothnumber {
-        font-size: 6rem;
-        margin-top: 2rem;
-        color: #000; }
-        @media (max-width: 37.5em) {
-          .boothcard__number--text .boothnumber {
-            font-size: 5rem; } }
-  .boothcard__details {
-    width: calc(100% - 15rem);
-    background-color: #037f8d;
-    padding: 2rem;
-    color: #fff;
-    text-transform: uppercase; }
-    @media (max-width: 37.5em) {
-      .boothcard__details {
-        width: calc(100% - 12rem); } }
-    .boothcard__details--name {
+      position: relative;
+      width: 15rem;
       height: auto;
-      border-bottom: 1px solid #3bd2e3;
-      margin-bottom: 1.5rem; }
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #f7f7f7f7; }
       @media (max-width: 37.5em) {
-        .boothcard__details--name {
-          height: 9.5rem;
-          margin-bottom: 1.2rem; } }
-      .boothcard__details--name .boothna {
-        color: #3bd2e3; }
-      .boothcard__details--name .boothname {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem; }
-        @media (max-width: 37.5em) {
-          .boothcard__details--name .boothname {
-            font-size: 2.5rem;
-            line-height: 3rem; } }
-  .boothcard__demograph {
-    display: block;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #3bd2e3; }
-    @media (max-width: 37.5em) {
-      .boothcard__demograph {
-        padding-bottom: 1.5rem; } }
-    .boothcard__demograph .demographtitle {
-      display: block;
-      margin-bottom: 0.5rem;
-      color: #3bd2e3; }
-    .boothcard__demograph--details {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      text-transform: capitalize;
-      justify-content: space-between; }
-      .boothcard__demograph--details .demoblock {
-        display: inline-block;
-        position: relative; }
-        .boothcard__demograph--details .demoblock__name {
-          display: block; }
-        .boothcard__demograph--details .demoblock__number {
+        .booth-container .boothcard__number {
+          width: 12rem; } }
+      .booth-container .boothcard__number--text {
+        display: block;
+        position: absolute;
+        height: auto;
+        padding: 1rem;
+        top: 50%;
+        transform: translateY(-50%); }
+        .booth-container .boothcard__number--text .boothno {
+          margin-bottom: 2rem;
           display: block;
-          font-size: 3rem;
-          font-weight: 400; }
-  .boothcard__redirect {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 4rem; }
-    @media (max-width: 37.5em) {
-      .boothcard__redirect {
-        height: 3.5rem; } }
-    .boothcard__redirect p {
+          position: relative; }
+        .booth-container .boothcard__number--text .boothnumber {
+          font-size: 6rem;
+          margin-top: 2rem;
+          color: #000; }
+          @media (max-width: 37.5em) {
+            .booth-container .boothcard__number--text .boothnumber {
+              font-size: 5rem; } }
+    .booth-container .boothcard__details {
+      width: calc(100% - 15rem);
+      background-color: #037f8d;
+      padding: 2rem;
+      color: #fff;
+      text-transform: uppercase; }
+      @media (max-width: 37.5em) {
+        .booth-container .boothcard__details {
+          width: calc(100% - 12rem); } }
+      .booth-container .boothcard__details--name {
+        height: auto;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #3bd2e3; }
+        @media (max-width: 37.5em) {
+          .booth-container .boothcard__details--name {
+            height: 9.5rem;
+            margin-bottom: 1.2rem; } }
+        .booth-container .boothcard__details--name .boothna {
+          color: #3bd2e3; }
+        .booth-container .boothcard__details--name .boothname {
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          font-weight: 300;
+          margin-bottom: 1.5rem; }
+          @media (max-width: 37.5em) {
+            .booth-container .boothcard__details--name .boothname {
+              font-size: 2.5rem;
+              line-height: 3rem; } }
+    .booth-container .boothcard__demograph {
+      display: block; }
+      @media (max-width: 37.5em) {
+        .booth-container .boothcard__demograph {
+          padding-bottom: 1.5rem; } }
+      .booth-container .boothcard__demograph .demographtitle {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #3bd2e3; }
+      .booth-container .boothcard__demograph--details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-transform: capitalize;
+        justify-content: space-between; }
+        .booth-container .boothcard__demograph--details .demoblock {
+          display: inline-block;
+          position: relative; }
+          .booth-container .boothcard__demograph--details .demoblock__name {
+            display: block; }
+          .booth-container .boothcard__demograph--details .demoblock__number {
+            display: block;
+            font-size: 3rem;
+            font-weight: 400; }
+    .booth-container .boothcard__redirect {
       display: block;
-      position: absolute;
-      bottom: 0; }
-  .boothcard__map {
-    width: 100%;
-    height: 100%; }
+      position: relative;
+      width: 100%;
+      height: 4rem; }
+      @media (max-width: 37.5em) {
+        .booth-container .boothcard__redirect {
+          height: 3.5rem; } }
+      .booth-container .boothcard__redirect p {
+        display: block;
+        position: absolute;
+        bottom: 0; }
+    .booth-container .boothcard__map {
+      width: 100%;
+      height: 100%; }
 
 .btn-login {
   background-color: #c91f0c; }
@@ -1624,7 +1642,7 @@ article {
             flex-direction: row;
             justify-content: space-between; }
 
-.pollingbooths {
+.v-pollingbooths {
   width: 114rem;
   display: block;
   position: relative;
@@ -1633,58 +1651,145 @@ article {
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem; }
-  .pollingbooths__title {
+  .v-pollingbooths__title {
     width: 100%;
     margin-bottom: 3rem; }
-    .pollingbooths__title--h2 {
+    .v-pollingbooths__title--h2 {
       margin-bottom: 1rem;
       text-align: center; }
-  .pollingbooths .ind_pollingbooth {
-    width: 100%;
+  .v-pollingbooths .v-booth-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3rem;
+    padding: 3rem;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    border-radius: 5px; }
+  .v-pollingbooths .v-boothcard {
+    width: calc((100% - 3rem) / 2);
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: #fff;
+    position: relative;
+    background-color: #f7f7f7f7;
     border-radius: 5px;
-    padding: 2rem;
-    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
-    gap: 3rem; }
-    .pollingbooths .ind_pollingbooth__block {
-      width: calc((100% - 3rem) / 2);
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    overflow: hidden; }
+    @media (max-width: 37.5em) {
+      .v-pollingbooths .v-boothcard {
+        width: 100%; } }
+    .v-pollingbooths .v-boothcard__number {
+      display: block;
       position: relative;
-      border-radius: 5px;
-      overflow: hidden; }
-      .pollingbooths .ind_pollingbooth__block--number {
-        width: 25%;
-        display: inline-block;
-        position: relative;
-        float: left;
-        color: #000;
-        background-color: #f7f7f7f7; }
-        .pollingbooths .ind_pollingbooth__block--number .numberblock {
-          display: block;
-          position: absolute;
-          text-align: center;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
-          .pollingbooths .ind_pollingbooth__block--number .numberblock__name {
-            text-transform: uppercase;
-            margin-bottom: 1.5rem; }
-          .pollingbooths .ind_pollingbooth__block--number .numberblock__numb {
-            font-size: 5rem;
-            font-weight: 600; }
-      .pollingbooths .ind_pollingbooth__block--details {
-        width: 75%;
+      width: 15rem;
+      height: 15rem;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #f7f7f7f7; }
+      @media (max-width: 37.5em) {
+        .v-pollingbooths .v-boothcard__number {
+          width: 12rem; } }
+      .v-pollingbooths .v-boothcard__number--text {
         display: block;
-        height: 20rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .v-pollingbooths .v-boothcard__number--text .boothno {
+          margin-bottom: 2rem;
+          display: block; }
+        .v-pollingbooths .v-boothcard__number--text .boothnumber {
+          font-size: 6rem;
+          margin-top: 2rem;
+          color: #000; }
+          @media (max-width: 37.5em) {
+            .v-pollingbooths .v-boothcard__number--text .boothnumber {
+              font-size: 5rem; } }
+    .v-pollingbooths .v-boothcard__details {
+      width: calc(100% - 15rem);
+      height: auto;
+      background-color: #037f8d;
+      padding: 2rem;
+      color: #fff;
+      text-transform: uppercase; }
+      @media (max-width: 37.5em) {
+        .v-pollingbooths .v-boothcard__details {
+          width: calc(100% - 12rem); } }
+      .v-pollingbooths .v-boothcard__details--name {
+        height: auto;
         display: block;
-        background-color: antiquewhite;
-        padding: 2rem; }
+        position: relative; }
+        @media (max-width: 37.5em) {
+          .v-pollingbooths .v-boothcard__details--name {
+            height: 9.5rem;
+            margin-bottom: 1.2rem; } }
+        .v-pollingbooths .v-boothcard__details--name .boothna {
+          color: #3bd2e3; }
+        .v-pollingbooths .v-boothcard__details--name .boothname {
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          font-weight: 300;
+          margin-bottom: 1.5rem; }
+          @media (max-width: 37.5em) {
+            .v-pollingbooths .v-boothcard__details--name .boothname {
+              font-size: 2.5rem;
+              line-height: 3rem; } }
+        .v-pollingbooths .v-boothcard__details--name a:link,
+        .v-pollingbooths .v-boothcard__details--name a:visited {
+          font-size: 1.2rem;
+          display: inline-block;
+          position: relative;
+          background-color: #c91f0c;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: uppercase;
+          bottom: 0; }
+    .v-pollingbooths .v-boothcard__demograph {
+      display: block;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #3bd2e3; }
+      @media (max-width: 37.5em) {
+        .v-pollingbooths .v-boothcard__demograph {
+          padding-bottom: 1.5rem; } }
+      .v-pollingbooths .v-boothcard__demograph .demographtitle {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #3bd2e3; }
+      .v-pollingbooths .v-boothcard__demograph--details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-transform: capitalize;
+        justify-content: space-between; }
+        .v-pollingbooths .v-boothcard__demograph--details .demoblock {
+          display: inline-block;
+          position: relative; }
+          .v-pollingbooths .v-boothcard__demograph--details .demoblock__name {
+            display: block; }
+          .v-pollingbooths .v-boothcard__demograph--details .demoblock__number {
+            display: block;
+            font-size: 3rem;
+            font-weight: 400; }
+    .v-pollingbooths .v-boothcard__redirect {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 4rem; }
+      @media (max-width: 37.5em) {
+        .v-pollingbooths .v-boothcard__redirect {
+          height: 3.5rem; } }
+      .v-pollingbooths .v-boothcard__redirect p {
+        display: block;
+        position: absolute;
+        bottom: 0; }
+    .v-pollingbooths .v-boothcard__map {
+      width: 100%;
+      height: 100%; }
 
 .prop {
   text-transform: uppercase; }

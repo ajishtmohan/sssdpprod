@@ -1,167 +1,191 @@
+.pollingbooths {
+  width: $site-content-width;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: $color-grey-light-1;
+  border-radius: 5px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+
+  &__title {
+    width: 100%;
+    margin-bottom: 3rem;
+
+    &--h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+}
+
 .booth-container {
+  height: auto;
   display: flex;
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 3rem;
   padding: 3rem;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
   background-color: $color-white;
   border-radius: 5px;
   margin-bottom: 3rem;
-}
 
-.boothcard {
-  width: calc((100% - 3rem) / 2);
-  height: 30rem;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  background-color: $color-grey-light-1;
-  border-radius: 5px;
-  overflow: hidden;
-
-  @include respond(phone) {
-    width: 100%;
-  }
-
-  &__number {
-    width: 15rem;
-    height: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
+  .boothcard {
+    width: calc((100% - 3rem) / 2);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: $color-grey-light-1;
+    border-radius: 5px;
+    overflow: hidden;
 
     @include respond(phone) {
-      width: 12rem;
+      width: 100%;
     }
 
-    &--text {
+    &__number {
       display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      .boothno {
-        margin-bottom: 2rem;
-        display: block;
-      }
-
-      .boothnumber {
-        font-size: 6rem;
-        margin-top: 2rem;
-        color: $color-black;
-
-        @include respond(phone) {
-          font-size: 5rem;
-        }
-      }
-    }
-  }
-
-  &__details {
-    width: calc(100% - 15rem);
-    background-color: $color-primary-dark-1;
-    padding: 2rem;
-    color: $color-white;
-    text-transform: uppercase;
-
-    @include respond(phone) {
-      width: calc(100% - 12rem);
-    }
-
-    &--name {
+      position: relative;
+      width: 15rem;
       height: auto;
-      border-bottom: 1px solid $color-primary-light-1;
-      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: $color-grey-light-1;
 
       @include respond(phone) {
-        height: 9.5rem;
-        margin-bottom: 1.2rem;
+        width: 12rem;
       }
 
-      .boothna {
-        color: $color-primary-light-1;
+      &--text {
+        display: block;
+        position: absolute;
+        height: auto;
+        padding: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .boothno {
+          margin-bottom: 2rem;
+          display: block;
+          position: relative;
+        }
+
+        .boothnumber {
+          font-size: 6rem;
+          margin-top: 2rem;
+          color: $color-black;
+
+          @include respond(phone) {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+
+    &__details {
+      width: calc(100% - 15rem);
+      background-color: $color-primary-dark-1;
+      padding: 2rem;
+      color: $color-white;
+      text-transform: uppercase;
+
+      @include respond(phone) {
+        width: calc(100% - 12rem);
       }
 
-      .boothname {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        font-weight: 600;
+      &--name {
+        height: auto;
         margin-bottom: 1.5rem;
+        border-bottom: 1px solid $color-primary-light-1;
 
         @include respond(phone) {
+          height: 9.5rem;
+          margin-bottom: 1.2rem;
+        }
+
+        .boothna {
+          color: $color-primary-light-1;
+        }
+
+        .boothname {
           font-size: 2.5rem;
-          line-height: 3rem;
+          line-height: 2.5rem;
+          font-weight: 300;
+          margin-bottom: 1.5rem;
+
+          @include respond(phone) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+          }
         }
       }
     }
-  }
 
-  &__demograph {
-    display: block;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid $color-primary-light-1;
-
-    @include respond(phone) {
-      padding-bottom: 1.5rem;
-    }
-
-    .demographtitle {
+    &__demograph {
       display: block;
-      margin-bottom: 0.5rem;
-      color: $color-primary-light-1;
+
+      @include respond(phone) {
+        padding-bottom: 1.5rem;
+      }
+
+      .demographtitle {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: $color-primary-light-1;
+      }
+      &--details {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-transform: capitalize;
+        justify-content: space-between;
+
+        .demoblock {
+          display: inline-block;
+          position: relative;
+
+          &__name {
+            display: block;
+            // margin-bottom: 1rem;
+          }
+
+          &__number {
+            display: block;
+            font-size: 3rem;
+            font-weight: 400;
+          }
+        }
+      }
     }
-    &--details {
+
+    &__redirect {
+      display: block;
+      position: relative;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      text-transform: capitalize;
-      justify-content: space-between;
+      height: 4rem;
 
-      .demoblock {
-        display: inline-block;
-        position: relative;
-
-        &__name {
-          display: block;
-          // margin-bottom: 1rem;
-        }
-
-        &__number {
-          display: block;
-          font-size: 3rem;
-          font-weight: 400;
-        }
+      @include respond(phone) {
+        height: 3.5rem;
       }
-    }
-  }
 
-  &__redirect {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 4rem;
-
-    @include respond(phone) {
-      height: 3.5rem;
+      p {
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+      // background-color: $color-primary-dark-2;
     }
 
-    p {
-      display: block;
-      position: absolute;
-      bottom: 0;
+    &__map {
+      width: 100%;
+      height: 100%;
     }
-    // background-color: $color-primary-dark-2;
-  }
-
-  &__map {
-    width: 100%;
-    height: 100%;
   }
 }
