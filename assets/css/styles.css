@@ -1434,11 +1434,31 @@ article {
       border-radius: 5px; }
   .villageinfo .predominant {
     width: 100%;
-    padding: 1rem 1.5rem;
-    background-color: #fff;
-    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    margin-bottom: 3rem; }
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 3rem; }
+    .villageinfo .predominant__item1 {
+      width: calc((100% - 3rem) / 2);
+      padding: 1rem 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+      border-radius: 5px; }
+    .villageinfo .predominant__item2 {
+      width: calc((100% - 3rem) / 2);
+      padding: 1rem 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .villageinfo .predominant__item2--caste {
+        display: inline-block;
+        position: relative;
+        text-align: center; }
   .villageinfo .populationinfo {
     width: 100%;
     height: auto;
