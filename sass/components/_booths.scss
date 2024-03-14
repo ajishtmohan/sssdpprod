@@ -119,6 +119,7 @@
           line-height: 2.5rem;
           font-weight: 300;
           margin-bottom: 1.5rem;
+          text-transform: capitalize;
 
           @include respond(phone) {
             font-size: 2.5rem;
@@ -137,7 +138,6 @@
 
       .demographtitle {
         display: block;
-        margin-bottom: 0.5rem;
         color: $color-primary-light-1;
       }
       &--details {
@@ -158,7 +158,7 @@
 
           &__number {
             display: block;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 400;
           }
         }

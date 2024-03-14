@@ -215,7 +215,7 @@ form {
   gap: 3rem;
 
   &__item {
-    width: calc((100% - 3rem) / 2);
+    width: 100%;
     background-color: $color-white;
     padding: 1rem;
     border-radius: 3px;
@@ -229,6 +229,14 @@ form {
 
       &__item {
         width: calc((100% - 4rem) / 3);
+
+        &--p {
+          color: #037f8d;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+          display: block;
+        }
       }
     }
   }

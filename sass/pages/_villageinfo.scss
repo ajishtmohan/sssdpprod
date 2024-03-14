@@ -115,12 +115,19 @@
   }
 }
 
-.polimportpeopleinfo {
+.polpeopleinfo-red {
+  background-color: rgba($color-secondary-dark, 0.1);
+}
+
+.polpeopleinfo-reg {
+  background-color: $color-grey-light-1;
+}
+
+.polpeopleinfo {
   width: $site-content-width;
   display: block;
   position: relative;
   margin: 0 auto;
-  background-color: rgba($color-secondary-dark, 0.1);
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem;
@@ -129,14 +136,18 @@
     width: 100%;
     margin-bottom: 3rem;
 
-    &--h2 {
+    &--h2red {
       margin-bottom: 1rem;
       text-align: center;
       color: $color-secondary-dark;
     }
+    &--h2reg {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
   }
 
-  .polimportcardflex {
+  .polpeopleinfocardflex {
     width: 100%;
     height: auto;
     display: flex;
@@ -160,7 +171,6 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        // gap: 3rem;
 
         &__photo {
           width: 35%;
@@ -176,9 +186,14 @@
         &__info {
           width: 60%;
           position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
 
           &--facts {
-            margin-bottom: 0.5rem;
+            &:not(:last-child) {
+              margin-bottom: 0.5rem;
+            }
 
             .prop {
               text-transform: uppercase;
@@ -187,30 +202,38 @@
               margin-bottom: -3px;
             }
 
-            .valu {
+            .valu-red {
               font-size: 1.8rem;
               color: $color-secondary-dark;
               font-weight: 500;
             }
 
+            .valu-reg {
+              font-size: 1.8rem;
+              color: $color-primary-dark-1;
+              font-weight: 500;
+            }
+
             .address {
-              font-size: 1.4rem;
               line-height: 2rem;
             }
 
-            a:link,
-            a:visited {
-              font-size: 1.2rem;
-              display: block;
-              position: absolute;
-              background-color: $color-secondary-dark;
-              color: $color-white;
-              padding: 0.5rem 1rem;
-              border-radius: 3px;
-              text-decoration: none;
-              text-transform: uppercase;
-              right: 0;
-              bottom: 0;
+            .phon-red {
+              a:link,
+              a:visited {
+                font-size: 1.8rem;
+                color: $color-secondary-dark;
+                text-decoration: none;
+              }
+            }
+
+            .phon-reg {
+              a:link,
+              a:visited {
+                font-size: 1.8rem;
+                color: $color-primary-dark-1;
+                text-decoration: none;
+              }
             }
           }
 
@@ -222,114 +245,49 @@
           }
         }
       }
-    }
-  }
-}
-
-.politleaderinfo {
-  width: $site-content-width;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  background-color: $color-grey-light-1;
-  border-radius: 5px;
-  padding: 3rem;
-  margin-bottom: 3rem;
-
-  &__title {
-    width: 100%;
-    margin-bottom: 3rem;
-
-    &--h2 {
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-  }
-
-  .politleadercardflex {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem;
-
-    &__item {
-      width: calc((100% - 3rem) / 2);
-      display: block;
-      background-color: $color-white;
-      border-radius: 5px;
-      padding: 2rem;
-      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
-
-      .politicperson {
+      .redirect-red {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        // gap: 3rem;
+        display: block;
+        position: relative;
+        text-align: right;
 
-        &__photo {
-          width: 35%;
-          height: 22rem;
-          overflow: hidden;
-          border-radius: 3px;
-
-          &--img {
-            width: 100%;
-          }
-        }
-
-        &__info {
-          width: 60%;
+        a:link,
+        a:visited {
+          font-size: 1.2rem;
+          display: inline-block;
           position: relative;
+          background-color: $color-secondary-dark;
+          color: $color-white;
+          padding: 0.5rem 1rem;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: uppercase;
+          right: 0;
+          bottom: 0;
+        }
+      }
 
-          &--facts {
-            margin-bottom: 0.5rem;
+      .redirect-reg {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        text-align: right;
 
-            .prop {
-              text-transform: uppercase;
-              color: $color-black;
-              font-size: 1.2rem;
-              margin-bottom: -3px;
-            }
-
-            .valu {
-              font-size: 1.8rem;
-              color: $color-primary-dark-1;
-              font-weight: 500;
-            }
-
-            .address {
-              font-size: 1.4rem;
-              line-height: 2rem;
-            }
-
-            a:link,
-            a:visited {
-              font-size: 1.2rem;
-              display: block;
-              position: absolute;
-              background-color: $color-primary-dark-1;
-              color: $color-white;
-              padding: 0.5rem 1rem;
-              border-radius: 3px;
-              text-decoration: none;
-              text-transform: uppercase;
-              right: 0;
-              bottom: 0;
-            }
-          }
-
-          .fatherageflex {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-          }
+        a:link,
+        a:visited {
+          font-size: 1.2rem;
+          display: inline-block;
+          position: relative;
+          background-color: $color-primary-dark-1;
+          color: $color-white;
+          padding: 0.5rem 1rem;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: uppercase;
+          right: 0;
+          bottom: 0;
         }
       }
     }
@@ -375,6 +333,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: stretch;
     position: relative;
     background-color: $color-grey-light-1;
     border-radius: 5px;
@@ -388,7 +347,7 @@
       display: block;
       position: relative;
       width: 15rem;
-      height: 15rem;
+      height: auto;
       text-transform: uppercase;
       text-align: center;
       background-color: $color-grey-light-1;
@@ -428,6 +387,10 @@
       padding: 2rem;
       color: $color-white;
       text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
 
       @include respond(phone) {
         width: calc(100% - 12rem);
@@ -437,6 +400,7 @@
         height: auto;
         display: block;
         position: relative;
+        margin-bottom: 1.5rem;
 
         @include respond(phone) {
           height: 9.5rem;
@@ -445,20 +409,27 @@
 
         .boothna {
           color: $color-primary-light-1;
+          display: block;
+          position: relative;
+          height: auto;
         }
 
         .boothname {
           font-size: 2.5rem;
           line-height: 2.5rem;
           font-weight: 300;
-          margin-bottom: 1.5rem;
+          text-transform: capitalize;
 
           @include respond(phone) {
             font-size: 2.5rem;
             line-height: 3rem;
           }
         }
-
+      }
+      .boothlink {
+        width: 100%;
+        height: auto;
+        text-align: right;
         a:link,
         a:visited {
           font-size: 1.2rem;
@@ -470,7 +441,6 @@
           border-radius: 3px;
           text-decoration: none;
           text-transform: uppercase;
-          bottom: 0;
         }
       }
     }
@@ -622,6 +592,14 @@
 
         &:not(:last-child) {
           margin-bottom: 0.5rem;
+        }
+      }
+      .officer-number {
+        a:link,
+        a:visited {
+          font-size: 2rem;
+          color: $color-primary-dark-1;
+          text-decoration: none;
         }
       }
     }

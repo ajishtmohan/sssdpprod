@@ -206,7 +206,8 @@ article ul {
           font-size: 2.5rem;
           line-height: 2.5rem;
           font-weight: 300;
-          margin-bottom: 1.5rem; }
+          margin-bottom: 1.5rem;
+          text-transform: capitalize; }
           @media (max-width: 37.5em) {
             .booth-container .boothcard__details--name .boothname {
               font-size: 2.5rem;
@@ -218,7 +219,6 @@ article ul {
           padding-bottom: 1.5rem; } }
       .booth-container .boothcard__demograph .demographtitle {
         display: block;
-        margin-bottom: 0.5rem;
         color: #3bd2e3; }
       .booth-container .boothcard__demograph--details {
         width: 100%;
@@ -233,7 +233,7 @@ article ul {
             display: block; }
           .booth-container .boothcard__demograph--details .demoblock__number {
             display: block;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 400; }
     .booth-container .boothcard__redirect {
       display: block;
@@ -490,7 +490,7 @@ form {
   justify-content: center;
   gap: 3rem; }
   .popdemography__item {
-    width: calc((100% - 3rem) / 2);
+    width: 100%;
     background-color: #fff;
     padding: 1rem;
     border-radius: 3px; }
@@ -502,6 +502,12 @@ form {
       gap: 1rem; }
       .popdemography__item .popflex__item {
         width: calc((100% - 4rem) / 3); }
+        .popdemography__item .popflex__item--p {
+          color: #037f8d;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          margin-bottom: 0.5rem;
+          display: block; }
 
 .boothform {
   width: 40rem;
@@ -1481,103 +1487,31 @@ article {
     .villageinfowarn__title p {
       text-align: center; }
 
-.polimportpeopleinfo {
+.polpeopleinfo-red {
+  background-color: rgba(201, 31, 12, 0.1); }
+
+.polpeopleinfo-reg {
+  background-color: #f7f7f7f7; }
+
+.polpeopleinfo {
   width: 114rem;
   display: block;
   position: relative;
   margin: 0 auto;
-  background-color: rgba(201, 31, 12, 0.1);
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem; }
-  .polimportpeopleinfo__title {
+  .polpeopleinfo__title {
     width: 100%;
     margin-bottom: 3rem; }
-    .polimportpeopleinfo__title--h2 {
+    .polpeopleinfo__title--h2red {
       margin-bottom: 1rem;
       text-align: center;
       color: #c91f0c; }
-  .polimportpeopleinfo .polimportcardflex {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 3rem; }
-    .polimportpeopleinfo .polimportcardflex__item {
-      width: calc((100% - 3rem) / 2);
-      display: block;
-      background-color: #fff;
-      border-radius: 5px;
-      padding: 2rem;
-      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
-      .polimportpeopleinfo .polimportcardflex__item .politicperson {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap; }
-        .polimportpeopleinfo .polimportcardflex__item .politicperson__photo {
-          width: 35%;
-          height: 22rem;
-          overflow: hidden;
-          border-radius: 3px; }
-          .polimportpeopleinfo .polimportcardflex__item .politicperson__photo--img {
-            width: 100%; }
-        .polimportpeopleinfo .polimportcardflex__item .politicperson__info {
-          width: 60%;
-          position: relative; }
-          .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts {
-            margin-bottom: 0.5rem; }
-            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .prop {
-              text-transform: uppercase;
-              color: #000;
-              font-size: 1.2rem;
-              margin-bottom: -3px; }
-            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .valu {
-              font-size: 1.8rem;
-              color: #c91f0c;
-              font-weight: 500; }
-            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts .address {
-              font-size: 1.4rem;
-              line-height: 2rem; }
-            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts a:link,
-            .polimportpeopleinfo .polimportcardflex__item .politicperson__info--facts a:visited {
-              font-size: 1.2rem;
-              display: block;
-              position: absolute;
-              background-color: #c91f0c;
-              color: #fff;
-              padding: 0.5rem 1rem;
-              border-radius: 3px;
-              text-decoration: none;
-              text-transform: uppercase;
-              right: 0;
-              bottom: 0; }
-          .polimportpeopleinfo .polimportcardflex__item .politicperson__info .fatherageflex {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between; }
-
-.politleaderinfo {
-  width: 114rem;
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  background-color: #f7f7f7f7;
-  border-radius: 5px;
-  padding: 3rem;
-  margin-bottom: 3rem; }
-  .politleaderinfo__title {
-    width: 100%;
-    margin-bottom: 3rem; }
-    .politleaderinfo__title--h2 {
+    .polpeopleinfo__title--h2reg {
       margin-bottom: 1rem;
       text-align: center; }
-  .politleaderinfo .politleadercardflex {
+  .polpeopleinfo .polpeopleinfocardflex {
     width: 100%;
     height: auto;
     display: flex;
@@ -1585,62 +1519,103 @@ article {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 3rem; }
-    .politleaderinfo .politleadercardflex__item {
+    .polpeopleinfo .polpeopleinfocardflex__item {
       width: calc((100% - 3rem) / 2);
       display: block;
       background-color: #fff;
       border-radius: 5px;
       padding: 2rem;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
-      .politleaderinfo .politleadercardflex__item .politicperson {
+      .polpeopleinfo .polpeopleinfocardflex__item .politicperson {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap; }
-        .politleaderinfo .politleadercardflex__item .politicperson__photo {
+        .polpeopleinfo .polpeopleinfocardflex__item .politicperson__photo {
           width: 35%;
           height: 22rem;
           overflow: hidden;
           border-radius: 3px; }
-          .politleaderinfo .politleadercardflex__item .politicperson__photo--img {
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__photo--img {
             width: 100%; }
-        .politleaderinfo .politleadercardflex__item .politicperson__info {
+        .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info {
           width: 60%;
-          position: relative; }
-          .politleaderinfo .politleadercardflex__item .politicperson__info--facts {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts:not(:last-child) {
             margin-bottom: 0.5rem; }
-            .politleaderinfo .politleadercardflex__item .politicperson__info--facts .prop {
-              text-transform: uppercase;
-              color: #000;
-              font-size: 1.2rem;
-              margin-bottom: -3px; }
-            .politleaderinfo .politleadercardflex__item .politicperson__info--facts .valu {
-              font-size: 1.8rem;
-              color: #037f8d;
-              font-weight: 500; }
-            .politleaderinfo .politleadercardflex__item .politicperson__info--facts .address {
-              font-size: 1.4rem;
-              line-height: 2rem; }
-            .politleaderinfo .politleadercardflex__item .politicperson__info--facts a:link,
-            .politleaderinfo .politleadercardflex__item .politicperson__info--facts a:visited {
-              font-size: 1.2rem;
-              display: block;
-              position: absolute;
-              background-color: #037f8d;
-              color: #fff;
-              padding: 0.5rem 1rem;
-              border-radius: 3px;
-              text-decoration: none;
-              text-transform: uppercase;
-              right: 0;
-              bottom: 0; }
-          .politleaderinfo .politleadercardflex__item .politicperson__info .fatherageflex {
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .prop {
+            text-transform: uppercase;
+            color: #000;
+            font-size: 1.2rem;
+            margin-bottom: -3px; }
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .valu-red {
+            font-size: 1.8rem;
+            color: #c91f0c;
+            font-weight: 500; }
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .valu-reg {
+            font-size: 1.8rem;
+            color: #037f8d;
+            font-weight: 500; }
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .address {
+            line-height: 2rem; }
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .phon-red a:link,
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .phon-red a:visited {
+            font-size: 1.8rem;
+            color: #c91f0c;
+            text-decoration: none; }
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .phon-reg a:link,
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info--facts .phon-reg a:visited {
+            font-size: 1.8rem;
+            color: #037f8d;
+            text-decoration: none; }
+          .polpeopleinfo .polpeopleinfocardflex__item .politicperson__info .fatherageflex {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between; }
+      .polpeopleinfo .polpeopleinfocardflex__item .redirect-red {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        text-align: right; }
+        .polpeopleinfo .polpeopleinfocardflex__item .redirect-red a:link,
+        .polpeopleinfo .polpeopleinfocardflex__item .redirect-red a:visited {
+          font-size: 1.2rem;
+          display: inline-block;
+          position: relative;
+          background-color: #c91f0c;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: uppercase;
+          right: 0;
+          bottom: 0; }
+      .polpeopleinfo .polpeopleinfocardflex__item .redirect-reg {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        text-align: right; }
+        .polpeopleinfo .polpeopleinfocardflex__item .redirect-reg a:link,
+        .polpeopleinfo .polpeopleinfocardflex__item .redirect-reg a:visited {
+          font-size: 1.2rem;
+          display: inline-block;
+          position: relative;
+          background-color: #037f8d;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 3px;
+          text-decoration: none;
+          text-transform: uppercase;
+          right: 0;
+          bottom: 0; }
 
 .v-pollingbooths {
   width: 114rem;
@@ -1674,6 +1649,7 @@ article {
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: stretch;
     position: relative;
     background-color: #f7f7f7f7;
     border-radius: 5px;
@@ -1685,7 +1661,7 @@ article {
       display: block;
       position: relative;
       width: 15rem;
-      height: 15rem;
+      height: auto;
       text-transform: uppercase;
       text-align: center;
       background-color: #f7f7f7f7; }
@@ -1714,31 +1690,43 @@ article {
       background-color: #037f8d;
       padding: 2rem;
       color: #fff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative; }
       @media (max-width: 37.5em) {
         .v-pollingbooths .v-boothcard__details {
           width: calc(100% - 12rem); } }
       .v-pollingbooths .v-boothcard__details--name {
         height: auto;
         display: block;
-        position: relative; }
+        position: relative;
+        margin-bottom: 1.5rem; }
         @media (max-width: 37.5em) {
           .v-pollingbooths .v-boothcard__details--name {
             height: 9.5rem;
             margin-bottom: 1.2rem; } }
         .v-pollingbooths .v-boothcard__details--name .boothna {
-          color: #3bd2e3; }
+          color: #3bd2e3;
+          display: block;
+          position: relative;
+          height: auto; }
         .v-pollingbooths .v-boothcard__details--name .boothname {
           font-size: 2.5rem;
           line-height: 2.5rem;
           font-weight: 300;
-          margin-bottom: 1.5rem; }
+          text-transform: capitalize; }
           @media (max-width: 37.5em) {
             .v-pollingbooths .v-boothcard__details--name .boothname {
               font-size: 2.5rem;
               line-height: 3rem; } }
-        .v-pollingbooths .v-boothcard__details--name a:link,
-        .v-pollingbooths .v-boothcard__details--name a:visited {
+      .v-pollingbooths .v-boothcard__details .boothlink {
+        width: 100%;
+        height: auto;
+        text-align: right; }
+        .v-pollingbooths .v-boothcard__details .boothlink a:link,
+        .v-pollingbooths .v-boothcard__details .boothlink a:visited {
           font-size: 1.2rem;
           display: inline-block;
           position: relative;
@@ -1747,8 +1735,7 @@ article {
           padding: 0.5rem 1rem;
           border-radius: 3px;
           text-decoration: none;
-          text-transform: uppercase;
-          bottom: 0; }
+          text-transform: uppercase; }
     .v-pollingbooths .v-boothcard__demograph {
       display: block;
       padding-bottom: 2rem;
@@ -1855,3 +1842,8 @@ article {
         font-weight: 500; }
         .forcedeployment .forceblockflex__item .officer-name:not(:last-child) {
           margin-bottom: 0.5rem; }
+      .forcedeployment .forceblockflex__item .officer-number a:link,
+      .forcedeployment .forceblockflex__item .officer-number a:visited {
+        font-size: 2rem;
+        color: #037f8d;
+        text-decoration: none; }
