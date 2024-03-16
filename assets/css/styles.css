@@ -1036,6 +1036,9 @@ main {
     .section-content {
       padding: 0; } }
 
+.village-block {
+  width: 100%; }
+
 .section-header {
   width: 130rem;
   height: 40rem;
@@ -1425,6 +1428,8 @@ article {
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem; }
+    .villageinfo .villageDesc:not(:last-child) {
+      margin-bottom: 3rem; }
     .villageinfo .villageDesc__item {
       width: calc((100% - 9rem) / 4);
       display: block;
