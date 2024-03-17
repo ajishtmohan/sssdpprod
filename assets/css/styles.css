@@ -1036,7 +1036,10 @@ main {
     .section-content {
       padding: 0; } }
 
-.village-block {
+.village-block,
+.pip-block,
+.pl-block,
+.pb-block {
   width: 100%; }
 
 .section-header {
@@ -1662,7 +1665,7 @@ article {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
     gap: 3rem;
     padding: 3rem;
