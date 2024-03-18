@@ -3,62 +3,360 @@
 </head>
 
 <main>
-  <section class="section-content">
+  <div class="section-home">
+    <div class="section__title">
+      <h2 class="section__title--text">village information</h2>
+    </div>
     <article>
-      <!-- form -->
-      <form class="villagesearch" action="index.html" method="post">
-        <!-- <button type="submit">
-          <h2>madakasira</h2>
-        </button>
-        <button type="submit">
-          <h2>madakasira</h2>
-        </button>
-        <button type="submit">
-          <h2>madakasira</h2>
-        </button>
-        <button type="submit">
-          <h2>madakasira</h2>
-        </button>
-        <button type="submit">
-          <h2>madakasira</h2>
-        </button>
-        <button type="submit">
-          <h2>madakasira</h2>
-        </button>
-        <button type="submit">
-          <h2>madakasira</h2>
-        </button> -->
-        <div class="radioholder">
-          <label for="radio"><h2>Eguvathummalakunta</h2></label>
-          <input
-            id="radio"
-            name="myRadio"
-            type="radio"
-            value="1"
-            onchange="this.form.submit()"
-          />
+      <div class="section-content">
+        <div class="village-block">
+          <div class="village_info_box">
+            <div class="villageinfowarn">
+              <div class="villageinfowarn__title">
+                <h2 class="villageinfowarn__title--h2">
+                  VILLAGE DATA NOT FOUND
+                </h2>
+                <p>
+                  The information about is not available at this moment.
+                  <br />
+                  It will be available once the data is populated.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="village_info_box">
+            <div class="villageinfo">
+              <div class="villageinfo__title">
+                <h2 class="villageinfo__title--h2">ASSEMBLY CONSTITUENCY</h2>
+                <h2 class="villageinfo__title--h2">POLICE STATION</h2>
+              </div>
+              <div class="villageDesc">
+                <div class="villageDesc__item">
+                  <p class="prop">Assembly Name</p>
+                  <p class="valu">Assembly Name</p>
+                </div>
+                <div class="villageDesc__item">
+                  <p class="prop">Assembly Number</p>
+                  <p class="valu">000</p>
+                </div>
+                <div class="villageDesc__item">
+                  <p class="prop">Mandal</p>
+                  <p class="valu">Mandal Name</p>
+                </div>
+                <div class="villageDesc__item">
+                  <p class="prop">Police Station</p>
+                  <p class="valu">Police Station Name</p>
+                </div>
+                <div class="villageDesc__item">
+                  <p class="prop">Circle</p>
+                  <p class="valu">Police Circle</p>
+                </div>
+                <div class="villageDesc__item">
+                  <p class="prop">Village</p>
+                  <p class="valu">Village Name</p>
+                </div>
+                <div class="villageDesc__item">
+                  <p class="prop">Main/Hamlet</p>
+                  <p class="valu">Main/Hamlet</p>
+                </div>
+                <div class="villageDesc__item">
+                  <p class="prop">Sensitivity</p>
+                  <p class="valu">Normal</p>
+                </div>
+              </div>
+              <div class="predominant">
+                <div class="predominant__item1">
+                  <p class="prop">Predominant Castes</p>
+                  <p class="valu">Boya/Reddy</p>
+                </div>
+                <div class="predominant__item2">
+                  <div class="predominant__item2--caste">
+                    <p class="prop">Predom 1</p>
+                    <p class="valu">000</p>
+                  </div>
+                  <div class="predominant__item2--caste">
+                    <p class="prop">Predom 2</p>
+                    <p class="valu">000</p>
+                  </div>
+                  <div class="predominant__item2--caste">
+                    <p class="prop">Predom 3</p>
+                    <p class="valu">000</p>
+                  </div>
+                  <div class="predominant__item2--caste">
+                    <p class="prop">Other</p>
+                    <p class="valu">000</p>
+                  </div>
+                  <div class="predominant__item2--caste">
+                    <p class="prop">Total</p>
+                    <p class="valu">000</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="radioholder">
-          <label for="radio"><h2>Hanumantharayani Palli</h2></label>
-          <input
-            id="radio"
-            name="myRadio"
-            type="radio"
-            value="1"
-            onchange="this.form.submit()"
-          />
+
+        <div class="pip-block">
+          <div class="village_info_box">
+            <div class="villageinfowarn">
+              <div class="villageinfowarn__title">
+                <h2 class="villageinfowarn__title--h2">PIP DATA NOT FOUND</h2>
+                <p>
+                  The PIP information is not available at this moment.
+                  <br />
+                  It will be available once the data is populated.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polpeopleinfo polpeopleinfo-red">
+            <div class="polpeopleinfo__title">
+              <h2 class="polpeopleinfo__title--h2red">
+                politically important persons
+              </h2>
+            </div>
+            <div class="polpeopleinfocardflex">
+              <div class="polpeopleinfocardflex__item">
+                <div class="politicperson">
+                  <div class="politicperson__photo">
+                    <img
+                      class="politicperson__photo--img"
+                      src="assets/img/profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="politicperson__info">
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Name</p>
+                      <p class="valu-red">Ramu</p>
+                    </div>
+                    <div class="fatherageflex">
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Father's Name</p>
+                        <p class="valu-red">Late Gurappa</p>
+                      </div>
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Age</p>
+                        <p class="valu-red">45</p>
+                      </div>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Address</p>
+                      <p class="address">
+                        aged 38 years, A.R.Roppam village, madakasira Mandal
+                      </p>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Phone</p>
+                      <p class="phon-red">
+                        <a href="tel:+919090909090">9090909090</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="redirect-red">
+                  <a href="assembly-village-details.php">know more</a>
+                </div>
+              </div>
+
+              <div class="polpeopleinfocardflex__item">
+                <div class="politicperson">
+                  <div class="politicperson__photo">
+                    <img
+                      class="politicperson__photo--img"
+                      src="assets/img/profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="politicperson__info">
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Name</p>
+                      <p class="valu-red">Ramu</p>
+                    </div>
+                    <div class="fatherageflex">
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Father's Name</p>
+                        <p class="valu-red">Late Gurappa</p>
+                      </div>
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Age</p>
+                        <p class="valu-red">45</p>
+                      </div>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Address</p>
+                      <p class="address">
+                        aged 38 years, A.R.Roppam village, madakasira Mandal
+                      </p>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Phone</p>
+                      <p class="phon-red">
+                        <a href="tel:+919090909090">9090909090</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="redirect-red">
+                  <a href="assembly-village-details.php">know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="radioholder">
-          <label for="radio"><h2>Peddayeddulavandlapalli</h2></label>
-          <input
-            id="radio"
-            name="myRadio"
-            type="radio"
-            value="1"
-            onchange="this.form.submit()"
-          />
+
+        <div class="pl-block">
+          <div class="village_info_box">
+            <div class="villageinfowarn">
+              <div class="villageinfowarn__title">
+                <h2 class="villageinfowarn__title--h2">
+                  political leaders DATA NOT FOUND
+                </h2>
+                <p>
+                  The political leaders information is not available at this
+                  moment.
+                  <br />
+                  It will be available once the data is populated.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polpeopleinfo polpeopleinfo-reg">
+            <div class="polpeopleinfo__title">
+              <h2 class="polpeopleinfo__title--h2reg">political leaders</h2>
+            </div>
+            <div class="polpeopleinfocardflex">
+              <div class="polpeopleinfocardflex__item">
+                <div class="politicperson">
+                  <div class="politicperson__photo">
+                    <img
+                      class="politicperson__photo--img"
+                      src="assets/img/profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="politicperson__info">
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Name</p>
+                      <p class="valu-reg">Ramu</p>
+                    </div>
+                    <div class="fatherageflex">
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Father's Name</p>
+                        <p class="valu-reg">Late Gurappa</p>
+                      </div>
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Age</p>
+                        <p class="valu-reg">45</p>
+                      </div>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Address</p>
+                      <p class="address">
+                        aged 38 years, A.R.Roppam village, madakasira Mandal
+                      </p>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Phone</p>
+                      <p class="phon-reg">
+                        <a href="tel:+919090909090">9090909090</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="redirect-reg">
+                  <a href="assembly-village-details.php">know more</a>
+                </div>
+              </div>
+
+              <div class="polpeopleinfocardflex__item">
+                <div class="politicperson">
+                  <div class="politicperson__photo">
+                    <img
+                      class="politicperson__photo--img"
+                      src="assets/img/profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="politicperson__info">
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Name</p>
+                      <p class="valu-reg">Ramu</p>
+                    </div>
+                    <div class="fatherageflex">
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Father's Name</p>
+                        <p class="valu-reg">Late Gurappa</p>
+                      </div>
+                      <div class="politicperson__info--facts">
+                        <p class="prop">Age</p>
+                        <p class="valu-reg">45</p>
+                      </div>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Address</p>
+                      <p class="address">
+                        aged 38 years, A.R.Roppam village, madakasira Mandal
+                      </p>
+                    </div>
+                    <div class="politicperson__info--facts">
+                      <p class="prop">Phone</p>
+                      <p class="phon-reg">
+                        <a href="tel:+919090909090">9090909090</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="redirect-reg">
+                  <a href="assembly-village-details.php">know more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </form>
+
+        <div class="pb-block">
+          <div class="villageinfowarn">
+            <div class="villageinfowarn__title">
+              <h2 class="villageinfowarn__title--h2">
+                polling booths DATA NOT FOUND
+              </h2>
+              <p>
+                The polling booths information is not available at this moment.
+                <br />
+                It will be available once the data is populated.
+              </p>
+            </div>
+          </div>
+          <div class="v-pollingbooths">
+            <div class="v-pollingbooths__title">
+              <h2 class="v-pollingbooths__title--h2">polling booths</h2>
+            </div>
+            <div class="v-booth-container">
+              <div class="v-boothcard">
+                <div class="v-boothcard__number">
+                  <div class="v-boothcard__number--text">
+                    <span class="boothno">booth number</span>
+                    <span class="boothnumber">123</span>
+                  </div>
+                </div>
+                <div class="v-boothcard__details">
+                  <div class="v-boothcard__details--name">
+                    <p class="boothna">Booth Name</p>
+                    <p class="boothname">Govt. High School</p>
+                  </div>
+                  <div class="boothlink">
+                    <a href="#">know more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
     </article>
-  </section>
+  </div>
 </main>
