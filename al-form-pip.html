@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSSDP Portal</title>
+    <meta name="description" content="" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="SSS District Police" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon-32x32.png" />
+
+    <meta name="theme-color" content="#0cb6c9" />
+  </head>
+
+  <body>
+    <header class="header">
+      <input type="checkbox" class="check" name="" id="nav-toggle" />
+      <label for="nav-toggle" class="icon-burger">
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+      </label>
+
+      <div class="header__logobox">
+        <a href="al-index.html">
+          <img
+            class="header__logobox--img"
+            src="assets/img/appolice_logo.png"
+            alt=""
+          />
+        </a>
+        <a href="al-index.html">
+          <h1 class="header__logobox--title">SSSDP PORTAL</h1>
+        </a>
+      </div>
+      <!-- MENU -->
+      <div class="header__navigation">
+        <div class="header__navigation--container">
+          <ul class="headernav">
+            <li class="headernav__item">
+              <a href="al-ass-const.html">assemblies</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-poll-station.html">Polling Stations</a>
+            </li>
+            <li class="headernav__item">
+              <a href="#">Enforcement ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Cash</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Liquor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">NBWS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">Force Deployment ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2019</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2024</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="al-under-construction.html">training</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-under-construction.html">route maps</a>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">check-posts ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-state</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-district</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">forms ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="#">lor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">deployment</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">poll booth</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">PIP</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">leaders</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MENU -->
+    </header>
+
+    <main>
+      <section class="sectionhome">
+        <div class="section__title">
+          <h2 class="section__title--text">PIP information FORM</h2>
+        </div>
+        <article>
+          <div class="section-content">
+            <form action="" method="post" id="village_entry_form">
+              <section class="section_form">
+                <h2 class="form_h2">Village details</h2>
+                <div class="village_details_flex">
+                  <div class="village_details_flex__item">
+                    <label for="v_form_constituency"
+                      >assembly constituency</label
+                    >
+                    <select name="" id="v_form_constituency" required>
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select constituency ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_policestation">Police Station</label>
+                    <select name="" id="v_form_policestation" required>
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select Police Station ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_village_name">Village Name</label>
+                    <select name="" id="v_form_village_name" required>
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select Village ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section_form">
+                <h2 class="form_h2">PIP Details</h2>
+                <div class="pipdetails">
+                  <div class="pipdetails__photo">
+                    <div class="pipdetails__photo--frame"></div>
+                  </div>
+                  <div class="pipdetails__facts">
+                    <div class="nameage">
+                      <div class="nameage__name">
+                        <label for="b_form_pollname">Name</label>
+                        <input type="text" id="b_form_pollname" />
+                      </div>
+                      <div class="nameage__age">
+                        <label for="b_form_pollname">Age</label>
+                        <input type="text" id="b_form_pollname" />
+                      </div>
+                    </div>
+                    <div class="fathermobile">
+                      <div class="fathermobile__father">
+                        <label for="b_form_pollname">Father's Name</label>
+                        <input type="text" id="b_form_pollname" />
+                      </div>
+                      <div class="fathermobile__mobile">
+                        <label for="b_form_pollname">Mobile Number</label>
+                        <input type="text" id="b_form_pollname" />
+                      </div>
+                    </div>
+                    <div class="address">
+                      <label for="b_form_pollname">Address</label>
+                      <input type="text" id="b_form_pollname" />
+                    </div>
+                    <div class="address">
+                      <label for="b_form_pollname">Crime Details</label>
+                      <input type="text" id="b_form_pollname" />
+                    </div>
+                    <div class="chargesheet">
+                      <div class="chargesheet__query">
+                        <label for="">IS SHEET OPENED?</label>
+                        <div>
+                          <input type="radio" name="answer" id="yes" />
+                          <label for="yes">yes</label>
+                        </div>
+                        <div>
+                          <input type="radio" name="answer" id="no" checked />
+                          <label for="no">no</label>
+                        </div>
+                      </div>
+                      <div class="chargesheet__facts">
+                        <div class="sheet">
+                          <div class="sheet__facts--item">
+                            <label for="b_form_pollname">TYPE OF SHEET</label>
+                            <input type="text" id="b_form_pollname" />
+                          </div>
+                          <div class="sheet__facts--item">
+                            <label for="b_form_pollname">SHEET NUMBER</label>
+                            <input type="text" id="b_form_pollname" />
+                          </div>
+                          <div class="sheet__facts--item">
+                            <label for="b_form_pollname">date</label>
+                            <input type="date" id="b_form_pollname" />
+                          </div>
+                        </div>
+                        <div class="category">
+                          <label for="b_form_pollname"
+                            >Category with Reason</label
+                          >
+                          <input type="text" id="b_form_pollname" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="address">
+                      <label for="b_form_pollname">Party Affiliation</label>
+                      <input type="text" id="b_form_pollname" />
+                    </div>
+                    <div class="chargesheet">
+                      <div class="chargesheet__query">
+                        <label for="">bind over?</label>
+                        <div>
+                          <input type="radio" name="answer" id="yes" />
+                          <label for="yes">yes</label>
+                        </div>
+                        <div>
+                          <input type="radio" name="answer" id="no" checked />
+                          <label for="no">no</label>
+                        </div>
+                      </div>
+                      <div class="chargesheet__facts">
+                        <div class="category">
+                          <label for="b_form_pollname"
+                            >Reason for bindover</label
+                          >
+                          <input type="text" id="b_form_pollname" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="server_report">&nbsp;</div>
+              <div class="formbtns">
+                <input type="reset" value="reset" />
+                <input type="submit" value="submit" />
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content--rights">
+          <script>
+            (function () {
+              document.querySelector(
+                '.footer__content--rights'
+              ).textContent = `© All Right Reserved | SSS District Police ${new Date().getFullYear()}`;
+            })();
+          </script>
+        </p>
+        <p class="footer__content--dev">
+          <a href="mailto:ajishtmohan@gmail.com">Contact the Developer</a>
+        </p>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script
+      type="text/javascript"
+      src="assets/js/village_form_script.js"
+    ></script>
+    <script
+      async
+      type="text/javascript"
+      src="assets/js/jquery-3.7.1.min.js"
+    ></script>
+  </body>
+</html>

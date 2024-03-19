@@ -24,7 +24,8 @@ form {
   select,
   input[type='text'],
   input[type='number'],
-  input[type='password'] {
+  input[type='password'],
+  input[type='date'] {
     width: 100%;
     font-family: $default-font-family;
     font-size: $default-font-size;
@@ -345,5 +346,199 @@ form {
   input[type='text'],
   input[type='password'] {
     margin-bottom: 3rem;
+  }
+}
+
+// PIP FORM
+.pipdetails {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 3rem;
+
+  &__photo {
+    width: calc((100% - 6rem) / 3);
+
+    &--frame {
+      width: 100%;
+      height: 35rem;
+      background-color: white;
+      border-radius: 3px;
+    }
+  }
+
+  &__facts {
+    width: calc((100% - (100% - 6rem) / 3) - 3rem);
+
+    .nameage {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      &__name {
+        width: calc(90% - 3rem);
+      }
+
+      &__age {
+        width: 10%;
+      }
+    }
+
+    .fathermobile {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      &__father {
+        width: 70%;
+      }
+    }
+
+    .address {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .partyaffiliate {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      &__item {
+        width: calc((100% - 3rem) / 2);
+      }
+    }
+
+    .chargesheet {
+      width: 100%;
+      background-color: $color-white;
+      padding: 1rem;
+      border-radius: 3px;
+      margin-bottom: 2rem;
+
+      &__query {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2rem;
+        margin-bottom: 1rem;
+
+        label {
+          cursor: pointer;
+          align-self: center;
+          margin-bottom: 0;
+
+          &:not(:first-child) {
+            background-color: $color-grey-light-1;
+            padding: 0.3rem 1rem;
+            border-radius: 3px;
+          }
+        }
+
+        input[type='radio'] {
+          display: none;
+        }
+
+        input[type='radio']:checked ~ label {
+          background-color: $color-primary;
+          color: $color-white;
+        }
+      }
+
+      #chargesheet {
+        display: none;
+      }
+
+      &__facts {
+        // visibility: hidden;
+
+        .sheet {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 3rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// POLITICAL LEADER
+.leadchargesheet {
+  width: 100%;
+  background-color: $color-white;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__query {
+    // width: calc((100% - 3rem) / 2);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    label {
+      cursor: pointer;
+      align-self: center;
+      margin-bottom: 0;
+
+      &:not(:first-child) {
+        background-color: $color-grey-light-1;
+        padding: 0.3rem 1rem;
+        border-radius: 3px;
+      }
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    input[type='radio']:checked ~ label {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  #chargesheet {
+    display: none;
+  }
+
+  &__facts {
+    // visibility: hidden;
+
+    .sheet {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 3rem;
+      margin-bottom: 1rem;
+    }
   }
 }
