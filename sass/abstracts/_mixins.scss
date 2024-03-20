@@ -53,7 +53,7 @@ Breakpoint Argument Choices
 
   //1366
   @if $breakpoint == laptop {
-    @media (max-width: 85em) {
+    @media (max-width: 90em) {
       @content;
     }
   }

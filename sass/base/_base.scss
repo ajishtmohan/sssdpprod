@@ -17,6 +17,10 @@ html {
     font-size: 50%;
   }
 
+  @include respond(laptop) {
+    font-size: 50%;
+  }
+
   @include respond(phone) {
     font-size: 50%;
   }

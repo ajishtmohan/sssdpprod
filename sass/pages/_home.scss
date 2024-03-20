@@ -30,7 +30,7 @@
 }
 
 .photogallery {
-  width: $site-width;
+  width: $site-content-width;
   height: auto;
   display: flex;
   position: relative;
@@ -38,6 +38,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
+  margin: 0 auto;
+  &:not(:last-child) {
+    padding-bottom: 5rem;
+  }
 
   @include respond(phone) {
     width: 100%;
