@@ -512,7 +512,10 @@
     &__demograph {
       display: block;
       padding-bottom: 2rem;
-      border-bottom: 1px solid $color-primary-light-1;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-primary-light-1;
+      }
 
       @include respond(phone) {
         padding-bottom: 1.5rem;
@@ -722,8 +725,11 @@
 
     &__demograph {
       display: block;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid $color-primary-light-1;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-primary-light-1;
+        padding-bottom: 2rem;
+      }
 
       @include respond(phone) {
         padding-bottom: 1.5rem;
@@ -840,7 +846,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 3rem;
 
@@ -853,6 +859,7 @@
       .force-head {
         text-transform: uppercase;
         margin-bottom: 0.5rem;
+        color: $color-secondary-dark;
       }
 
       .officer-title {

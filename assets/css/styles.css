@@ -720,6 +720,29 @@ form {
     gap: 3rem;
     margin-bottom: 1rem; }
 
+.sec_lor_form {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-bottom: 3rem; }
+  .sec_lor_form .nbw {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    gap: 3rem; }
+    .sec_lor_form .nbw:not(:last-child) {
+      margin-bottom: 3rem; }
+    .sec_lor_form .nbw__item {
+      width: calc((100% - 6rem) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: end; }
+
 .enforcement-flex {
   width: 114rem;
   margin: 0 auto;
@@ -739,7 +762,13 @@ form {
     height: auto;
     background-color: #037f8d;
     padding: 1.5rem;
-    border-radius: 5px; }
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.1s ease-in; }
+    .enforcement-flex__item:hover {
+      background-color: #035761;
+      transform: translateY(-3px);
+      box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.3); }
     .enforcement-flex__item--title {
       width: 100%;
       height: auto;
@@ -756,7 +785,7 @@ form {
       .enforcement-flex__item--title .enf_entity {
         color: #fff;
         font-weight: 300;
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 2.5rem; }
     .enforcement-flex__item--qty {
       width: 100%;
@@ -1931,8 +1960,9 @@ article {
             display: none; }
     .v-pollingbooths .v-boothcard__demograph {
       display: block;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #3bd2e3; }
+      padding-bottom: 2rem; }
+      .v-pollingbooths .v-boothcard__demograph:not(:last-child) {
+        border-bottom: 1px solid #3bd2e3; }
       @media (max-width: 37.5em) {
         .v-pollingbooths .v-boothcard__demograph {
           padding-bottom: 1.5rem; } }
@@ -2086,9 +2116,10 @@ article {
             position: absolute;
             display: none; }
     .v-pollingbooths .boothcard__demograph {
-      display: block;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #3bd2e3; }
+      display: block; }
+      .v-pollingbooths .boothcard__demograph:not(:last-child) {
+        border-bottom: 1px solid #3bd2e3;
+        padding-bottom: 2rem; }
       @media (max-width: 37.5em) {
         .v-pollingbooths .boothcard__demograph {
           padding-bottom: 1.5rem; } }
@@ -2171,7 +2202,7 @@ article {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 3rem; }
     .forcedeployment .forceblockflex__item {
@@ -2181,7 +2212,8 @@ article {
       border-radius: 3px; }
       .forcedeployment .forceblockflex__item .force-head {
         text-transform: uppercase;
-        margin-bottom: 0.5rem; }
+        margin-bottom: 0.5rem;
+        color: #c91f0c; }
       .forcedeployment .forceblockflex__item .officer-title {
         text-transform: uppercase;
         color: #000;
