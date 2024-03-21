@@ -743,6 +743,25 @@ form {
       flex-direction: column;
       justify-content: end; }
 
+.subhead {
+  color: #037f8d;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block; }
+
+.annexure3 {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  width: 100%;
+  text-align: center; }
+  .annexure3 td {
+    border: 1px solid #037f8d;
+    width: 25%;
+    padding: 1rem; }
+
 .enforcement-flex {
   width: 114rem;
   margin: 0 auto;
