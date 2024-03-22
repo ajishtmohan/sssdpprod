@@ -66,25 +66,32 @@
       &--text {
         display: block;
         position: absolute;
-        height: auto;
-        padding: 1rem;
         top: 50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         .boothno {
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
           display: block;
-          position: relative;
         }
 
         .boothnumber {
-          font-size: 6rem;
-          margin-top: 2rem;
+          display: block;
+          font-size: 4rem;
           color: $color-black;
 
           @include respond(phone) {
             font-size: 5rem;
           }
+        }
+
+        .boothstatus {
+          text-transform: uppercase;
+          font-size: 2rem;
+          font-weight: 600;
+          color: $color-primary-dark-1;
+          display: block;
+          margin-top: 1rem;
         }
       }
     }

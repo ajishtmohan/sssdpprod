@@ -171,21 +171,26 @@ article ul {
       .booth-container .boothcard__number--text {
         display: block;
         position: absolute;
-        height: auto;
-        padding: 1rem;
         top: 50%;
-        transform: translateY(-50%); }
+        left: 50%;
+        transform: translate(-50%, -50%); }
         .booth-container .boothcard__number--text .boothno {
-          margin-bottom: 2rem;
-          display: block;
-          position: relative; }
+          margin-bottom: 1rem;
+          display: block; }
         .booth-container .boothcard__number--text .boothnumber {
-          font-size: 6rem;
-          margin-top: 2rem;
+          display: block;
+          font-size: 4rem;
           color: #000; }
           @media (max-width: 37.5em) {
             .booth-container .boothcard__number--text .boothnumber {
               font-size: 5rem; } }
+        .booth-container .boothcard__number--text .boothstatus {
+          text-transform: uppercase;
+          font-size: 2rem;
+          font-weight: 600;
+          color: #037f8d;
+          display: block;
+          margin-top: 1rem; }
     .booth-container .boothcard__details {
       width: calc(100% - 15rem);
       background-color: #037f8d;
@@ -752,15 +757,35 @@ form {
 
 .annexure3 {
   outline: none;
-  padding: 0;
+  padding: 0.8rem;
   margin: 0;
   border-spacing: 0;
   width: 100%;
-  text-align: center; }
+  font-size: 1.4rem;
+  text-align: center;
+  border-collapse: collapse; }
+  .annexure3 input[type='text'],
+  .annexure3 input[type='number'] {
+    font-size: 1.4rem;
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0;
+    border: none;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    property: none; }
+    .annexure3 input[type='text']:hover, .annexure3 input[type='text']:focus, .annexure3 input[type='text']:active,
+    .annexure3 input[type='number']:hover,
+    .annexure3 input[type='number']:focus,
+    .annexure3 input[type='number']:active {
+      border: none; }
+  .annexure3 th {
+    border: 1px solid #037f8d;
+    padding: 0.5rem; }
   .annexure3 td {
     border: 1px solid #037f8d;
-    width: 25%;
-    padding: 1rem; }
+    padding: 0.5rem; }
 
 .enforcement-flex {
   width: 114rem;
@@ -1893,11 +1918,11 @@ article {
         left: 50%;
         transform: translate(-50%, -50%); }
         .v-pollingbooths .v-boothcard__number--text .boothno {
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
           display: block; }
         .v-pollingbooths .v-boothcard__number--text .boothnumber {
           display: block;
-          font-size: 6rem;
+          font-size: 4rem;
           color: #000; }
           @media (max-width: 37.5em) {
             .v-pollingbooths .v-boothcard__number--text .boothnumber {
@@ -1908,7 +1933,7 @@ article {
           font-weight: 600;
           color: #037f8d;
           display: block;
-          margin-top: 2rem; }
+          margin-top: 1rem; }
     .v-pollingbooths .v-boothcard__details {
       width: calc(100% - 15rem);
       height: auto;
@@ -2017,163 +2042,6 @@ article {
         position: absolute;
         bottom: 0; }
     .v-pollingbooths .v-boothcard__map {
-      width: 100%;
-      height: 100%; }
-  .v-pollingbooths .boothcard {
-    width: calc((100% - 3rem) / 2);
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    position: relative;
-    background-color: #f7f7f7f7;
-    border-radius: 5px;
-    overflow: hidden; }
-    @media (max-width: 37.5em) {
-      .v-pollingbooths .boothcard {
-        width: 100%; } }
-    .v-pollingbooths .boothcard__number {
-      display: block;
-      position: relative;
-      width: 15rem;
-      height: auto;
-      text-transform: uppercase;
-      text-align: center;
-      background-color: #f7f7f7f7; }
-      @media (max-width: 37.5em) {
-        .v-pollingbooths .boothcard__number {
-          width: 12rem; } }
-      .v-pollingbooths .boothcard__number--text {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-        .v-pollingbooths .boothcard__number--text .boothno {
-          margin-bottom: 2rem;
-          display: block; }
-        .v-pollingbooths .boothcard__number--text .boothnumber {
-          display: block;
-          font-size: 6rem;
-          color: #000; }
-          @media (max-width: 37.5em) {
-            .v-pollingbooths .boothcard__number--text .boothnumber {
-              font-size: 5rem; } }
-        .v-pollingbooths .boothcard__number--text .boothstatus {
-          text-transform: uppercase;
-          font-size: 2rem;
-          font-weight: 600;
-          color: #037f8d;
-          display: block;
-          margin-top: 2rem; }
-    .v-pollingbooths .boothcard__details {
-      width: calc(100% - 15rem);
-      height: auto;
-      background-color: #037f8d;
-      padding: 2rem;
-      color: #fff;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative; }
-      @media (max-width: 37.5em) {
-        .v-pollingbooths .boothcard__details {
-          width: calc(100% - 12rem); } }
-      .v-pollingbooths .boothcard__details--name {
-        height: auto;
-        display: block;
-        position: relative;
-        margin-bottom: 1rem; }
-        @media (max-width: 37.5em) {
-          .v-pollingbooths .boothcard__details--name {
-            height: 9.5rem;
-            margin-bottom: 1.2rem; } }
-        .v-pollingbooths .boothcard__details--name .boothna {
-          color: #3bd2e3;
-          display: block;
-          position: relative;
-          height: auto; }
-        .v-pollingbooths .boothcard__details--name .boothname {
-          font-size: 2.5rem;
-          line-height: 3rem;
-          font-weight: 300;
-          text-transform: capitalize; }
-          @media (max-width: 37.5em) {
-            .v-pollingbooths .boothcard__details--name .boothname {
-              font-size: 2.5rem;
-              line-height: 3rem; } }
-      .v-pollingbooths .boothcard__details .boothlink {
-        width: 100%;
-        height: auto;
-        text-align: right; }
-        .v-pollingbooths .boothcard__details .boothlink a:link,
-        .v-pollingbooths .boothcard__details .boothlink a:visited {
-          font-size: 1.2rem;
-          display: inline-block;
-          position: relative;
-          background-color: #c91f0c;
-          color: #fff;
-          padding: 0.5rem 1rem;
-          border-radius: 3px;
-          text-decoration: none;
-          text-transform: uppercase; }
-        .v-pollingbooths .boothcard__details .boothlink__cont {
-          display: inline-block;
-          position: relative;
-          width: auto;
-          height: 100%; }
-          .v-pollingbooths .boothcard__details .boothlink__cont label {
-            color: #fff;
-            background-color: #c91f0c;
-            padding: 0.5rem 1rem;
-            display: inline-block;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 1.2rem; }
-          .v-pollingbooths .boothcard__details .boothlink__cont input[type='checkbox'] {
-            position: absolute;
-            display: none; }
-    .v-pollingbooths .boothcard__demograph {
-      display: block; }
-      .v-pollingbooths .boothcard__demograph:not(:last-child) {
-        border-bottom: 1px solid #3bd2e3;
-        padding-bottom: 2rem; }
-      @media (max-width: 37.5em) {
-        .v-pollingbooths .boothcard__demograph {
-          padding-bottom: 1.5rem; } }
-      .v-pollingbooths .boothcard__demograph .demographtitle {
-        display: block;
-        margin-bottom: 0.5rem;
-        color: #3bd2e3; }
-      .v-pollingbooths .boothcard__demograph--details {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        text-transform: capitalize;
-        justify-content: space-between; }
-        .v-pollingbooths .boothcard__demograph--details .demoblock {
-          display: inline-block;
-          position: relative; }
-          .v-pollingbooths .boothcard__demograph--details .demoblock__name {
-            display: block; }
-          .v-pollingbooths .boothcard__demograph--details .demoblock__number {
-            display: block;
-            font-size: 3rem;
-            font-weight: 400; }
-    .v-pollingbooths .boothcard__redirect {
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 4rem; }
-      @media (max-width: 37.5em) {
-        .v-pollingbooths .boothcard__redirect {
-          height: 3.5rem; } }
-      .v-pollingbooths .boothcard__redirect p {
-        display: block;
-        position: absolute;
-        bottom: 0; }
-    .v-pollingbooths .boothcard__map {
       width: 100%;
       height: 100%; }
 
