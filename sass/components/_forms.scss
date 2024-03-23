@@ -574,13 +574,51 @@ form {
   }
 }
 
-// annexure iii
-.subhead {
-  color: #037f8d;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  display: block;
+// ANNEXURE - III
+.tablehead {
+  padding: 3rem 3rem 0 3rem;
+  height: 20rem;
+
+  .subhead {
+    color: #037f8d;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+  }
+
+  .dates {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__item {
+      display: block;
+      position: relative;
+
+      #datepicker {
+        display: block;
+        position: relative;
+        background-color: $color-grey-light-1;
+        z-index: 100;
+
+        label {
+          cursor: pointer;
+          text-align: right;
+          display: block;
+        }
+
+        input[type='date'] {
+          display: none;
+          font-size: $annexure-font-size;
+          text-transform: uppercase;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
 }
 
 .annexure3 {

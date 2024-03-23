@@ -748,12 +748,38 @@ form {
       flex-direction: column;
       justify-content: end; }
 
-.subhead {
-  color: #037f8d;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  display: block; }
+.tablehead {
+  padding: 3rem 3rem 0 3rem;
+  height: 20rem; }
+  .tablehead .subhead {
+    color: #037f8d;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    display: block;
+    position: relative; }
+  .tablehead .dates {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .tablehead .dates__item {
+      display: block;
+      position: relative; }
+      .tablehead .dates__item #datepicker {
+        display: block;
+        position: relative;
+        background-color: #f7f7f7f7;
+        z-index: 100; }
+        .tablehead .dates__item #datepicker label {
+          cursor: pointer;
+          text-align: right;
+          display: block; }
+        .tablehead .dates__item #datepicker input[type='date'] {
+          display: none;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          padding: 0.5rem; }
 
 .annexure3 {
   outline: none;

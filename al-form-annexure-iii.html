@@ -9,6 +9,11 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <!-- SCRIPT -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/annexure.js"></script>
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -139,23 +144,45 @@
         </div>
         <article>
           <div class="section-content">
-            <form action="" method="post" id="annexure3_form">
+            <form action="" method="post" class="tablehead">
               <h3 class="form_h3 u-center-div">Annexure - iii</h3>
               <h2 class="form_h2 u-center-div">law & order report - I</h2>
               <p class="u-center-div subhead">
-                daily law and order report for district for electoral events
+                Daily law and order report for district for electoral events
               </p>
               <p class="u-center-div subhead">
                 District: <b>Sri Sathya Sai District</b> I State:
                 <b>Andhra Pradesh</b>
               </p>
+              <br />
               <div class="dates">
-                <div class="dates_item">
+                <div class="dates__item">
                   <p class="subhead">
-                    Start date for these: <b>20th March, 2024</b>
+                    Start date for these: <b>March 20, 2024</b>
                   </p>
                 </div>
+                <div class="dates__item">
+                  <p class="subhead" id="datedisplay">
+                    Reporting date:
+                    <b>
+                      <span id="month"></span>
+                      <span id="date"></span>, <span id="year"></span>
+                    </b>
+                  </p>
+
+                  <div id="datepicker">
+                    <label for="datepick" id="datepicklab">pick a date</label>
+                    <input
+                      type="date"
+                      id="datepick"
+                      name="datepick"
+                      onchange="this.form.submit()"
+                    />
+                  </div>
+                </div>
               </div>
+            </form>
+            <form action="" method="post" id="annexure3_form">
               <table class="annexure3">
                 <col width="20" />
                 <col width="20" />
