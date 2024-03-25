@@ -263,8 +263,8 @@ form {
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem 0;
+  justify-content: flex-start;
+  gap: 3rem;
   margin-bottom: 2rem;
 
   &__item {
@@ -602,7 +602,7 @@ form {
         display: block;
         position: relative;
         background-color: $color-grey-light-1;
-        z-index: 100;
+        z-index: 1;
 
         label {
           cursor: pointer;

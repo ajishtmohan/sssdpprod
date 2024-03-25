@@ -1,0 +1,87 @@
+.report {
+  font-family: 'Fira Code', monospace;
+  font-style: light;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+
+  .projectreport {
+    h2 {
+      font-size: 1;
+      margin-bottom: 1rem;
+      color: $color-black;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      color: $color-black;
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+    ol {
+      margin-left: 2rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+      ul {
+        margin-left: 0rem;
+        li {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+
+    .date {
+      display: inline-block;
+      position: relative;
+      background-color: #777;
+      padding: 0.5rem 1rem;
+      color: $color-white;
+      border-radius: 3px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.reportflex {
+  width: $report-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 3rem;
+
+  &__item {
+    width: calc((100% - 3rem) / 2);
+    background-color: $color-grey-light-1;
+    padding: 2rem;
+    border-bottom: 1px solid #777;
+
+    table {
+      // border: 1px solid black;
+      width: 100%;
+      border-collapse: collapse;
+
+      td {
+        // border: 1px solid black;
+        vertical-align: top;
+        // padding: 1rem;
+      }
+    }
+  }
+}
+
+.projectreport {
+  width: $report-width;
+  margin: 0 auto;
+  display: block;
+  background-color: $color-grey-light-1;
+  padding: 2rem;
+  border-bottom: 1px solid #777;
+  margin-bottom: 3rem;
+}

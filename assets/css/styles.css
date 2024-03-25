@@ -535,8 +535,8 @@ form {
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem 0;
+  justify-content: flex-start;
+  gap: 3rem;
   margin-bottom: 2rem; }
   .asmb_details_flex__item {
     width: calc((100% - 6rem) / 3); }
@@ -770,7 +770,7 @@ form {
         display: block;
         position: relative;
         background-color: #f7f7f7f7;
-        z-index: 100; }
+        z-index: 1; }
         .tablehead .dates__item #datepicker label {
           cursor: pointer;
           text-align: right;
@@ -972,6 +972,65 @@ form {
 
 .inactive {
   background-color: #777 !important; }
+
+.report {
+  font-family: 'Fira Code', monospace;
+  font-style: light;
+  font-size: 1.2rem;
+  line-height: 1.5rem; }
+  .report .projectreport h2 {
+    font-size: 1;
+    margin-bottom: 1rem;
+    color: #000; }
+  .report .projectreport h3 {
+    margin-bottom: 1rem;
+    color: #000; }
+  .report .projectreport p:not(:last-child) {
+    margin-bottom: 1rem; }
+  .report .projectreport ol {
+    margin-left: 2rem; }
+    .report .projectreport ol li {
+      margin-bottom: 0.5rem; }
+    .report .projectreport ol ul {
+      margin-left: 0rem; }
+      .report .projectreport ol ul li {
+        margin-left: 1.5rem; }
+  .report .projectreport .date {
+    display: inline-block;
+    position: relative;
+    background-color: #777;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 1rem; }
+
+.reportflex {
+  width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 3rem; }
+  .reportflex__item {
+    width: calc((100% - 3rem) / 2);
+    background-color: #f7f7f7f7;
+    padding: 2rem;
+    border-bottom: 1px solid #777; }
+    .reportflex__item table {
+      width: 100%;
+      border-collapse: collapse; }
+      .reportflex__item table td {
+        vertical-align: top; }
+
+.projectreport {
+  width: 80rem;
+  margin: 0 auto;
+  display: block;
+  background-color: #f7f7f7f7;
+  padding: 2rem;
+  border-bottom: 1px solid #777;
+  margin-bottom: 3rem; }
 
 .villagesearch {
   width: 114rem;

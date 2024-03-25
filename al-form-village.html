@@ -231,8 +231,13 @@
                   </div>
 
                   <div class="asmb_details_flex__item">
-                    <label for="v_form_village_name">Village Name</label>
-                    <select name="" id="v_form_village_name" required>
+                    <label for="v_form_village">Village</label>
+                    <select
+                      name=""
+                      id="v_form_village"
+                      class="form_text_input"
+                      required
+                    >
                       <option
                         disabled
                         selected
@@ -240,7 +245,29 @@
                         default
                         value=""
                       >
-                        ~ select Police Station ~
+                        ~ select Village ~
+                      </option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                    </select>
+                  </div>
+
+                  <div class="asmb_details_flex__item">
+                    <label for="v_form_polling_station">Polling Station</label>
+                    <select
+                      name=""
+                      id="v_form_polling_station"
+                      class="form_text_input"
+                      required
+                    >
+                      <option
+                        disabled
+                        selected
+                        class="boothform__option--dis"
+                        default
+                        value=""
+                      >
+                        ~ select Polling Station ~
                       </option>
                       <option value="">1</option>
                       <option value="">2</option>
