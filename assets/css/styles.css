@@ -2135,7 +2135,8 @@ article {
 
 .valu {
   color: #037f8d;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: capitalize; }
 
 .infrastructure {
   display: block;
