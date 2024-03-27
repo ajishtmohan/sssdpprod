@@ -195,8 +195,7 @@ article ul {
       width: calc(100% - 15rem);
       background-color: #037f8d;
       padding: 2rem;
-      color: #fff;
-      text-transform: uppercase; }
+      color: #fff; }
       @media (max-width: 37.5em) {
         .booth-container .boothcard__details {
           width: calc(100% - 12rem); } }
@@ -209,7 +208,8 @@ article ul {
             height: 9.5rem;
             margin-bottom: 1.2rem; } }
         .booth-container .boothcard__details--name .boothna {
-          color: #3bd2e3; }
+          color: #3bd2e3;
+          text-transform: uppercase; }
         .booth-container .boothcard__details--name .boothname {
           font-size: 2.5rem;
           line-height: 2.5rem;
@@ -227,7 +227,8 @@ article ul {
           padding-bottom: 1.5rem; } }
       .booth-container .boothcard__demograph .demographtitle {
         display: block;
-        color: #3bd2e3; }
+        color: #3bd2e3;
+        text-transform: uppercase; }
       .booth-container .boothcard__demograph--details {
         width: 100%;
         display: flex;
@@ -370,7 +371,6 @@ form {
     form input[type='password']:hover,
     form input[type='date']:focus,
     form input[type='date']:hover {
-      outline: none;
       border: 2px solid #c91f0c;
       color: #037f8d; }
     form select option,
@@ -379,12 +379,10 @@ form {
     form input[type='password'] option,
     form input[type='date'] option {
       font-size: 1.6rem;
-      margin: 2rem;
       text-align: center;
       text-transform: uppercase;
       font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      margin: 0.8rem; }
+      font-weight: 500; }
     form select input[type='text'],
     form input[type='text'] input[type='text'],
     form input[type='number'] input[type='text'],
@@ -1959,7 +1957,9 @@ article {
       margin-bottom: 1rem;
       text-align: center; }
     .v-pollingbooths__title--p {
-      text-align: center; }
+      text-align: center;
+      text-transform: lowercase;
+      text-transform: capitalize; }
   .v-pollingbooths .v-booth-container {
     display: flex;
     position: relative;

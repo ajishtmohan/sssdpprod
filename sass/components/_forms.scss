@@ -44,19 +44,16 @@ form {
 
     &:focus,
     &:hover {
-      outline: none;
       border: 2px solid $color-secondary-dark;
       color: $color-primary-dark-1;
     }
 
     option {
       font-size: $default-font-size;
-      margin: 2rem;
       text-align: center;
       text-transform: uppercase;
       font-family: $default-font-family;
       font-weight: 500;
-      margin: 0.8rem;
     }
 
     input[type='text'] {

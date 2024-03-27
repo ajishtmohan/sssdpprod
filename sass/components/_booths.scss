@@ -101,7 +101,6 @@
       background-color: $color-primary-dark-1;
       padding: 2rem;
       color: $color-white;
-      text-transform: uppercase;
 
       @include respond(phone) {
         width: calc(100% - 12rem);
@@ -119,6 +118,7 @@
 
         .boothna {
           color: $color-primary-light-1;
+          text-transform: uppercase;
         }
 
         .boothname {
@@ -146,6 +146,7 @@
       .demographtitle {
         display: block;
         color: $color-primary-light-1;
+        text-transform: uppercase;
       }
       &--details {
         width: 100%;
