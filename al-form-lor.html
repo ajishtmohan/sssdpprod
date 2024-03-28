@@ -9,6 +9,10 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/form_lor.js"></script>
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -139,322 +143,674 @@
         </div>
         <article>
           <div class="section-content">
+            <form action="" method="post" class="tablehead">
+              <h2 class="form_h2 u-center-div">law & order report</h2>
+              <p class="u-center-div subhead">
+                Daily law and order report for district for electoral events
+              </p>
+              <p class="u-center-div subhead">
+                Assembly: <b>Kadiri</b> I District:
+                <b>Sri Sathya Sai District</b> I State:
+                <b>Andhra Pradesh</b>
+              </p>
+              <br />
+              <div class="dates">
+                <div class="dates__item">
+                  <p class="subhead" id="datedisplay">
+                    Reporting date:
+                    <b>
+                      <span id="month"></span>
+                      <span id="date"></span>, <span id="year"></span>
+                    </b>
+                  </p>
+
+                  <div id="datepicker">
+                    <label for="datepick" id="datepicklab">pick a date</label>
+                    <input
+                      type="date"
+                      id="datepick"
+                      name="datepick"
+                      onchange="this.form.submit()"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
             <form action="" method="post" id="lor_form">
               <section class="sec_lor_form">
                 <h2 class="form_h2">NBW</h2>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="nbw_received">NBWs received today</label>
-                    <input type="number" name="" id="nbw_received" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="nbw_executed">NBWs executed today</label>
-                    <input type="number" name="" id="nbw_executed" />
+                <div class="nbw_container">
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="nbw_received">NBWs received today</label>
+                      <input
+                        type="number"
+                        name="nbw_received"
+                        id="nbw_received"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="nbw_executed">NBWs executed today</label>
+                      <input
+                        type="number"
+                        name="nbw_executed"
+                        id="nbw_executed"
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
 
               <section class="sec_lor_form">
                 <h2 class="form_h2">arms</h2>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >Arms licenses issued/registered in the unit
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">arms deposited today</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Arms yet to be deposited</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                <div class="nbw_container">
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="arms_regstd"
+                        >Arms licenses issued/registered in the unit
+                      </label>
+                      <input
+                        type="number"
+                        name="arms_regstd"
+                        id="arms_regstd"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="arms_depstd">arms deposited today</label>
+                      <input
+                        type="number"
+                        name="arms_depstd"
+                        id="arms_depstd"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="arms_to_depos"
+                        >Arms yet to be deposited</label
+                      >
+                      <input
+                        type="number"
+                        name="arms_to_depos"
+                        id="arms_to_depos"
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
 
               <section class="sec_lor_form">
                 <h2 class="form_h2">preventive action</h2>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="pre_107">Bound over U/s 107 Cr.P.C </label>
-                    <input type="number" name="" id="pre_107" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_108">Bound over U/s 108 Cr.P.C </label>
-                    <input type="number" name="" id="pre_108" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_109">Bound over U/s 109 Cr.P.C </label>
-                    <input type="number" name="" id="pre_109" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_110">Bound over U/s 110 Cr.P.C </label>
-                    <input type="number" name="" id="pre_110" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_151"
-                      >Bound over U/s 107, 108, 110 r/w 151 Cr.P.C
-                    </label>
-                    <input type="number" name="" id="pre_151" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_116"
-                      >Bound over U/s 107, 108, 110 r/w 116(3) Cr.P.C
-                    </label>
-                    <input type="number" name="" id="pre_116" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_total">Total</label>
-                    <input type="number" name="" id="pre_total" />
+                <div class="nbw_container">
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="pre_107">Bound over U/s 107 Cr.P.C </label>
+                      <input type="number" name="pre_107" id="pre_107" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_108">Bound over U/s 108 Cr.P.C </label>
+                      <input type="number" name="pre_108" id="pre_108" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_109">Bound over U/s 109 Cr.P.C </label>
+                      <input type="number" name="pre_109" id="pre_109" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_110">Bound over U/s 110 Cr.P.C </label>
+                      <input type="number" name="pre_110" id="pre_110" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_151"
+                        >Bound over U/s 107, 108, 110 r/w 151 Cr.P.C
+                      </label>
+                      <input type="number" name="pre_151" id="pre_151" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_116"
+                        >Bound over U/s 107, 108, 110 r/w 116(3) Cr.P.C
+                      </label>
+                      <input type="number" name="pre_116" id="pre_116" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_total">Total</label>
+                      <input type="number" name="pre_total" id="pre_total" />
+                    </div>
                   </div>
                 </div>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="pre_pit"
-                      >Preventive detention under PITNDPS Act</label
-                    >
-                    <input type="number" name="" id="pre_pit" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_loc"
-                      >Preventive detection under local Preventive Detention
-                      Act</label
-                    >
-                    <input type="number" name="" id="pre_loc" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_pdact"
-                      >Total no of persons initiated PD Act</label
-                    >
-                    <input type="number" name="" id="pre_pdact" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_proclaim"
-                      >Number of persons declared as Proclaimed Offenders</label
-                    >
-                    <input type="number" name="" id="pre_proclaim" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="pre_extern"
-                      >No. of persons under externment
-                    </label>
-                    <input type="number" name="" id="pre_extern" />
+                <div class="nbw_container">
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="pre_pit"
+                        >Preventive detention under PITNDPS Act</label
+                      >
+                      <input type="number" name="pre_pit" id="pre_pit" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_loc"
+                        >Preventive detection under local Preventive Detention
+                        Act</label
+                      >
+                      <input type="number" name="pre_loc" id="pre_loc" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_pdact"
+                        >Total no of persons initiated PD Act</label
+                      >
+                      <input type="number" name="pre_pdact" id="pre_pdact" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_procl"
+                        >Number of persons declared as Proclaimed
+                        Offenders</label
+                      >
+                      <input type="number" name="pre_procl" id="pre_procl" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="pre_extern"
+                        >No. of persons under externment
+                      </label>
+                      <input type="number" name="pre_extern" id="pre_extern" />
+                    </div>
                   </div>
                 </div>
               </section>
 
               <section class="sec_lor_form">
                 <h2 class="form_h2">LIQUOR</h2>
-                <h3 class="form_h3">ID</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">ID</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="id_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="id_book" id="id_book" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="id_arrest">No. of Persons arrested</label>
+                      <input type="number" name="id_arrest" id="id_arrest" />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">Qty. In Ltrs.</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">No. of Persons arrested</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="id_qty">Qty. In Ltrs.</label>
+                      <input type="number" name="id_qty" id="id_qty" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="id_price">PRICE</label>
+                      <input type="number" name="id_price" id="id_price" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="id_mon_val">Monetary Value (in Rs.)</label>
+                      <input type="number" name="id_mon_val" id="id_mon_val" />
+                    </div>
                   </div>
                 </div>
-                <h3 class="form_h3">FJ WASH</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">FJ WASH</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="fj_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="fj_book" id="fj_book" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="fj_arrest">No. of Persons arrested</label>
+                      <input type="number" name="fj_arrest" id="fj_arrest" />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">Qty. In Ltrs.</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">No. of Persons arrested</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="fj_qty">Qty. In Ltrs.</label>
+                      <input type="number" name="fj_qty" id="fj_qty" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="fj_price">PRICE</label>
+                      <input type="number" name="fj_price" id="fj_price" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="fj_mon_val">Monetary Value (in Rs.)</label>
+                      <input type="number" name="fj_mon_val" id="fj_mon_val" />
+                    </div>
                   </div>
                 </div>
               </section>
 
               <section class="sec_lor_form">
                 <h2 class="form_h2">GANJA & OTHER DRUGS</h2>
-                <h3 class="form_h3">GANJA</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">GANJA</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="gan_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="gan_book" id="gan_book" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="gan_arrest">No. of Persons arrested</label>
+                      <input type="number" name="gan_arrest" id="gan_arrest" />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">Qty. In Ltrs.</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">No. of Persons arrested</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="gan_qty">Qty. In Kgs.</label>
+                      <input type="number" name="gan_qty" id="gan_qty" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="gan_price">Price</label>
+                      <input type="number" name="gan_price" id="gan_price" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="gan_mon_val">Monetary Value (in Rs.)</label>
+                      <input
+                        type="number"
+                        name="gan_mon_val"
+                        id="gan_mon_val"
+                      />
+                    </div>
                   </div>
                 </div>
-                <h3 class="form_h3">OTHER DRUGS</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">OTHER DRUGS</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="otdr_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="otdr_book" id="otdr_book" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="otdr_arrest">No. of Persons arrested</label>
+                      <input
+                        type="number"
+                        name="otdr_arrest"
+                        id="otdr_arrest"
+                      />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">Qty. In Ltrs.</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">No. of Persons arrested</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="otdr_qty">Qty. In Kgs.</label>
+                      <input type="number" name="otdr_qty" id="otdr_qty" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="otdr_price">Price</label>
+                      <input type="number" name="otdr_price" id="otdr_price" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="otdr_mon_val">Monetary Value (in Rs.)</label>
+                      <input
+                        type="number"
+                        name="otdr_mon_val"
+                        id="otdr_mon_val"
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
 
               <section class="sec_lor_form">
                 <h2 class="form_h2">NDPL</h2>
-                <h3 class="form_h3">NDPL (Bottles)</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">NDPL (Bottles)</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="ndplb_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="ndplb_book" id="ndplb_book" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="ndplb_arrest">No. of Persons arrested</label>
+                      <input
+                        type="number"
+                        name="ndplb_arrest"
+                        id="ndplb_arrest"
+                      />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">Qty. In Ltrs.</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">No. of Persons arrested</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="ndplb_qty">Qty. In ltrs.</label>
+                      <input type="number" name="ndplb_qty" id="ndplb_qty" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="ndplb_price">Price</label>
+                      <input
+                        type="number"
+                        name="ndplb_price"
+                        id="ndplb_price"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="ndplb_mon_val">Monetary Value (in Rs.)</label>
+                      <input
+                        type="number"
+                        name="ndplb_mon_val"
+                        id="ndplb_mon_val"
+                      />
+                    </div>
                   </div>
                 </div>
-                <h3 class="form_h3">NDPL (Tetra Packets)</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">NDPL (Tetra Packets)</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="ndplt_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="ndplt_book" id="ndplt_book" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="ndplt_arrest">No. of Persons arrested</label>
+                      <input
+                        type="number"
+                        name="ndplt_arrest"
+                        id="ndplt_arrest"
+                      />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">Qty. In Ltrs.</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">No. of Persons arrested</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="ndplt_qty">Qty. In ltrs.</label>
+                      <input type="number" name="ndplt_qty" id="ndplt_qty" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="ndplt_price">Price</label>
+                      <input
+                        type="number"
+                        name="ndplt_price"
+                        id="ndplt_price"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="ndplt_mon_val">Monetary Value (in Rs.)</label>
+                      <input
+                        type="number"
+                        name="ndplt_mon_val"
+                        id="ndplt_mon_val"
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
 
               <section class="sec_lor_form">
                 <h2 class="form_h2">DPL</h2>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="dpl_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="dpl_book" id="dpl_book" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="dpl_arrest">No. of Persons arrested</label>
+                      <input type="number" name="dpl_arrest" id="dpl_arrest" />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_depos">Qty. In Ltrs.</label>
-                    <input type="number" name="" id="arms_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">No. of Persons arrested</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="dpl_qty">Qty. In ltrs.</label>
+                      <input type="number" name="dpl_qty" id="dpl_qty" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="dpl_price">Price</label>
+                      <input type="number" name="dpl_price" id="dpl_price" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="dpl_mon_val">Monetary Value (in Rs.)</label>
+                      <input
+                        type="number"
+                        name="dpl_mon_val"
+                        id="dpl_mon_val"
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
               <section class="sec_lor_form">
                 <h2 class="form_h2">FREEBIES</h2>
-                <h3 class="form_h3">CASH</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Amount siezed (in Rs.)</label>
-                    <input type="number" name="" id="arms_to_depos" />
-                  </div>
-                </div>
-                <h3 class="form_h3">PRECIOUS METALS</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_restd">Quantity (Kgs) </label>
-                    <input type="number" name="" id="arms_restd" />
-                  </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.) </label>
-                    <input type="number" name="" id="arms_to_depos" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">CASH</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="f_cash_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input
+                        type="number"
+                        name="f_cash_book"
+                        id="f_cash_book"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="f_cash_seize">Amount siezed (in Rs.)</label>
+                      <input
+                        type="number"
+                        name="f_cash_seize"
+                        id="f_cash_seize"
+                      />
+                    </div>
                   </div>
                 </div>
-                <h3 class="form_h3">FREEBIES/ OTHER ITEMS</h3>
-                <div class="nbw">
-                  <div class="nbw__item">
-                    <label for="arms_restd"
-                      >No. of FIRs booked for the day
-                    </label>
-                    <input type="number" name="" id="arms_restd" />
+                <div class="nbw_container">
+                  <h3 class="form_h3">PRECIOUS METALS</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="premet_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input
+                        type="number"
+                        name="premet_book"
+                        id="premet_book"
+                      />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_restd">Quantity (Item wise) (KGs)</label>
-                    <input type="number" name="" id="arms_restd" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="premet_g">Gold (Kgs) </label>
+                      <input type="number" name="premet_g" id="premet_g" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="premet_g_price">PRICE</label>
+                      <input
+                        type="number"
+                        name="premet_g_price"
+                        id="premet_g_price"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="premet_g_mone"
+                        >Monetary Value (in Rs.)
+                      </label>
+                      <input
+                        type="number"
+                        name="premet_g_mone
+                      premet_g_mone"
+                        id="premet_g_mone"
+                      />
+                    </div>
                   </div>
-                  <div class="nbw__item">
-                    <label for="arms_to_depos">Monetary Value (in Rs.) </label>
-                    <input type="number" name="" id="arms_to_depos" />
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="premet_s">Silver (Kgs) </label>
+                      <input type="number" name="premet_s" id="premet_s" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="premet_s_price">PRICE</label>
+                      <input
+                        type="number"
+                        name="premet_s_price"
+                        id="premet_s_price"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="premet_s_mone"
+                        >Monetary Value (in Rs.)
+                      </label>
+                      <input
+                        type="number"
+                        name="premet_s_mone
+                      premet_s_mone"
+                        id="premet_s_mone"
+                      />
+                    </div>
+                  </div>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="premet_p">Platinum (Kgs) </label>
+                      <input type="number" name="premet_p" id="premet_p" />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="premet_p_price">PRICE</label>
+                      <input
+                        type="number"
+                        name="premet_p_price"
+                        id="premet_p_price"
+                      />
+                    </div>
+                    <div class="nbw__item">
+                      <label for="premet_p_mone"
+                        >Monetary Value (in Rs.)
+                      </label>
+                      <input
+                        type="number"
+                        name="premet_p_mone
+                      premet_p_mone"
+                        id="premet_p_mone"
+                      />
+                    </div>
                   </div>
                 </div>
+                <div class="nbw_container">
+                  <h3 class="form_h3">FREEBIES/ OTHER ITEMS</h3>
+                  <div class="nbw">
+                    <div class="nbw__item">
+                      <label for="f_oth_book"
+                        >No. of FIRs booked for the day
+                      </label>
+                      <input type="number" name="f_oth_book" id="f_oth_book" />
+                    </div>
+                  </div>
+                </div>
+                <div class="nbw_container">
+                  <div class="freebie">
+                    <div class="freebie__item">
+                      <label for="f_item1_name">Item 1</label>
+                      <input
+                        type="text"
+                        name="f_item1_name"
+                        id="f_item1_name"
+                      />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item1_qty">Quantity </label>
+                      <input type="number" name="" id="f_item1_qty" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item1_price">Price</label>
+                      <input type="number" name="" id="f_item1_price" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item1_mone">Monetary Value (in Rs.)</label>
+                      <input type="number" name="" id="f_item1_mone" />
+                    </div>
+                  </div>
+                  <div class="freebie">
+                    <div class="freebie__item">
+                      <label for="f_item2_name">Item 2</label>
+                      <input
+                        type="text"
+                        name="f_item2_name"
+                        id="f_item2_name"
+                      />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item2_qty">Quantity </label>
+                      <input type="number" name="" id="f_item2_qty" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item2_price">Price</label>
+                      <input type="number" name="" id="f_item2_price" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item2_mone">Monetary Value (in Rs.)</label>
+                      <input type="number" name="" id="f_item2_mone" />
+                    </div>
+                  </div>
+
+                  <div class="freebie">
+                    <div class="freebie__item">
+                      <label for="f_item3_name">Item 3</label>
+                      <input
+                        type="text"
+                        name="f_item3_name"
+                        id="f_item3_name"
+                      />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item3_qty">Quantity </label>
+                      <input type="number" name="" id="f_item3_qty" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item3_price">Price</label>
+                      <input type="number" name="" id="f_item3_price" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item3_mone">Monetary Value (in Rs.)</label>
+                      <input type="number" name="" id="f_item3_mone" />
+                    </div>
+                  </div>
+
+                  <div class="freebie">
+                    <div class="freebie__item">
+                      <label for="f_item4_name">Item 4</label>
+                      <input
+                        type="text"
+                        name="f_item4_name"
+                        id="f_item4_name"
+                      />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item4_qty">Quantity </label>
+                      <input type="number" name="" id="f_item4_qty" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item4_price">Price</label>
+                      <input type="number" name="" id="f_item4_price" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item4_mone">Monetary Value (in Rs.)</label>
+                      <input type="number" name="" id="f_item4_mone" />
+                    </div>
+                  </div>
+
+                  <div class="freebie">
+                    <div class="freebie__item">
+                      <label for="f_item5_name">Item 5</label>
+                      <input
+                        type="text"
+                        name="f_item5_name"
+                        id="f_item5_name"
+                      />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item5_qty">Quantity </label>
+                      <input type="number" name="" id="f_item5_qty" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item5_price">Price</label>
+                      <input type="number" name="" id="f_item5_price" />
+                    </div>
+                    <div class="freebie__item">
+                      <label for="f_item5_mone">Monetary Value (in Rs.)</label>
+                      <input type="number" name="" id="f_item5_mone" />
+                    </div>
+                  </div>
+                  
               </section>
 
               <div class="server_report">&nbsp;</div>

@@ -730,6 +730,14 @@ form {
   border-radius: 3px;
   background-color: #fff;
   margin-bottom: 3rem; }
+  .sec_lor_form .nbw_container {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: 2rem; }
+    .sec_lor_form .nbw_container:not(:last-child) {
+      margin-bottom: 3rem; }
   .sec_lor_form .nbw {
     width: 100%;
     height: auto;
@@ -737,18 +745,35 @@ form {
     flex-direction: row;
     justify-content: stretch;
     flex-wrap: wrap;
-    gap: 3rem; }
+    gap: 3rem;
+    row-gap: 1.5rem; }
     .sec_lor_form .nbw:not(:last-child) {
-      margin-bottom: 3rem; }
+      margin-bottom: 1.5rem; }
     .sec_lor_form .nbw__item {
       width: calc((100% - 6rem) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: end; }
+  .sec_lor_form .freebie {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 1.5rem; }
+    .sec_lor_form .freebie:not(:last-child) {
+      margin-bottom: 1.5rem; }
+    .sec_lor_form .freebie__item {
+      width: calc((100% - 9rem) / 4);
       display: flex;
       flex-direction: column;
       justify-content: end; }
 
 .tablehead {
   padding: 3rem 3rem 0 3rem;
-  height: 20rem; }
+  height: 16rem; }
   .tablehead .subhead {
     color: #037f8d;
     font-size: 1.4rem;
@@ -760,10 +785,11 @@ form {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: center; }
     .tablehead .dates__item {
       display: block;
-      position: relative; }
+      position: relative;
+      text-align: center; }
       .tablehead .dates__item #datepicker {
         display: block;
         position: relative;
@@ -771,8 +797,11 @@ form {
         z-index: 1; }
         .tablehead .dates__item #datepicker label {
           cursor: pointer;
-          text-align: right;
-          display: block; }
+          text-align: center;
+          display: block;
+          transition: all 0.2s ease-in-out; }
+          .tablehead .dates__item #datepicker label:hover {
+            color: #c91f0c; }
         .tablehead .dates__item #datepicker input[type='date'] {
           display: none;
           font-size: 1.4rem;
@@ -1961,6 +1990,7 @@ article {
       text-transform: lowercase;
       text-transform: capitalize; }
   .v-pollingbooths .v-booth-container {
+    width: 100%;
     display: flex;
     position: relative;
     flex-direction: row;

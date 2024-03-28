@@ -549,6 +549,18 @@ form {
   background-color: $color-white;
   margin-bottom: 3rem;
 
+  .nbw_container {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
   .nbw {
     width: 100%;
     height: auto;
@@ -557,13 +569,33 @@ form {
     justify-content: stretch;
     flex-wrap: wrap;
     gap: 3rem;
-
+    row-gap: 1.5rem;
     &:not(:last-child) {
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
     }
 
     &__item {
       width: calc((100% - 6rem) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+  }
+  .freebie {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 1.5rem;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &__item {
+      width: calc((100% - 9rem) / 4);
       display: flex;
       flex-direction: column;
       justify-content: end;
@@ -574,7 +606,7 @@ form {
 // ANNEXURE - III
 .tablehead {
   padding: 3rem 3rem 0 3rem;
-  height: 20rem;
+  height: 16rem;
 
   .subhead {
     color: #037f8d;
@@ -589,11 +621,12 @@ form {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
     &__item {
       display: block;
       position: relative;
+      text-align: center;
 
       #datepicker {
         display: block;
@@ -603,8 +636,13 @@ form {
 
         label {
           cursor: pointer;
-          text-align: right;
+          text-align: center;
           display: block;
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            color: $color-secondary-dark;
+          }
         }
 
         input[type='date'] {
