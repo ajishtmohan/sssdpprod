@@ -1134,6 +1134,83 @@ form {
     border: 1px solid #000;
     padding: 0.5rem 0.5rem; }
 
+.nbw-table {
+  width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #000;
+  margin-bottom: 5rem; }
+  .nbw-table .t-title {
+    background-color: #037f8d;
+    padding: 1.5rem; }
+    .nbw-table .t-title h2 {
+      color: #fff;
+      font-weight: 300;
+      margin: 0; }
+    .nbw-table .t-title .date-range {
+      color: #fff;
+      font-size: 1.6rem;
+      margin: 0.5rem 0 0;
+      font-weight: 400;
+      text-transform: uppercase; }
+      .nbw-table .t-title .date-range #from-date,
+      .nbw-table .t-title .date-range #to-date {
+        cursor: pointer; }
+    .nbw-table .t-title #datepick {
+      margin: 0.8rem 0 0;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      padding: 0.25rem 1rem;
+      background-color: #c91f0c;
+      color: #fff;
+      cursor: pointer; }
+    .nbw-table .t-title #date_picker {
+      margin: 0.8rem 0 0.2rem;
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+      border-radius: 0;
+      display: none; }
+      .nbw-table .t-title #date_picker .date-picker-flex {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center; }
+        .nbw-table .t-title #date_picker .date-picker-flex__item {
+          width: auto;
+          align-self: center; }
+          .nbw-table .t-title #date_picker .date-picker-flex__item label {
+            text-align: left; }
+          .nbw-table .t-title #date_picker .date-picker-flex__item input[type='date'],
+          .nbw-table .t-title #date_picker .date-picker-flex__item input[type='submit'] {
+            font-size: 1.2rem;
+            display: block;
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 0;
+            border: none;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            property: none; }
+          .nbw-table .t-title #date_picker .date-picker-flex__item input[type='submit'] {
+            background-color: #c91f0c;
+            padding: 0 1rem; }
+  .nbw-table .t-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.8rem; }
+  .nbw-table .t-heading2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3rem; }
+  .nbw-table td {
+    border: 1px solid #000;
+    padding: 0.5rem 0.5rem; }
+
 .odd {
   background-color: #ddf5ff; }
 

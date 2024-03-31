@@ -63,6 +63,111 @@
   }
 }
 
+.nbw-table {
+  width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: $color-black;
+  margin-bottom: 5rem;
+  // font-size: 1rem;
+
+  .t-title {
+    background-color: $color-primary-dark-1;
+    padding: 1.5rem;
+    h2 {
+      color: $color-white;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .date-range {
+      color: $color-white;
+      font-size: $default-font-size;
+      margin: 0.5rem 0 0;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      #from-date,
+      #to-date {
+        cursor: pointer;
+      }
+    }
+
+    #datepick {
+      margin: 0.8rem 0 0;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      padding: 0.25rem 1rem;
+      background-color: $color-secondary-dark;
+      color: $color-white;
+      cursor: pointer;
+    }
+
+    #date_picker {
+      margin: 0.8rem 0 0.2rem;
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+      border-radius: 0;
+      display: none;
+
+      .date-picker-flex {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+
+        &__item {
+          // width: calc((100% - 1rem) / 2);
+          width: auto;
+          align-self: center;
+
+          label {
+            text-align: left;
+          }
+          input[type='date'],
+          input[type='submit'] {
+            font-size: 1.2rem;
+            display: block;
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 0;
+            border: none;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            property: none;
+          }
+
+          input[type='submit'] {
+            background-color: $color-secondary-dark;
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+  .t-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+  }
+
+  .t-heading2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+  }
+
+  td {
+    border: 1px solid $color-black;
+    padding: 0.5rem 0.5rem;
+  }
+}
+
 .odd {
   background-color: #ddf5ff;
 }
