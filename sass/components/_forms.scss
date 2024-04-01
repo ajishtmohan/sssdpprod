@@ -581,6 +581,27 @@ form {
       justify-content: end;
     }
   }
+
+  .nbw4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 1.5rem;
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &__item {
+      width: calc((100% - 9rem) / 4);
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+  }
   .freebie {
     width: 100%;
     height: auto;
