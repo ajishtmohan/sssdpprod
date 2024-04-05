@@ -242,15 +242,45 @@ form {
 
 // POLLING STATION FINDER
 .boothform {
-  width: 40rem;
-  height: auto;
+  width: $site-content-width;
+  .boothform-flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
 
-  label {
-    text-align: center;
+    &__item {
+      display: block;
+      position: relative;
+    }
+
+    label {
+      text-align: left;
+    }
+    select {
+      // margin-bottom: 2.5rem;
+    }
+
+    input[type='text'] {
+      // margin-bottom: 2.5rem;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    input[type='submit'] {
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
-  select {
-    margin-bottom: 2.5rem;
-  }
+}
+
+#polling_result {
+  display: none;
 }
 
 // Booth Form

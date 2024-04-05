@@ -524,12 +524,31 @@ form {
           display: block; }
 
 .boothform {
-  width: 40rem;
-  height: auto; }
-  .boothform label {
-    text-align: center; }
-  .boothform select {
-    margin-bottom: 2.5rem; }
+  width: 114rem; }
+  .boothform .boothform-flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem; }
+    .boothform .boothform-flex__item {
+      display: block;
+      position: relative; }
+    .boothform .boothform-flex label {
+      text-align: left; }
+    .boothform .boothform-flex input[type='text'] {
+      text-align: left;
+      text-transform: uppercase; }
+    .boothform .boothform-flex input[type='submit'] {
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+#polling_result {
+  display: none; }
 
 .asmb_details_flex {
   display: flex;
@@ -1538,15 +1557,32 @@ table {
                 height: auto; } }
 
 main {
-  min-height: calc(100vh - 22rem); }
-
-.section-content {
-  width: 114rem;
-  min-height: calc(100vh - 19rem);
-  padding: 5rem 0; }
-  @media (max-width: 37.5em) {
-    .section-content {
-      padding: 0; } }
+  min-height: calc(100vh - 22rem);
+  display: block;
+  position: relative; }
+  main .section-content {
+    width: 114rem;
+    min-height: calc(100vh - 19rem);
+    padding: 5rem 0; }
+    @media (max-width: 37.5em) {
+      main .section-content {
+        padding: 0; } }
+  main .section-content-ah {
+    width: 114rem;
+    display: block;
+    position: relative;
+    height: auto;
+    margin: 0 auto; }
+    main .section-content-ah:not(:last-child) {
+      padding: 5rem 0 3rem; }
+    @media (max-width: 37.5em) {
+      main .section-content-ah {
+        padding: 0; } }
+    main .section-content-ah h2 {
+      color: #0cb6c9;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 1rem; }
 
 .village-block,
 .pip-block,

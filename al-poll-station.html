@@ -133,139 +133,211 @@
     </header>
 
     <main>
-      <section class="section-content">
+      <section class="section-content-ah">
         <!-- form -->
         <form class="boothform" action="" method="post">
-          <!-- mandala -->
-          <label class="boothform__label" for="constituency"
-            >Assembly Constituency</label
-          >
-          <select
-            class="boothform__select"
-            name="constituency"
-            id="constituency"
-          >
-            <option
-              disabled
-              selected
-              class="boothform__option--dis"
-              default
-              value=""
-            >
-              ~ select Constituency ~
-            </option>
-            <option class="boothform__option" value="madakasira">
-              Madakasira
-            </option>
-          </select>
+          <div class="boothform-flex">
+            <div class="boothform-flex__item">
+              <!-- <label class="boothform__label" for="constituency"
+                >Assembly Constituency</label
+                > -->
+              <select
+                class="boothform__select"
+                name="constituency"
+                id="constituency"
+              >
+                <option
+                  disabled
+                  selected
+                  class="boothform__option--dis"
+                  default
+                  value=""
+                >
+                  ~ select Constituency ~
+                </option>
+                <option class="boothform__option" value="madakasira">
+                  Madakasira
+                </option>
+              </select>
+            </div>
+            <div class="boothform-flex__item">
+              <!-- <label class="boothform__label" for="policestation"
+              >Enter Polling Booth Number</label
+              > -->
+              <input type="text" autofocus placeholder="pollbooth number" />
+            </div>
 
-          <!-- police station -->
-          <label class="boothform__label" for="policestation"
-            >Police Station</label
-          >
-          <select
-            class="boothform__select"
-            name="policestation"
-            id="policestation"
-          >
-            <option
-              disabled
-              selected
-              class="boothform__option--dis"
-              default
-              value=""
-            >
-              ~ select Police Station ~
-            </option>
-            <option class="boothform__option" value="policestation1">
-              Amarapuram PS
-            </option>
-            <option class="boothform__option" value="policestation2">
-              Gudibanda
-            </option>
-            <option class="boothform__option" value="policestation3">
-              Rolla
-            </option>
-            <option class="boothform__option" value="policestation4">
-              Agali
-            </option>
-            <option class="boothform__option" value="policestation4">
-              Madakasira PS
-            </option>
-          </select>
-
-          <!-- villages -->
-          <label class="boothform__label" for="village">Village</label>
-          <select class="boothform__select" name="village" id="village">
-            <option
-              disabled
-              selected
-              class="boothform__option--dis"
-              default
-              value=""
-            >
-              ~ Select Village ~
-            </option>
-            <option class="boothform__option" value="village1">
-              Agraharam
-            </option>
-            <option class="boothform__option" value="village2">
-              Akkampalli
-            </option>
-            <option class="boothform__option" value="village3">
-              Aldapalli
-            </option>
-            <option class="boothform__option" value="village4">Aludi</option>
-            <option class="boothform__option" value="village4">
-              Alupanapalli
-            </option>
-            <option class="boothform__option" value="village4">
-              Amarapuram
-            </option>
-            <option class="boothform__option" value="village4">
-              Amidalagondi
-            </option>
-          </select>
-
-          <!-- polling booth -->
-          <label class="boothform__label" for="pollingbooth"
-            >Polling Booth</label
-          >
-          <select
-            class="boothform__select"
-            name="pollingbooth"
-            id="pollingbooth"
-            placeholder="hi"
-          >
-            <option
-              disabled
-              selected
-              class="boothform__option--dis"
-              default
-              value=""
-            >
-              ~ select Polling Booth ~
-            </option>
-            <option class="boothform__option" value="pollingbooth1">
-              Mandal Parishad Primary School Virupasamudram
-            </option>
-            <option class="boothform__option" value="pollingbooth2">
-              Mandal Parishad Primary School V.Agraharam
-            </option>
-            <option class="boothform__option" value="pollingbooth3">
-              Mandal Parishad Primary School V.Agraharam
-            </option>
-            <option class="boothform__option" value="pollingbooth4">
-              Mandal Parishad Primary School Tammade Palli
-            </option>
-          </select>
-
-          <div class="formbtns">
-            <input type="reset" value="reset" />
-            <input type="submit" value="submit" />
+            <div class="boothform-flex__item">
+              <input type="submit" value="submit" />
+            </div>
           </div>
         </form>
       </section>
+      <div class="section-content-ah" id="polling_result">
+        <div class="v-pollingbooths">
+          <div class="v-pollingbooths__title">
+            <h2 class="v-pollingbooths__title--h2">polling booth 134</h2>
+            <p class="v-pollingbooths__title--p">AMIDALAGONDI, constituency</p>
+          </div>
+          <div class="booth-container">
+            <div class="boothcard">
+              <div class="boothcard__number">
+                <div class="boothcard__number--text">
+                  <span class="boothno">booth number</span>
+                  <span class="boothnumber">134</span>
+                  <span class="boothstatus">normal</span>
+                </div>
+              </div>
+              <div class="boothcard__details">
+                <div class="boothcard__details--name">
+                  <p class="boothna">Booth Name</p>
+                  <p class="boothname">Mandal Parishad Primary School</p>
+                </div>
+                <div class="boothcard__demograph">
+                  <p class="demographtitle">Voter Demographics</p>
+                  <div class="boothcard__demograph--details">
+                    <p class="demoblock">
+                      <span class="demoblock__name">Male</span>
+                      <span class="demoblock__number">490</span>
+                    </p>
+                    <p class="demoblock">
+                      <span class="demoblock__name">Female</span>
+                      <span class="demoblock__number">520</span>
+                    </p>
+                    <p class="demoblock">
+                      <span class="demoblock__name">Trans</span>
+                      <span class="demoblock__number">1010</span>
+                    </p>
+                    <p class="demoblock">
+                      <span class="demoblock__name">Total</span>
+                      <span class="demoblock__number">1010</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="boothcard">
+              <iframe
+                class="boothcard__map"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?q=14.178101,76.955684&hl=en&z=12&amp;output=embed"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="pollingbooths">
+          <div class="forcedeployment">
+            <div class="forcedeployment__title">
+              <h2 class="forcedeployment__title--h2">force deployment</h2>
+            </div>
+            <div class="forceblockflex">
+              <div class="forceblockflex__item">
+                <p class="force-head">force deployment</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Sivashankara</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">Route Mobile 1</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Damodhara</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">Route Mobile 2</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Damodhara</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">QRT</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">RO</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">PO</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">VRO</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">VRA</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">DSP</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">CI</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+              <div class="forceblockflex__item">
+                <p class="force-head">SI</p>
+                <!-- <p class="officer-title">Officer Name</p> -->
+                <p class="officer-name">Harish</p>
+                <!-- <p class="officer-title">Phone</p> -->
+                <p class="officer-number">
+                  <a href="tel:9090909090">9090909090</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">

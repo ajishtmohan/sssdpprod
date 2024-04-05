@@ -1,14 +1,38 @@
 main {
   min-height: calc(100vh - 22rem);
-}
+  display: block;
+  position: relative;
 
-.section-content {
-  width: $site-content-width;
-  min-height: calc(100vh - 19rem);
-  padding: 5rem 0;
+  .section-content {
+    width: $site-content-width;
+    min-height: calc(100vh - 19rem);
+    padding: 5rem 0;
 
-  @include respond(phone) {
-    padding: 0;
+    @include respond(phone) {
+      padding: 0;
+    }
+  }
+  .section-content-ah {
+    width: $site-content-width;
+    display: block;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      padding: 5rem 0 3rem;
+    }
+
+    @include respond(phone) {
+      padding: 0;
+    }
+
+    h2 {
+      color: $color-primary;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
   }
 }
 
