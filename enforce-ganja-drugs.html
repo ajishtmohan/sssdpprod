@@ -136,12 +136,14 @@
     <main>
       <div class="section-home">
         <div class="section__title">
-          <h2 class="section__title--text">enforcement - liquor</h2>
+          <h2 class="section__title--text">
+            enforcement - GANJA & OTHER DRUGS
+          </h2>
         </div>
 
         <article>
           <div class="section-content">
-            <table class="cash-table">
+            <table class="ganja-drugs-table">
               <col width="50" />
               <col width="122" />
               <col width="94" />
@@ -158,7 +160,16 @@
               <col width="94" />
               <tr class="u-center-text">
                 <td colspan="14" class="t-title">
-                  <h2>DAILY DSR - GANJA & OTHER DRUGS Dt.13.03.2024</h2>
+                  <h2>DAILY DSR - GANJA & OTHER DRUGS</h2>
+                  <p class="date-range">
+                    <span id="pre-date">&#11207;</span>
+                    <span id="date-holder">
+                      <span id="cur-month">Mar</span>
+                      <span id="cur-date">1</span>,
+                      <span id="cur-year">2024</span>
+                    </span>
+                    <span id="nex-date">&#11208;</span>
+                  </p>
                 </td>
               </tr>
               <tr class="u-center-text t-heading">
@@ -299,7 +310,7 @@
               </tr>
             </table>
 
-            <table class="cash-table">
+            <table class="ganja-drugs-table">
               <col width="50" />
               <col width="122" />
               <col width="94" />
@@ -316,10 +327,27 @@
               <col width="94" />
               <tr class="u-center-text">
                 <td colspan="14" class="t-title">
-                  <h2>
-                    DAILY DSR - GANJA & OTHER DRUGS (CUMULATIVE FROM 26.12.2023
-                    TO TILL DATE)
-                  </h2>
+                  <h2>CUMULATIVE: DSR - GANJA & OTHER DRUGS</h2>
+                  <p class="date-range">
+                    From <span id="from-date">Mar 1, 2024</span> to
+                    <span id="to-date">Mar 31, 2024</span>
+                  </p>
+                  <p id="datepick">select a range</p>
+                  <form action="" method="post" id="date_picker">
+                    <div class="date-picker-flex">
+                      <div class="date-picker-flex__item">
+                        <!-- <label for="pick-from-date">from</label> -->
+                        <input type="date" id="pick-from-date" />
+                      </div>
+                      <div class="date-picker-flex__item">
+                        <!-- <label for="pick-to-date">to</label> -->
+                        <input type="date" id="pick-to-date" />
+                      </div>
+                      <div class="date-picker-flex__item">
+                        <input type="submit" id="submit" />
+                      </div>
+                    </div>
+                  </form>
                 </td>
               </tr>
               <tr class="u-center-text t-heading">
@@ -330,21 +358,18 @@
                 <td colspan="4">Total</td>
               </tr>
               <tr class="u-center-text t-heading">
+                <td>Total number of FIRs booked</td>
+                <td>Total Qty. In Kgs.</td>
+                <td>Total number of Persons arrested</td>
+                <td>Total Monetary Value<br />(in Rs.)</td>
+                <td>Total number of FIRs booked</td>
+                <td>Total Qty. in Kg/Ml</td>
+                <td>Total number of Persons arrested</td>
+                <td>Total Monetary Value<br />(in Rs.)</td>
                 <td>No. of FIRs booked for the day</td>
-                <td>Qty. In Kgs.</td>
-                <td>No. of Persons arrested</td>
-                <td>Monetary Value<br />(in Rs.)</td>
-                <td>No. of FIRs booked for the day</td>
-                <td>Qty. in Kg/Ml</td>
-                <td>No. of Persons arrested</td>
-                <td>Monetary Value (in Rs.)</td>
-                <td>No. of FIRs booked for the day</td>
-                <td>Qty. In Kg/Ml</td>
-                <td>No. of Persons arrested</td>
-                <td>
-                  Monetary Value <br />
-                  (in Rs.)
-                </td>
+                <td>Total Qty. In Kg/Ml</td>
+                <td>Total number of Persons arrested</td>
+                <td>Total Monetary Value<br />(in Rs.)</td>
               </tr>
               <tr class="odd">
                 <td class="u-center-text">1</td>
