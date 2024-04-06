@@ -63,7 +63,12 @@ table {
   }
 }
 
-.ganja-drugs-table,
+.ganja-drugs-table {
+  border-collapse: collapse;
+  color: $color-black;
+  margin-bottom: 5rem;
+}
+
 .liquor-table {
   border-collapse: collapse;
   color: $color-black;

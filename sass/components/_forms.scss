@@ -279,8 +279,88 @@ form {
   }
 }
 
-#polling_result {
-  display: none;
+#polling_results {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+
+  #pollbooth_no {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+    .villageinfowarn {
+      width: $site-content-width;
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      background-color: $color-grey-light-1;
+      border-radius: 5px;
+      padding: 3rem;
+      margin-bottom: 3rem;
+
+      &__title {
+        width: 100%;
+
+        &--h2 {
+          margin-bottom: 1rem;
+          text-align: center;
+          color: $color-secondary-dark;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #pollbooth_yes {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  #pollinch_no {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+    .villageinfowarn {
+      width: $site-content-width;
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      background-color: $color-grey-light-1;
+      border-radius: 5px;
+      padding: 3rem;
+      margin-bottom: 3rem;
+
+      &__title {
+        width: 100%;
+
+        &--h2 {
+          margin-bottom: 1rem;
+          text-align: center;
+          color: $color-secondary-dark;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #pollinch_yes {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  #pollinch_no {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
 }
 
 // Booth Form

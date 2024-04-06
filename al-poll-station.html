@@ -134,13 +134,9 @@
 
     <main>
       <section class="section-content-ah">
-        <!-- form -->
         <form class="boothform" action="" method="post">
           <div class="boothform-flex">
             <div class="boothform-flex__item">
-              <!-- <label class="boothform__label" for="constituency"
-                >Assembly Constituency</label
-                > -->
               <select
                 class="boothform__select"
                 name="constituency"
@@ -161,20 +157,28 @@
               </select>
             </div>
             <div class="boothform-flex__item">
-              <!-- <label class="boothform__label" for="policestation"
-              >Enter Polling Booth Number</label
-              > -->
               <input type="text" autofocus placeholder="pollbooth number" />
             </div>
-
             <div class="boothform-flex__item">
               <input type="submit" value="submit" />
             </div>
           </div>
         </form>
       </section>
-      <div class="section-content-ah" id="polling_result">
-        <div class="v-pollingbooths">
+      <div class="section-content-ah" id="polling_results">
+        <div class="village_info_box" id="pollbooth_no">
+          <div class="villageinfowarn">
+            <div class="villageinfowarn__title">
+              <h2 class="villageinfowarn__title--h2">POLL BOOTH NOT FOUND</h2>
+              <p>
+                The poll booth No. 124 of Assembly doesn't exist.
+                <br />
+                Please check entered number.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="v-pollingbooths" id="pollbooth_yes">
           <div class="v-pollingbooths__title">
             <h2 class="v-pollingbooths__title--h2">polling booth 134</h2>
             <p class="v-pollingbooths__title--p">AMIDALAGONDI, constituency</p>
@@ -229,7 +233,20 @@
             </div>
           </div>
         </div>
-        <div class="pollingbooths">
+        <div class="village_info_box" id="pollinch_no">
+          <div class="villageinfowarn">
+            <div class="villageinfowarn__title">
+              <h2 class="villageinfowarn__title--h2">
+                POLL BOOTH OFFICERS' DETAILS NOT FOUND
+              </h2>
+              <p>
+                The details of Poll Booth Incharge Officers are not available at
+                this moment
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="pollingbooths" id="pollinch_yes">
           <div class="forcedeployment">
             <div class="forcedeployment__title">
               <h2 class="forcedeployment__title--h2">force deployment</h2>
