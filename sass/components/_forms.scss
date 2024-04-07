@@ -25,7 +25,8 @@ form {
   input[type='text'],
   input[type='number'],
   input[type='password'],
-  input[type='date'] {
+  input[type='date'],
+  input[type='button'] {
     width: 100%;
     font-family: $default-font-family;
     font-size: $default-font-size;
@@ -59,6 +60,18 @@ form {
     input[type='text'] {
       padding: 2rem;
       text-align: left;
+    }
+  }
+  input[type='button'] {
+    background-color: $color-primary-light-1;
+    color: $color-white;
+    outline: none;
+    border: 0px;
+
+    &:focus,
+    &:hover {
+      border: none;
+      color: $color-white;
     }
   }
 
@@ -267,6 +280,39 @@ form {
       // margin-bottom: 2.5rem;
       text-align: left;
       text-transform: uppercase;
+    }
+
+    input[type='submit'] {
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.routemap {
+  width: $site-content-width;
+  .routemap-flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+
+    &__item {
+      display: block;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    select {
+      width: 30rem;
     }
 
     input[type='submit'] {

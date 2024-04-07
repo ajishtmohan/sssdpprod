@@ -280,6 +280,50 @@ article ul {
   .btn-form:hover {
     background-color: #035761; }
 
+.ac-block {
+  width: 114rem;
+  height: auto;
+  margin: 5rem auto;
+  background-color: #f7f7f7f7;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: block;
+  position: relative; }
+  .ac-block__h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+    display: block;
+    position: relative; }
+
+.checkpostsflex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap; }
+  .checkpostsflex__item {
+    width: calc((100% - 3rem) / 2);
+    background-color: #fff;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    text-align: center; }
+    .checkpostsflex__item--text {
+      margin-bottom: 2rem; }
+      .checkpostsflex__item--text h3 {
+        color: #037f8d;
+        text-transform: uppercase;
+        font-weight: 600; }
+    .checkpostsflex__item--map {
+      width: 100%;
+      height: 30rem;
+      border-radius: 0.5rem;
+      overflow: hidden; }
+      .checkpostsflex__item--map iframe {
+        width: 100%;
+        height: 100%; }
+
 .constnavflex {
   width: 130rem;
   height: auto;
@@ -349,7 +393,8 @@ form {
   form input[type='text'],
   form input[type='number'],
   form input[type='password'],
-  form input[type='date'] {
+  form input[type='date'],
+  form input[type='button'] {
     width: 100%;
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
@@ -373,14 +418,17 @@ form {
     form input[type='password']:focus,
     form input[type='password']:hover,
     form input[type='date']:focus,
-    form input[type='date']:hover {
+    form input[type='date']:hover,
+    form input[type='button']:focus,
+    form input[type='button']:hover {
       border: 2px solid #c91f0c;
       color: #037f8d; }
     form select option,
     form input[type='text'] option,
     form input[type='number'] option,
     form input[type='password'] option,
-    form input[type='date'] option {
+    form input[type='date'] option,
+    form input[type='button'] option {
       font-size: 1.6rem;
       text-align: center;
       text-transform: uppercase;
@@ -390,9 +438,18 @@ form {
     form input[type='text'] input[type='text'],
     form input[type='number'] input[type='text'],
     form input[type='password'] input[type='text'],
-    form input[type='date'] input[type='text'] {
+    form input[type='date'] input[type='text'],
+    form input[type='button'] input[type='text'] {
       padding: 2rem;
       text-align: left; }
+  form input[type='button'] {
+    background-color: #3bd2e3;
+    color: #fff;
+    outline: none;
+    border: 0px; }
+    form input[type='button']:focus, form input[type='button']:hover {
+      border: none;
+      color: #fff; }
   form .formbtns {
     width: 100%;
     display: flex;
@@ -541,6 +598,29 @@ form {
       text-align: left;
       text-transform: uppercase; }
     .boothform .boothform-flex input[type='submit'] {
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.routemap {
+  width: 114rem; }
+  .routemap .routemap-flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem; }
+    .routemap .routemap-flex__item {
+      display: block;
+      position: relative; }
+    .routemap .routemap-flex img {
+      width: 100%; }
+    .routemap .routemap-flex select {
+      width: 30rem; }
+    .routemap .routemap-flex input[type='submit'] {
       display: block;
       position: relative;
       top: 50%;
@@ -1238,11 +1318,11 @@ table {
   margin-bottom: 5rem; }
 
 .ndpl-dpl-table {
-  width: 130rem;
+  width: 160rem;
   margin: 0 auto;
   border-collapse: collapse;
   color: #000;
-  margin-bottom: 5rem; }
+  margin-top: 5rem; }
 
 .nbw-table {
   width: 600px;
@@ -1636,13 +1716,14 @@ main {
       main .section-content-site-width {
         padding: 0; } }
   main .section-content-ah {
-    width: 114rem;
+    width: 100rem;
     display: block;
     position: relative;
     height: auto;
-    margin: 0 auto; }
-    main .section-content-ah:not(:last-child) {
-      padding: 5rem 0 3rem; }
+    margin: 0 auto;
+    padding: 5rem 0 3rem; }
+    main .section-content-ah .routemap {
+      width: 100%; }
     @media (max-width: 37.5em) {
       main .section-content-ah {
         padding: 0; } }
@@ -1651,6 +1732,17 @@ main {
       font-weight: 500;
       text-transform: uppercase;
       margin-bottom: 1rem; }
+  main .routedisplay {
+    width: 114rem;
+    margin: 0 auto;
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-in; }
+    main .routedisplay img {
+      width: 80%;
+      display: block;
+      position: relative;
+      margin: 0 auto; }
 
 .village-block,
 .pip-block,
