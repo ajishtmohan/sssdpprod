@@ -1,6 +1,7 @@
 .pipinfoflex {
   width: $form-width;
   height: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -123,6 +124,25 @@
         border-radius: 3px;
         box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
         margin-bottom: 3rem;
+      }
+
+      .bindover {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-bottom: 3rem;
+
+        &__item {
+          width: calc((100% - 3rem) / 2);
+          background-color: $color-white;
+          padding: 1rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+        }
       }
 
       .polpartyflex {

@@ -63,6 +63,17 @@ table {
   }
 }
 
+.force-deploy {
+  width: $site-width;
+  margin: 0 auto 5rem;
+
+  p {
+    color: $color-primary-light-2;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .ganja-drugs-table {
   border-collapse: collapse;
   color: $color-black;

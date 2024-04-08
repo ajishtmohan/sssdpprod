@@ -1307,6 +1307,14 @@ table {
         font-weight: 300;
         margin: 0; }
 
+.force-deploy {
+  width: 130rem;
+  margin: 0 auto 5rem; }
+  .force-deploy p {
+    color: #88e6f1;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem; }
+
 .ganja-drugs-table {
   border-collapse: collapse;
   color: #000;
@@ -2003,6 +2011,7 @@ article {
 .pipinfoflex {
   width: 100rem;
   height: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2097,6 +2106,21 @@ article {
         border-radius: 3px;
         box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
         margin-bottom: 3rem; }
+      .pipinfoflex__item--details .bindover {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-bottom: 3rem; }
+        .pipinfoflex__item--details .bindover__item {
+          width: calc((100% - 3rem) / 2);
+          background-color: #fff;
+          padding: 1rem 1.5rem;
+          border-radius: 3px;
+          box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
       .pipinfoflex__item--details .polpartyflex {
         width: 100%;
         height: auto;
@@ -2336,6 +2360,31 @@ article {
           text-transform: uppercase;
           right: 0;
           bottom: 0; }
+        .polpeopleinfo .polpeopleinfocardflex__item .redirect-red #pip_submit {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          padding: 0;
+          background-color: transparent;
+          margin-top: 1rem; }
+          .polpeopleinfo .polpeopleinfocardflex__item .redirect-red #pip_submit label {
+            width: auto;
+            font-size: 1.2rem;
+            display: inline-block;
+            position: relative;
+            background-color: #c91f0c;
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            right: 0;
+            bottom: 0;
+            cursor: pointer; }
+          .polpeopleinfo .polpeopleinfocardflex__item .redirect-red #pip_submit input[type='submit'] {
+            display: none; }
       .polpeopleinfo .polpeopleinfocardflex__item .redirect-reg {
         width: 100%;
         height: auto;
