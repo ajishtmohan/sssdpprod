@@ -904,3 +904,27 @@ form {
     padding: 0.5rem;
   }
 }
+
+.policebtn {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  padding: 0;
+
+  label {
+    color: $color-white;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+
+    // &:hover {
+    //   color: $color-primary-light-1;
+    // }
+  }
+
+  input[type='radio'] {
+    display: none;
+    padding: 0;
+  }
+}

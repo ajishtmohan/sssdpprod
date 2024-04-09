@@ -173,7 +173,7 @@
           color: $color-white;
           text-decoration: none;
           text-transform: uppercase;
-          padding: 1.5rem 1.5rem 1.3rem 1.5rem;
+          // padding: 1.2rem 1.2rem 1rem 1.2rem;
           transition: all 0.2s ease-in;
 
           @include respond(phone) {
@@ -196,11 +196,14 @@
           height: auto;
           display: block;
           position: absolute;
+          top: 5.4rem;
           opacity: 0;
           visibility: hidden;
           transition: all 0.4s;
           background-color: $color-primary-dark-1;
           border-top: 3px solid $color-secondary-dark;
+          box-sizing: border-box;
+          cursor: pointer;
 
           @include respond(phone) {
             display: block;
@@ -209,14 +212,77 @@
           }
 
           &--l2 {
+            display: block;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1.2rem 1.2rem 1rem 1.2rem;
+            transition: all 0.2s ease-in;
             border-bottom: 1px solid $color-primary-dark-2;
             list-style-type: none;
-            min-width: 15rem;
+            min-width: 17rem;
+            position: relative;
+
+            &:hover {
+              background-color: $color-primary-dark-2;
+              color: $color-primary-light-1;
+            }
+
+            .l2_item {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
 
             @include respond(phone) {
               background-color: $color-primary-dark-2;
               list-style-type: none;
               border-bottom: 1px solid $color-primary-dark-2;
+            }
+
+            .headernav__sub2 {
+              width: auto;
+              display: none;
+              position: absolute;
+              box-sizing: border-box;
+              margin-top: 0.75rem;
+              top: 0;
+              left: 17rem;
+              background-color: $color-primary-dark-2;
+              border-top: 3px solid $color-secondary-dark;
+              opacity: 0;
+              cursor: pointer;
+              transition: all 0.3s ease-in;
+
+              &--l3 {
+                display: block;
+                color: $color-white;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 1.2rem 1.2rem 1rem 1.2rem;
+                transition: all 0.2s ease-in;
+                border-bottom: 1px solid $color-primary-dark-2;
+                border-bottom: 1px solid $color-primary-light-1;
+                list-style-type: none;
+                min-width: 17rem;
+                position: relative;
+
+                &:hover {
+                  background-color: darken($color-primary-dark-2, 5);
+                  color: $color-primary-light-1;
+                }
+
+                &:hover label {
+                  color: $color-primary-light-2;
+                }
+              }
+            }
+            &:hover .headernav__sub2 {
+              margin-top: -0.25rem;
+              transition: all 0.3s ease-in;
+              display: block;
+              position: absolute;
+              opacity: 1;
             }
           }
         }
@@ -224,6 +290,7 @@
         &__item {
           list-style-type: none;
           display: inline-block;
+          padding: 1.2rem 1.2rem 1rem 1.2rem;
 
           @include respond(phone) {
             width: 100%;
@@ -231,6 +298,7 @@
           }
 
           &:hover .headernav__sub {
+            top: 4.4rem;
             opacity: 1;
             visibility: visible;
 

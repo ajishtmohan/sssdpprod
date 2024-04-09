@@ -168,14 +168,14 @@ article {
 
 .section__title {
   width: 100%;
-  min-height: 8rem;
+  height: 6rem;
   background-color: $color-primary;
   display: block;
   position: relative;
 
   &--text {
     font-weight: 300;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     color: $color-white;
     text-transform: uppercase;
