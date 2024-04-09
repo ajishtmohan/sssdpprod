@@ -144,8 +144,9 @@ article ul {
   padding: 3rem;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
   background-color: #fff;
-  border-radius: 5px;
-  margin-bottom: 3rem; }
+  border-radius: 5px; }
+  .booth-container:not(:last-child) {
+    margin-bottom: 3rem; }
   .booth-container .boothcard {
     width: calc((100% - 3rem) / 2);
     height: auto;
@@ -1679,7 +1680,7 @@ table {
           .header__navigation--container .headernav a:visited:active {
             color: #88e6f1; }
         .header__navigation--container .headernav__sub {
-          width: auto;
+          width: 19rem;
           height: auto;
           display: block;
           position: absolute;
@@ -1705,7 +1706,7 @@ table {
             transition: all 0.2s ease-in;
             border-bottom: 1px solid #035761;
             list-style-type: none;
-            min-width: 17rem;
+            width: auto;
             position: relative; }
             .header__navigation--container .headernav__sub--l2:hover {
               background-color: #035761;
@@ -1713,7 +1714,8 @@ table {
             .header__navigation--container .headernav__sub--l2 .l2_item {
               display: flex;
               flex-direction: row;
-              justify-content: space-between; }
+              justify-content: space-between;
+              gap: 1rem; }
             @media (max-width: 37.5em) {
               .header__navigation--container .headernav__sub--l2 {
                 background-color: #035761;
@@ -1722,11 +1724,11 @@ table {
             .header__navigation--container .headernav__sub--l2 .headernav__sub2 {
               width: auto;
               display: none;
-              position: absolute;
+              position: relative;
               box-sizing: border-box;
               margin-top: 0.75rem;
               top: 0;
-              left: 17rem;
+              left: 19rem;
               background-color: #035761;
               border-top: 3px solid #c91f0c;
               opacity: 0;
@@ -1793,7 +1795,7 @@ main {
       main .section-content-site-width {
         padding: 0; } }
   main .section-content-ah {
-    width: 100rem;
+    width: 114rem;
     display: block;
     position: relative;
     height: auto;
@@ -1805,7 +1807,6 @@ main {
       main .section-content-ah {
         padding: 0; } }
     main .section-content-ah h2 {
-      color: #0cb6c9;
       font-weight: 500;
       text-transform: uppercase;
       margin-bottom: 1rem; }
@@ -2348,7 +2349,7 @@ article {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 3rem; }
     .polpeopleinfo .polpeopleinfocardflex__item {
@@ -2499,7 +2500,7 @@ article {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
     gap: 3rem;
     padding: 3rem;

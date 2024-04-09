@@ -24,7 +24,7 @@ main {
     }
   }
   .section-content-ah {
-    width: $form-width;
+    width: $site-content-width;
     display: block;
     position: relative;
     height: auto;
@@ -40,7 +40,7 @@ main {
     }
 
     h2 {
-      color: $color-primary;
+      // color: $color-primary;
       font-weight: 500;
       text-transform: uppercase;
       margin-bottom: 1rem;
