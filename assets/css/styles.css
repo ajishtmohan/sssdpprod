@@ -1822,11 +1822,10 @@ main {
       position: relative;
       margin: 0 auto; }
 
-.village-block,
-.pip-block,
-.pl-block,
-.pb-block {
+.village-block {
   width: 100%; }
+  .village-block:not(:last-child) {
+    margin-bottom: 3rem; }
 
 .section-header {
   width: 130rem;
@@ -2220,8 +2219,7 @@ article {
   margin: 0 auto;
   background-color: #f7f7f7f7;
   border-radius: 5px;
-  padding: 3rem;
-  margin-bottom: 3rem; }
+  padding: 3rem; }
   .villageinfo__title {
     width: 100%;
     margin-bottom: 3rem; }
@@ -2332,18 +2330,18 @@ article {
   position: relative;
   margin: 0 auto;
   border-radius: 5px;
-  padding: 3rem;
-  margin-bottom: 3rem; }
+  padding: 3rem; }
   .polpeopleinfo__title {
-    width: 100%;
-    margin-bottom: 3rem; }
+    width: 100%; }
     .polpeopleinfo__title--h2red {
       margin-bottom: 1rem;
       text-align: center;
-      color: #c91f0c; }
+      color: #c91f0c;
+      margin: 0; }
     .polpeopleinfo__title--h2reg {
       margin-bottom: 1rem;
-      text-align: center; }
+      text-align: center;
+      margin: 0; }
   .polpeopleinfo .polpeopleinfocardflex {
     width: 100%;
     height: auto;
@@ -2351,7 +2349,8 @@ article {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem; }
+    gap: 3rem;
+    margin-top: 3rem; }
     .polpeopleinfo .polpeopleinfocardflex__item {
       width: calc((100% - 3rem) / 2);
       display: block;
@@ -2411,69 +2410,87 @@ article {
             display: flex;
             flex-direction: row;
             justify-content: space-between; }
-      .polpeopleinfo .polpeopleinfocardflex__item .redirect-red {
-        width: 100%;
-        height: auto;
-        display: block;
-        position: relative;
-        text-align: right; }
-        .polpeopleinfo .polpeopleinfocardflex__item .redirect-red a:link,
-        .polpeopleinfo .polpeopleinfocardflex__item .redirect-red a:visited {
-          font-size: 1.2rem;
-          display: inline-block;
-          position: relative;
-          background-color: #c91f0c;
-          color: #fff;
-          padding: 0.5rem 1rem;
-          border-radius: 3px;
-          text-decoration: none;
-          text-transform: uppercase;
-          right: 0;
-          bottom: 0; }
-        .polpeopleinfo .polpeopleinfocardflex__item .redirect-red #pip_submit {
-          width: 100%;
-          height: auto;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-          padding: 0;
-          background-color: transparent;
-          margin-top: 1rem; }
-          .polpeopleinfo .polpeopleinfocardflex__item .redirect-red #pip_submit label {
-            width: auto;
-            font-size: 1.2rem;
-            display: inline-block;
-            position: relative;
-            background-color: #c91f0c;
-            color: #fff;
-            padding: 0.75rem 1.25rem;
-            border-radius: 3px;
-            text-decoration: none;
-            text-transform: uppercase;
-            right: 0;
-            bottom: 0;
-            cursor: pointer; }
-          .polpeopleinfo .polpeopleinfocardflex__item .redirect-red #pip_submit input[type='submit'] {
-            display: none; }
-      .polpeopleinfo .polpeopleinfocardflex__item .redirect-reg {
-        width: 100%;
-        height: auto;
-        display: block;
-        position: relative;
-        text-align: right; }
-        .polpeopleinfo .polpeopleinfocardflex__item .redirect-reg a:link,
-        .polpeopleinfo .polpeopleinfocardflex__item .redirect-reg a:visited {
-          font-size: 1.2rem;
-          display: inline-block;
-          position: relative;
-          background-color: #037f8d;
-          color: #fff;
-          padding: 0.5rem 1rem;
-          border-radius: 3px;
-          text-decoration: none;
-          text-transform: uppercase;
-          right: 0;
-          bottom: 0; }
+
+.redirect-red,
+.redirect-reg {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  text-align: right; }
+  .redirect-red a:link,
+  .redirect-red a:visited,
+  .redirect-reg a:link,
+  .redirect-reg a:visited {
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    background-color: #c91f0c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    right: 0;
+    bottom: 0; }
+  .redirect-red .red_submit,
+  .redirect-red .green_submit,
+  .redirect-reg .red_submit,
+  .redirect-reg .green_submit {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    background-color: transparent;
+    margin-top: 1rem; }
+    .redirect-red .red_submit label,
+    .redirect-red .green_submit label,
+    .redirect-reg .red_submit label,
+    .redirect-reg .green_submit label {
+      width: auto;
+      font-size: 1.2rem;
+      display: inline-block;
+      position: relative;
+      background-color: #c91f0c;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 3px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 0;
+      right: 0;
+      bottom: 0;
+      cursor: pointer; }
+    .redirect-red .red_submit input[type='radio'],
+    .redirect-red .green_submit input[type='radio'],
+    .redirect-reg .red_submit input[type='radio'],
+    .redirect-reg .green_submit input[type='radio'] {
+      display: none; }
+  .redirect-red .green_submit label,
+  .redirect-reg .green_submit label {
+    background-color: #037f8d; }
+
+.redirect-reg {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  text-align: right; }
+  .redirect-reg a:link,
+  .redirect-reg a:visited {
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    background-color: #037f8d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    right: 0;
+    bottom: 0; }
 
 .v-pollingbooths {
   width: 114rem;

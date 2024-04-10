@@ -63,11 +63,12 @@ main {
   }
 }
 
-.village-block,
-.pip-block,
-.pl-block,
-.pb-block {
+.village-block {
   width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 
 .section-header {

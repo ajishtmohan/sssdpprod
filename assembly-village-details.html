@@ -141,20 +141,6 @@
           <div class="section-content">
             <div class="village-block">
               <div class="village_info_box">
-                <div class="villageinfowarn">
-                  <div class="villageinfowarn__title">
-                    <h2 class="villageinfowarn__title--h2">
-                      VILLAGE DATA NOT FOUND
-                    </h2>
-                    <p>
-                      The information about is not available at this moment.
-                      <br />
-                      It will be available once the data is populated.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="village_info_box">
                 <div class="villageinfo">
                   <div class="villageinfo__title">
                     <h2 class="villageinfo__title--h2">
@@ -228,22 +214,7 @@
               </div>
             </div>
 
-            <div class="pip-block">
-              <div class="village_info_box">
-                <div class="villageinfowarn">
-                  <div class="villageinfowarn__title">
-                    <h2 class="villageinfowarn__title--h2">
-                      PIP DATA NOT FOUND
-                    </h2>
-                    <p>
-                      The PIP information is not available at this moment.
-                      <br />
-                      It will be available once the data is populated.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
+            <div class="village-block">
               <div class="polpeopleinfo polpeopleinfo-red">
                 <div class="polpeopleinfo__title">
                   <h2 class="polpeopleinfo__title--h2red">
@@ -290,40 +261,23 @@
                       </div>
                     </div>
                     <div class="redirect-red">
-                      <form action="" id="pip_submit">
+                      <form action="" class="red_submit">
                         <label for="radio">know more</label>
                         <input
-                          type="submit"
+                          type="radio"
                           name="pip_id"
                           id="'.$pip['pip_id'].'"
                           value="'.$pip['pip_id'].'"
                           onchange="this.form.submit()"
                         />
                       </form>
-                      <!-- <a href="assembly-village-details.php">know more</a> -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="pl-block">
-              <div class="village_info_box">
-                <div class="villageinfowarn">
-                  <div class="villageinfowarn__title">
-                    <h2 class="villageinfowarn__title--h2">
-                      political leaders DATA NOT FOUND
-                    </h2>
-                    <p>
-                      The political leaders information is not available at this
-                      moment.
-                      <br />
-                      It will be available once the data is populated.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
+            <div class="village-block">
               <div class="polpeopleinfo polpeopleinfo-reg">
                 <div class="polpeopleinfo__title">
                   <h2 class="polpeopleinfo__title--h2reg">political leaders</h2>
@@ -367,8 +321,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="redirect-reg">
-                      <a href="assembly-village-details.php">know more</a>
+                    <div class="redirect-red">
+                      <form action="" class="green_submit">
+                        <label for="radio">know more</label>
+                        <input
+                          type="radio"
+                          name="pip_id"
+                          id="'.$pip['pip_id'].'"
+                          value="'.$pip['pip_id'].'"
+                          onchange="this.form.submit()"
+                        />
+                      </form>
                     </div>
                   </div>
 
@@ -410,38 +373,29 @@
                         </div>
                       </div>
                     </div>
-                    <div class="redirect-reg">
-                      <a href="assembly-village-details.php">know more</a>
+                    <div class="redirect-red">
+                      <form action="" class="green_submit">
+                        <label for="radio">know more</label>
+                        <input
+                          type="radio"
+                          name="pip_id"
+                          id="'.$pip['pip_id'].'"
+                          value="'.$pip['pip_id'].'"
+                          onchange="this.form.submit()"
+                        />
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="pb-block">
-              <div class="villageinfowarn">
-                <div class="villageinfowarn__title">
-                  <h2 class="villageinfowarn__title--h2">
-                    polling booths DATA NOT FOUND
-                  </h2>
-                  <p>
-                    The polling booths information is not available at this
-                    moment.
-                    <br />
-                    It will be available once the data is populated.
-                  </p>
-                </div>
-              </div>
+            <div class="village-block">
               <div class="v-pollingbooths">
                 <div class="v-pollingbooths__title">
                   <h2 class="v-pollingbooths__title--h2">polling booths</h2>
                 </div>
-
-                <form
-                  class="v-booth-container"
-                  action="assembly-booth-details.php"
-                  method="post"
-                >
+                <div class="v-booth-container">
                   <div class="v-boothcard">
                     <div class="v-boothcard__number">
                       <div class="v-boothcard__number--text">
@@ -457,21 +411,22 @@
                           Anantha Sagaram Polling Station 1
                         </p>
                       </div>
-                      <div class="boothlink">
-                        <div class="boothlink__cont">
-                          <label for="knowmore">know more</label>
+
+                      <div class="redirect-red">
+                        <form action="" class="red_submit">
+                          <label for="radio">know more</label>
                           <input
                             type="radio"
-                            id="knowmore"
-                            value="asmb_id"
-                            name="village_id"
+                            name="pip_id"
+                            id="'.$pip['pip_id'].'"
+                            value="'.$pip['pip_id'].'"
                             onchange="this.form.submit()"
                           />
-                        </div>
+                        </form>
                       </div>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
             <!--  -->
