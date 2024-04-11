@@ -2,10 +2,12 @@ main {
   min-height: calc(100vh - 22rem);
   display: block;
   position: relative;
+  margin-top: 18.25rem;
+  transition: all 0.3s ease-in;
 
   .section-content {
     width: $site-content-width;
-    min-height: calc(100vh - 19rem);
+    min-height: calc(100vh - 27.5rem);
     padding: 5rem 0;
 
     @include respond(phone) {
@@ -15,7 +17,7 @@ main {
 
   .section-content-site-width {
     width: $site-width;
-    min-height: calc(100vh - 19rem);
+    min-height: calc(100vh - 27.5rem);
     padding: 5rem 0;
     margin: 0 auto;
 

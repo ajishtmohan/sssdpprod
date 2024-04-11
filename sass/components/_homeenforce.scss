@@ -1,30 +1,30 @@
 .enforcement-flex {
   width: $site-content-width;
   margin: 0 auto;
-  height: auto;
+  height: calc(100vh - 32rem);
   display: flex;
+  align-items: center;
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
-  margin-bottom: 5rem;
+  align-content: center;
+  gap: 3rem;
+  padding-bottom: 5rem;
 
   &__item {
-    display: flex;
+    display: block;
     flex-direction: row;
     position: relative;
-    width: calc((100% - 5rem) / 3);
-    height: auto;
+    width: calc((100% - 6rem) / 3);
     background-color: $color-primary-dark-1;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
     transition: all 0.1s ease-in;
 
     &:hover {
       background-color: $color-primary-dark-2;
-      // transform: translateY(-3px);
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
     }
 
@@ -34,23 +34,51 @@
       display: block;
       position: relative;
       text-transform: uppercase;
+      border-bottom: 1px solid $color-primary-light-2;
 
       .enf_title {
-        color: $color-primary-light-1;
+        color: $color-primary-light-2;
+        text-align: center;
         display: block;
         position: relative;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-        margin-bottom: 1rem;
-      }
-
-      .enf_entity {
-        color: $color-white;
-        font-weight: 300;
         font-size: 3rem;
-        line-height: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
       }
     }
+
+    &--stat {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      padding: 0.8rem 0 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-primary-light-2;
+        padding: 0.8rem 0 0.6rem;
+      }
+
+      .stat-title {
+        width: 30%;
+        color: $color-white;
+        font-weight: 300;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 1.6rem;
+        margin-top: 0.3rem;
+      }
+
+      .stat-number {
+        color: $color-white;
+        font-weight: 200;
+        font-size: 3.5rem;
+        line-height: 4rem;
+      }
+    }
+
     &--qty {
       width: 100%;
       height: auto;
@@ -73,6 +101,87 @@
         font-weight: 300;
         font-size: 3.5rem;
         line-height: 2.5rem;
+      }
+    }
+  }
+}
+
+.enforcement-flex2 {
+  width: $site-content-width;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+
+  &__item {
+    display: block;
+    flex-direction: row;
+    position: relative;
+    width: calc((100% - 12rem) / 7);
+    background-color: $color-primary-dark-1;
+    padding: 1.5rem 1.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      background-color: $color-primary-dark-2;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+    }
+
+    &--title {
+      width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      text-transform: uppercase;
+      border-bottom: 1px solid $color-primary-light-2;
+
+      .enf_title {
+        color: $color-primary-light-2;
+        text-align: center;
+        display: block;
+        position: relative;
+        font-size: 1.35rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &--stat {
+      width: 100%;
+      display: block;
+      position: relative;
+      padding: 0.8rem 0 0;
+      text-align: center;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-primary-light-2;
+        padding: 0.8rem 0 0.6rem;
+      }
+
+      .stat-title {
+        color: $color-white;
+        font-weight: 300;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 1.6rem;
+        margin-top: 0.3rem;
+      }
+
+      .stat-number {
+        color: $color-white;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 4rem;
       }
     }
   }
