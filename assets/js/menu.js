@@ -4,16 +4,12 @@ window.onscroll = function () {
 
   if (prevScrollpos > currentScrollPos) {
     // Show standard menu
-    setTimeout(function () {
-      document.querySelector('.header').style.top = '0';
-      document.querySelector('main').style.transform = 'translateY(0)';
-    }, 300);
+    document.querySelector('.header').style.top = '0';
+    document.querySelector('main').style.transform = 'translateY(0)';
   } else {
     // Show minimal menu
-    setTimeout(function () {
-      document.querySelector('.header').style.top = '-13.61rem';
-      document.querySelector('main').style.transform = 'translateY(-13.61rem)';
-    }, 300);
+    document.querySelector('.header').style.top = '-13.61rem';
+    document.querySelector('main').style.transform = 'translateY(-9.21rem)';
   }
   prevScrollpos = currentScrollPos;
 };

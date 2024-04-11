@@ -1869,7 +1869,7 @@ main {
   min-height: calc(100vh - 22rem);
   display: block;
   position: relative;
-  margin-top: 18.25rem;
+  margin-top: 21.45rem;
   transition: all 0.3s ease-in; }
   main .section-content {
     width: 114rem;
@@ -2119,7 +2119,7 @@ article {
 .section-home {
   width: 100%;
   min-height: calc(100vh - 20rem);
-  opacity: 1;
+  opacity: 0;
   transition: all 0.3s ease-in-out; }
 
 .homepagephoto {
