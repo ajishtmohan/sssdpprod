@@ -1,114 +1,6 @@
 .enforcement-flex {
   width: $site-content-width;
   margin: 0 auto;
-  height: calc(100vh - 32rem);
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 3rem;
-  padding-bottom: 5rem;
-
-  &__item {
-    display: block;
-    flex-direction: row;
-    position: relative;
-    width: calc((100% - 6rem) / 3);
-    background-color: $color-primary-dark-1;
-    padding: 1.5rem 1.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.1s ease-in;
-
-    &:hover {
-      background-color: $color-primary-dark-2;
-      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
-    }
-
-    &--title {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
-      text-transform: uppercase;
-      border-bottom: 1px solid $color-primary-light-2;
-
-      .enf_title {
-        color: $color-primary-light-2;
-        text-align: center;
-        display: block;
-        position: relative;
-        font-size: 3rem;
-        font-weight: 400;
-        margin-bottom: 1.5rem;
-      }
-    }
-
-    &--stat {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-content: center;
-      padding: 0.8rem 0 0;
-
-      &:not(:last-child) {
-        border-bottom: 1px solid $color-primary-light-2;
-        padding: 0.8rem 0 0.6rem;
-      }
-
-      .stat-title {
-        width: 30%;
-        color: $color-white;
-        font-weight: 300;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        font-weight: 400;
-        line-height: 1.6rem;
-        margin-top: 0.3rem;
-      }
-
-      .stat-number {
-        color: $color-white;
-        font-weight: 200;
-        font-size: 3.5rem;
-        line-height: 4rem;
-      }
-    }
-
-    &--qty {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
-      text-transform: uppercase;
-      text-align: right;
-
-      .enf_title {
-        color: $color-primary-light-1;
-        display: block;
-        position: relative;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-        margin-bottom: 1rem;
-      }
-
-      .enf_entity {
-        color: $color-white;
-        font-weight: 300;
-        font-size: 3.5rem;
-        line-height: 2.5rem;
-      }
-    }
-  }
-}
-
-.enforcement-flex2 {
-  width: $site-content-width;
-  margin: 0 auto;
   height: auto;
   display: flex;
   align-items: center;
@@ -181,7 +73,7 @@
         color: $color-white;
         font-weight: 400;
         font-size: 2.2rem;
-        line-height: 4rem;
+        line-height: 3rem;
       }
     }
   }

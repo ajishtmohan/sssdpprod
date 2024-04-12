@@ -1060,7 +1060,7 @@ form {
 .enforcement-flex {
   width: 114rem;
   margin: 0 auto;
-  height: calc(100vh - 32rem);
+  height: auto;
   display: flex;
   align-items: center;
   position: relative;
@@ -1068,13 +1068,13 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: 3rem;
+  gap: 2rem;
   padding-bottom: 5rem; }
   .enforcement-flex__item {
     display: block;
     flex-direction: row;
     position: relative;
-    width: calc((100% - 6rem) / 3);
+    width: calc((100% - 12rem) / 7);
     background-color: #037f8d;
     padding: 1.5rem 1.5rem 1rem;
     border-radius: 5px;
@@ -1095,21 +1095,19 @@ form {
         text-align: center;
         display: block;
         position: relative;
-        font-size: 3rem;
+        font-size: 1.35rem;
         font-weight: 400;
-        margin-bottom: 1.5rem; }
+        margin-bottom: 0.5rem; }
     .enforcement-flex__item--stat {
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-content: center;
-      padding: 0.8rem 0 0; }
+      display: block;
+      position: relative;
+      padding: 0.8rem 0 0;
+      text-align: center; }
       .enforcement-flex__item--stat:not(:last-child) {
         border-bottom: 1px solid #88e6f1;
         padding: 0.8rem 0 0.6rem; }
       .enforcement-flex__item--stat .stat-title {
-        width: 30%;
         color: #fff;
         font-weight: 300;
         font-size: 1.3rem;
@@ -1119,92 +1117,9 @@ form {
         margin-top: 0.3rem; }
       .enforcement-flex__item--stat .stat-number {
         color: #fff;
-        font-weight: 200;
-        font-size: 3.5rem;
-        line-height: 4rem; }
-    .enforcement-flex__item--qty {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
-      text-transform: uppercase;
-      text-align: right; }
-      .enforcement-flex__item--qty .enf_title {
-        color: #3bd2e3;
-        display: block;
-        position: relative;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-        margin-bottom: 1rem; }
-      .enforcement-flex__item--qty .enf_entity {
-        color: #fff;
-        font-weight: 300;
-        font-size: 3.5rem;
-        line-height: 2.5rem; }
-
-.enforcement-flex2 {
-  width: 114rem;
-  margin: 0 auto;
-  height: auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 2rem;
-  padding-bottom: 5rem; }
-  .enforcement-flex2__item {
-    display: block;
-    flex-direction: row;
-    position: relative;
-    width: calc((100% - 12rem) / 7);
-    background-color: #037f8d;
-    padding: 1.5rem 1.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.1s ease-in; }
-    .enforcement-flex2__item:hover {
-      background-color: #035761;
-      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.1); }
-    .enforcement-flex2__item--title {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
-      text-transform: uppercase;
-      border-bottom: 1px solid #88e6f1; }
-      .enforcement-flex2__item--title .enf_title {
-        color: #88e6f1;
-        text-align: center;
-        display: block;
-        position: relative;
-        font-size: 1.35rem;
-        font-weight: 400;
-        margin-bottom: 0.5rem; }
-    .enforcement-flex2__item--stat {
-      width: 100%;
-      display: block;
-      position: relative;
-      padding: 0.8rem 0 0;
-      text-align: center; }
-      .enforcement-flex2__item--stat:not(:last-child) {
-        border-bottom: 1px solid #88e6f1;
-        padding: 0.8rem 0 0.6rem; }
-      .enforcement-flex2__item--stat .stat-title {
-        color: #fff;
-        font-weight: 300;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        font-weight: 400;
-        line-height: 1.6rem;
-        margin-top: 0.3rem; }
-      .enforcement-flex2__item--stat .stat-number {
-        color: #fff;
         font-weight: 400;
         font-size: 2.2rem;
-        line-height: 4rem; }
+        line-height: 3rem; }
 
 .adminmap {
   width: 114rem;
@@ -2047,6 +1962,37 @@ article {
     background-color: #c91f0c; }
   .warning .permRedirect {
     background-color: #037f8d; }
+
+.annexrepo {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  background-color: #f7f7f7f7;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 2rem; }
+  .annexrepo__date {
+    font-weight: 600;
+    color: #037f8d;
+    margin-bottom: 1.5rem; }
+  .annexrepo__files {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: 3px; }
+    .annexrepo__files a:link,
+    .annexrepo__files a:visited {
+      background-color: #037f8d;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 3px; }
 
 .constdetails {
   width: 130rem;
