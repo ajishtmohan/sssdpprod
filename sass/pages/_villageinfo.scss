@@ -663,6 +663,10 @@
   padding: 3rem;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
 
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
   &__title {
     width: 100%;
     margin-bottom: 3rem;

@@ -5,6 +5,13 @@ main {
   margin-top: 21.45rem;
   transition: all 0.3s ease-in;
 
+  h2 {
+    color: $color-primary-light-1;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
   .section-content {
     width: $site-content-width;
     min-height: calc(100vh - 27.5rem);
@@ -39,13 +46,6 @@ main {
 
     @include respond(phone) {
       padding: 0;
-    }
-
-    h2 {
-      // color: $color-primary;
-      font-weight: 500;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
     }
   }
 

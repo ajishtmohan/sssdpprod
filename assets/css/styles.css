@@ -1786,6 +1786,11 @@ main {
   position: relative;
   margin-top: 21.45rem;
   transition: all 0.3s ease-in; }
+  main h2 {
+    color: #3bd2e3;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
   main .section-content {
     width: 114rem;
     min-height: calc(100vh - 27.5rem);
@@ -1813,10 +1818,6 @@ main {
     @media (max-width: 37.5em) {
       main .section-content-ah {
         padding: 0; } }
-    main .section-content-ah h2 {
-      font-weight: 500;
-      text-transform: uppercase;
-      margin-bottom: 1rem; }
   main .routedisplay {
     width: 114rem;
     margin: 0 auto;
@@ -2757,6 +2758,8 @@ article {
   border-radius: 5px;
   padding: 3rem;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+  .forcedeployment:not(:last-child) {
+    margin-bottom: 3rem; }
   .forcedeployment__title {
     width: 100%;
     margin-bottom: 3rem; }
