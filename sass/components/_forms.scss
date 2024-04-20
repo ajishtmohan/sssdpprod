@@ -26,7 +26,8 @@ form {
   input[type='number'],
   input[type='password'],
   input[type='date'],
-  input[type='button'] {
+  input[type='button'],
+  input[type='file'] {
     width: 100%;
     font-family: $default-font-family;
     font-size: $default-font-size;
@@ -862,6 +863,43 @@ form {
         }
       }
     }
+  }
+}
+
+.select_asmb {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 0;
+
+  &__item {
+    label {
+      background-color: $color-white;
+      padding: 0.5rem 1rem;
+      border-radius: 3px;
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    input[type='radio']:checked ~ label {
+      background-color: $color-primary-light-1;
+      color: $color-white;
+    }
+  }
+}
+
+.annex_upload {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  &__item {
+    align-content: end;
   }
 }
 
