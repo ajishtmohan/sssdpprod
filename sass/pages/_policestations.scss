@@ -1,0 +1,56 @@
+.asmbpolicestn {
+  width: $site-content-width;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  position: relative;
+  background-color: $color-grey-light-1;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+
+  &__h2 {
+    // display: block;
+    text-align: center;
+  }
+
+  .policestn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    &__item {
+      width: calc((100% - 4rem) / 3);
+      background-color: $color-white;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-direction: row;
+
+      &--no {
+        text-align: right;
+        width: 8%;
+        font-size: 1.8rem;
+        color: $color-primary-dark-1;
+      }
+
+      &--de {
+        width: 92%;
+
+        .psname {
+          font-size: 1.8rem;
+          color: $color-primary-dark-1;
+        }
+
+        .psinch {
+          margin-bottom: 0.5rem;
+        }
+        .pscont {
+          font-size: 1.8rem;
+          color: $color-primary-dark-1;
+        }
+      }
+    }
+  }
+}

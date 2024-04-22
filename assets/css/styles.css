@@ -1867,7 +1867,7 @@ main {
     margin-bottom: 3rem; }
 
 .section-header {
-  width: 130rem;
+  width: 114rem;
   height: 40rem;
   display: block;
   position: relative;
@@ -2346,6 +2346,47 @@ article {
           font-size: 1.4rem;
           line-height: 2.5rem; }
 
+.guidelines {
+  width: 100rem;
+  margin: 0 auto;
+  background-color: #f7f7f7f7;
+  padding: 3rem;
+  border-radius: 5px;
+  margin-bottom: 3rem; }
+  .guidelines h3 {
+    color: #c91f0c;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+  .guidelines p {
+    line-height: 2.5rem; }
+  .guidelines ul {
+    margin-top: 2rem;
+    margin-left: 1.75rem; }
+    .guidelines ul li {
+      margin-bottom: 1rem;
+      padding-left: 0;
+      line-height: 2.5rem; }
+  .guidelines .links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem; }
+    .guidelines .links__item {
+      width: calc((100% - 3rem) / 2);
+      height: auto;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+      transition: all 0.1s ease-in; }
+      .guidelines .links__item:hover {
+        box-shadow: 0 0.6rem 0.3rem rgba(0, 0, 0, 0.05);
+        transform: translateY(-3px); }
+
 .pipinfoflex {
   width: 100rem;
   height: auto;
@@ -2473,6 +2514,46 @@ article {
           padding: 1rem 1.5rem;
           border-radius: 3px;
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+
+.asmbpolicestn {
+  width: 114rem;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+  position: relative;
+  background-color: #f7f7f7f7;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-bottom: 3rem; }
+  .asmbpolicestn__h2 {
+    text-align: center; }
+  .asmbpolicestn .policestn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    .asmbpolicestn .policestn__item {
+      width: calc((100% - 4rem) / 3);
+      background-color: #fff;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-direction: row; }
+      .asmbpolicestn .policestn__item--no {
+        text-align: right;
+        width: 8%;
+        font-size: 1.8rem;
+        color: #037f8d; }
+      .asmbpolicestn .policestn__item--de {
+        width: 92%; }
+        .asmbpolicestn .policestn__item--de .psname {
+          font-size: 1.8rem;
+          color: #037f8d; }
+        .asmbpolicestn .policestn__item--de .psinch {
+          margin-bottom: 0.5rem; }
+        .asmbpolicestn .policestn__item--de .pscont {
+          font-size: 1.8rem;
+          color: #037f8d; }
 
 .event {
   width: 100rem;

@@ -1,0 +1,55 @@
+.guidelines {
+  width: $form-width;
+  margin: 0 auto;
+  background-color: $color-grey-light-1;
+  padding: 3rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+
+  h3 {
+    color: $color-secondary-dark;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 2.5rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+    margin-left: 1.75rem;
+
+    li {
+      margin-bottom: 1rem;
+      padding-left: 0;
+      line-height: 2.5rem;
+    }
+  }
+
+  .links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    &__item {
+      width: calc((100% - 3rem) / 2);
+      height: auto;
+      background-color: $color-white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        box-shadow: 0 0.6rem 0.3rem rgba(0, 0, 0, 0.05);
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
