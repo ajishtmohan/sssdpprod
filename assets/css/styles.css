@@ -1458,11 +1458,10 @@ table {
           background-color: #c91f0c;
           padding: 0 1rem; }
 
-.odd {
+.table_row {
   background-color: #ddf5ff; }
-
-.even {
-  background-color: #edfaff; }
+  .table_row:nth-child(even) {
+    background-color: #edfaff; }
 
 .villagesearch {
   width: 114rem;

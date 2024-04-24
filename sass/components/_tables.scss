@@ -198,10 +198,9 @@ table {
   }
 }
 
-.odd {
+.table_row {
   background-color: #ddf5ff;
-}
-
-.even {
-  background-color: #edfaff;
+  &:nth-child(even) {
+    background-color: #edfaff;
+  }
 }
