@@ -39,6 +39,10 @@ html {
 
 body {
   box-sizing: border-box; }
+  @media (max-width: 37.5em) {
+    body {
+      width: 100%;
+      display: block; } }
   body::-webkit-scrollbar {
     width: 0.2em; }
   body::-webkit-scrollbar-track {
@@ -1566,7 +1570,10 @@ table {
   transition: all 0.3s; }
   @media (max-width: 37.5em) {
     .header {
-      border-bottom: 2px solid #037f8d; } }
+      border-bottom: 2px solid #037f8d;
+      width: 100%;
+      display: block;
+      position: fixed; } }
   .header #nav-toggle {
     display: block;
     position: fixed;
@@ -1642,6 +1649,10 @@ table {
           text-align: center; } }
     .header__logobox--img {
       height: 9rem; }
+      @media (max-width: 37.5em) {
+        .header__logobox--img {
+          height: 12rem;
+          margin: 1rem auto; } }
     .header__logobox--title {
       font-size: 4rem;
       font-weight: 600;
@@ -1650,7 +1661,12 @@ table {
       @media (max-width: 37.5em) {
         .header__logobox--title {
           font-size: 4rem;
-          line-height: 4rem; } }
+          line-height: 4rem;
+          margin-bottom: 1rem; }
+          .header__logobox--title .title_name {
+            display: block; }
+          .header__logobox--title .title_dept {
+            display: block; } }
   .header__navigation {
     width: 100%;
     height: auto;
@@ -1674,6 +1690,9 @@ table {
     .header__navigation--container {
       width: 130rem;
       margin: 0 auto; }
+      @media (max-width: 37.5em) {
+        .header__navigation--container {
+          width: 100%; } }
       .header__navigation--container .headernav {
         height: auto;
         display: flex;
@@ -1691,10 +1710,9 @@ table {
             align-items: center;
             font-size: 2rem;
             position: absolute;
-            top: 50%;
+            top: 10%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 5rem; } }
+            transform: translateX(-50%); } }
         .header__navigation--container .headernav a:link,
         .header__navigation--container .headernav a:visited {
           display: block;
@@ -1706,14 +1724,16 @@ table {
             .header__navigation--container .headernav a:link,
             .header__navigation--container .headernav a:visited {
               padding: 3rem;
-              border-top: 1px solid #3bd2e3; }
-              .header__navigation--container .headernav a:link:last-child,
-              .header__navigation--container .headernav a:visited:last-child {
-                border-bottom: 1px solid #3bd2e3; } }
+              border-top: 1px solid #3bd2e3; } }
           .header__navigation--container .headernav a:link:hover, .header__navigation--container .headernav a:link:active,
           .header__navigation--container .headernav a:visited:hover,
           .header__navigation--container .headernav a:visited:active {
             color: #88e6f1; }
+        @media (max-width: 37.5em) {
+          .header__navigation--container .headernav li {
+            width: 100%;
+            margin: 0;
+            padding: 0; } }
         .header__navigation--container .headernav__sub {
           width: 19rem;
           height: auto;
@@ -1730,8 +1750,11 @@ table {
           @media (max-width: 37.5em) {
             .header__navigation--container .headernav__sub {
               display: block;
+              position: absolute;
+              width: 100%;
               border: none;
-              opacity: 0; } }
+              opacity: 0;
+              top: 0; } }
           .header__navigation--container .headernav__sub--l2 {
             display: block;
             color: #fff;
@@ -1746,13 +1769,11 @@ table {
             .header__navigation--container .headernav__sub--l2:hover {
               background-color: #035761;
               color: #3bd2e3; }
-            .header__navigation--container .headernav__sub--l2 .l2_item {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              gap: 1rem; }
             @media (max-width: 37.5em) {
               .header__navigation--container .headernav__sub--l2 {
+                display: block;
+                position: relative;
+                width: 100%;
                 background-color: #035761;
                 list-style-type: none;
                 border-bottom: 1px solid #035761; } }
@@ -1808,6 +1829,7 @@ table {
               .header__navigation--container .headernav__item:hover .headernav__sub {
                 display: block;
                 position: relative;
+                top: 0;
                 height: auto; } }
 
 main {

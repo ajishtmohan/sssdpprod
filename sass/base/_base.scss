@@ -33,6 +33,11 @@ html {
 body {
   box-sizing: border-box;
 
+  @include respond(phone) {
+    width: 100%;
+    display: block;
+  }
+
   &::-webkit-scrollbar {
     width: 0.2em;
   }
