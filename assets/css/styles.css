@@ -21,16 +21,16 @@ Breakpoint Argument Choices
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
+  @media (max-width: 37.5em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 50%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 90em) {
+  @media (max-width: 75em) {
     html {
-      font-size: 50%; } }
-  @media (max-width: 37.5em) {
+      font-size: 56.25%; } }
+  @media (max-width: 90em) {
     html {
       font-size: 50%; } }
   @media (min-width: 112.5em) {
@@ -1723,12 +1723,17 @@ table {
           @media (max-width: 37.5em) {
             .header__navigation--container .headernav a:link,
             .header__navigation--container .headernav a:visited {
-              padding: 3rem;
+              display: block;
+              width: 80%;
+              margin: 0 auto;
+              padding: 2rem;
               border-top: 1px solid #3bd2e3; } }
           .header__navigation--container .headernav a:link:hover, .header__navigation--container .headernav a:link:active,
           .header__navigation--container .headernav a:visited:hover,
           .header__navigation--container .headernav a:visited:active {
             color: #88e6f1; }
+        .header__navigation--container .headernav__item {
+          transition: all 0.3s ease-in; }
         @media (max-width: 37.5em) {
           .header__navigation--container .headernav li {
             width: 100%;
@@ -1813,6 +1818,11 @@ table {
               display: block;
               position: absolute;
               opacity: 1; }
+            .header__navigation--container .headernav__sub--l2 .l2_item {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              gap: 1rem; }
         .header__navigation--container .headernav__item {
           list-style-type: none;
           display: inline-block;

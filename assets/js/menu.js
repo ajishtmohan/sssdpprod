@@ -13,3 +13,32 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+const nav_toggle = document.querySelector('#nav-toggle');
+const menu_items = document.querySelectorAll('.headernav__item');
+console.log(menu_items.length);
+hideMenuItems();
+
+nav_toggle.addEventListener('click', function () {
+  if (nav_toggle.checked === true) {
+    showMenuItems();
+  } else if (nav_toggle.checked === false) {
+    hideMenuItems();
+  }
+});
+
+function showMenuItems() {
+  for (let i = 0; i < menu_items.length; i++) {
+    setTimeout(() => {
+      menu_items[i].style.opacity = '1';
+      console.log('checked');
+    }, 300 + i * 75);
+  }
+}
+
+function hideMenuItems() {
+  for (let i = 0; i < menu_items.length; i++) {
+    menu_items[i].style.opacity = '0';
+    console.log('unchecked');
+  }
+}

@@ -201,7 +201,10 @@
           transition: all 0.2s ease-in;
 
           @include respond(phone) {
-            padding: 3rem;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
             border-top: 1px solid $color-primary-light-1;
           }
 
@@ -209,6 +212,10 @@
           &:active {
             color: $color-primary-light-2;
           }
+        }
+
+        &__item {
+          transition: all 0.3s ease-in;
         }
 
         li {
@@ -311,6 +318,13 @@
               display: block;
               position: absolute;
               opacity: 1;
+            }
+
+            .l2_item {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              gap: 1rem;
             }
           }
         }
