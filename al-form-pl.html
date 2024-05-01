@@ -8,6 +8,9 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/cropper.css" />
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -129,6 +132,7 @@
           </ul>
         </div>
       </div>
+      <div class="welcome">welcome</div>
       <!-- MENU -->
     </header>
 
@@ -202,7 +206,14 @@
                 <h2 class="form_h2">Political Leader Details</h2>
                 <div class="pipdetails">
                   <div class="pipdetails__photo">
-                    <div class="pipdetails__photo--frame"></div>
+                    <div class="pipdetails__photo--frame">
+                      <img src="assets/img/profile.jpg" alt="" id="pil_photo" />
+                    </div>
+                    <input
+                      type="file"
+                      accept="image/png, image/jpg, image/jpeg"
+                      id="upload_image"
+                    />
                   </div>
                   <div class="pipdetails__facts">
                     <div class="nameage">
@@ -285,6 +296,23 @@
                 <input type="submit" value="submit" />
               </div>
             </form>
+            <div class="modal">
+              <div class="modal__content">
+                <h2 class="u-center-text">crop image</h2>
+                <div class="photos">
+                  <div class="photos__orig">
+                    <img src="" id="pl_sample_image" />
+                  </div>
+                  <!-- <div class="photos__crop">
+                    <img src="" class="preview" />
+                  </div> -->
+                </div>
+                <div class="modal__footer">
+                  <button type="button" id="cancel">Cancel</button>
+                  <button type="button" id="crop">Crop</button>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
       </section>
@@ -306,15 +334,7 @@
         </p>
       </div>
     </footer>
-    <!-- SCRIPT -->
-    <script
-      type="text/javascript"
-      src="assets/js/village_form_script.js"
-    ></script>
-    <script
-      async
-      type="text/javascript"
-      src="assets/js/jquery-3.7.1.min.js"
-    ></script>
+    <script async src="assets/js/cropper.min.js"></script>
+    <script async src="assets/js/cropper_img.js"></script>
   </body>
 </html>

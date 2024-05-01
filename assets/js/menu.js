@@ -14,31 +14,64 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-const nav_toggle = document.querySelector('#nav-toggle');
-const menu_items = document.querySelectorAll('.headernav__item');
-console.log(menu_items.length);
-hideMenuItems();
+const windowUpto600 = function () {
+  const nav_toggle = document.querySelector('#nav-toggle');
+  const menu_items = document.querySelectorAll('.headernav__item');
+  console.log(menu_items.length);
+  hideMenuItems();
 
-nav_toggle.addEventListener('click', function () {
-  if (nav_toggle.checked === true) {
-    showMenuItems();
-  } else if (nav_toggle.checked === false) {
-    hideMenuItems();
+  nav_toggle.addEventListener('click', function () {
+    if (nav_toggle.checked === true) {
+      showMenuItems();
+    } else if (nav_toggle.checked === false) {
+      hideMenuItems();
+    }
+  });
+
+  function showMenuItems() {
+    for (let i = 0; i < menu_items.length; i++) {
+      menu_items[i].style.display = 'block';
+      setTimeout(() => {
+        menu_items[i].style.opacity = '1';
+        menu_items[i].style.transform = 'translateY(0)';
+        console.log('checked');
+      }, 300 + i * 75);
+    }
   }
-});
 
-function showMenuItems() {
+  function hideMenuItems() {
+    for (let i = 0; i < menu_items.length; i++) {
+      menu_items[i].style.transform = 'translateY(5rem)';
+      menu_items[i].style.opacity = '0';
+      menu_items[i].s;
+      console.log('unchecked');
+    }
+  }
+
   for (let i = 0; i < menu_items.length; i++) {
-    setTimeout(() => {
-      menu_items[i].style.opacity = '1';
-      console.log('checked');
-    }, 300 + i * 75);
+    menu_items[i].addEventListener('click', function (e) {
+      hideMenuItems();
+      console.log('clicked submenu');
+      const sub_menu_items = document.querySelectorAll('.headernav__sub--l2');
+      for (let i = 0; i < sub_menu_items.length; i++) {
+        console.log(sub_menu_items[i]);
+        sub_menu_items[i].style.display = 'block';
+        sub_menu_items[i].style.opacity = '1';
+      }
+    });
+  }
+};
+
+// SCREENSIZE HANDLING
+window.addEventListener('resize', resizeHandler);
+let screenSize = window.innerWidth;
+
+function resizeHandler() {
+  if (screenSize < 600) {
+    windowUpto600();
   }
 }
 
-function hideMenuItems() {
-  for (let i = 0; i < menu_items.length; i++) {
-    menu_items[i].style.opacity = '0';
-    console.log('unchecked');
-  }
-}
+(function init() {
+  resizeHandler();
+})();

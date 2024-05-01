@@ -762,6 +762,80 @@ form {
   .loginform input[type='password'] {
     margin-bottom: 3rem; }
 
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 21.5rem);
+  background-color: #000;
+  z-index: 9;
+  scroll-behavior: smooth; }
+  .modal__content {
+    width: 50%;
+    min-width: 65rem;
+    height: auto;
+    background-color: #f7f7f7f7;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+    border-radius: 5px; }
+    .modal__content h2 {
+      margin-bottom: 3rem; }
+    .modal__content .photos {
+      height: 35rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 3rem; }
+      .modal__content .photos__orig {
+        width: 70%;
+        position: relative; }
+        .modal__content .photos__orig img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+          overflow: hidden;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: block; }
+      .modal__content .photos__crop {
+        width: 30%; }
+        .modal__content .photos__crop .preview {
+          display: block;
+          position: relative;
+          width: 200px;
+          height: 300px; }
+  .modal__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem; }
+    .modal__footer button {
+      width: 10rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      color: #3bd2e3;
+      border-radius: 5px;
+      border: 2px solid #88e6f1;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 1rem 1.5rem;
+      transition: all 0.2s ease-in;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500; }
+
 .pipdetails {
   width: 100%;
   height: auto;
@@ -773,10 +847,15 @@ form {
   .pipdetails__photo {
     width: calc((100% - 6rem) / 3); }
     .pipdetails__photo--frame {
-      width: 100%;
+      width: 100%rem;
       height: 35rem;
       background-color: white;
-      border-radius: 3px; }
+      border-radius: 3px;
+      margin-bottom: 3rem;
+      overflow: hidden; }
+      .pipdetails__photo--frame img {
+        width: 100%;
+        height: auto; }
   .pipdetails__facts {
     width: calc((100% - (100% - 6rem) / 3) - 3rem); }
     .pipdetails__facts .nameage {
@@ -1812,12 +1891,6 @@ table {
                   color: #3bd2e3; }
                 .header__navigation--container .headernav__sub--l2 .headernav__sub2--l3:hover label {
                   color: #88e6f1; }
-            .header__navigation--container .headernav__sub--l2:hover .headernav__sub2 {
-              margin-top: -0.25rem;
-              transition: all 0.3s ease-in;
-              display: block;
-              position: absolute;
-              opacity: 1; }
             .header__navigation--container .headernav__sub--l2 .l2_item {
               display: flex;
               flex-direction: row;
@@ -1831,16 +1904,6 @@ table {
             .header__navigation--container .headernav__item {
               width: 100%;
               text-align: center; } }
-          .header__navigation--container .headernav__item:hover .headernav__sub {
-            top: 4.4rem;
-            opacity: 1;
-            visibility: visible; }
-            @media (max-width: 37.5em) {
-              .header__navigation--container .headernav__item:hover .headernav__sub {
-                display: block;
-                position: relative;
-                top: 0;
-                height: auto; } }
 
 main {
   min-height: calc(100vh - 22rem);
