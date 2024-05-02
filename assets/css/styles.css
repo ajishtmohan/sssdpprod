@@ -794,18 +794,11 @@ form {
       gap: 3rem;
       margin-bottom: 3rem; }
       .modal__content .photos__orig {
-        width: 70%;
+        width: 100%;
         position: relative; }
         .modal__content .photos__orig img {
-          max-width: 100%;
-          max-height: 100%;
-          object-fit: contain;
-          overflow: hidden;
-          position: relative;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          display: block; }
+          display: block;
+          object-fit: contain; }
       .modal__content .photos__crop {
         width: 30%; }
         .modal__content .photos__crop .preview {
@@ -850,7 +843,7 @@ form {
       width: 100%rem;
       height: 35rem;
       background-color: white;
-      border-radius: 3px;
+      border-radius: 5px;
       margin-bottom: 3rem;
       overflow: hidden; }
       .pipdetails__photo--frame img {
