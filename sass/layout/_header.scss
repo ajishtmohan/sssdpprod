@@ -15,6 +15,20 @@
     position: fixed;
   }
 
+  @include respond(tab-port) {
+    border-bottom: 2px solid $color-primary-dark-1;
+    width: 100%;
+    display: block;
+    position: fixed;
+  }
+
+  @include respond(tab-land) {
+    border-bottom: 2px solid $color-primary-dark-1;
+    width: 100%;
+    display: block;
+    position: fixed;
+  }
+
   #nav-toggle {
     display: block;
     position: fixed;
@@ -38,12 +52,30 @@
     top: 3rem;
     right: 3rem;
 
+    @include respond(tab-port) {
+      display: flex;
+      z-index: 1000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include respond(tab-land) {
+      display: flex;
+      z-index: 1000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     @include respond(phone) {
       display: flex;
       z-index: 1000;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      top: 2.2rem;
+      right: 2.2rem;
     }
 
     &__line {
@@ -93,11 +125,24 @@
 
     @include u-center-div;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 100%;
-      flex-direction: column;
       padding: 3rem 2rem 1.5rem;
       gap: 1rem;
+    }
+
+    @include respond(tab-land) {
+      width: 100%;
+      padding: 3rem 2rem 1.5rem;
+      gap: 1rem;
+    }
+
+    @include respond(phone) {
+      justify-content: flex-start;
+      align-self: center;
+      width: 100%;
+      padding: 2rem;
+      gap: 1.5rem;
     }
 
     a:link {
@@ -106,6 +151,7 @@
       @include respond(phone) {
         text-decoration: none;
         text-align: center;
+        margin: 0;
       }
     }
 
@@ -113,8 +159,8 @@
       height: 9rem;
 
       @include respond(phone) {
-        height: 12rem;
-        margin: 1rem auto;
+        height: 6rem;
+        // margin: 1rem auto;
       }
     }
 
@@ -125,16 +171,19 @@
       color: $color-primary;
 
       @include respond(phone) {
-        font-size: 4rem;
-        line-height: 4rem;
-        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 0;
+        text-align: left;
 
         .title_name {
           display: block;
+          font-size: 3rem;
         }
 
         .title_dept {
           display: block;
+          font-size: 2rem;
         }
       }
     }
@@ -149,13 +198,39 @@
     border-top: 3px solid $color-secondary-dark;
     transition: all 0.3s ease-in;
 
+    @include respond(tab-port) {
+      width: 35rem;
+      height: 100vh;
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 500;
+    }
+
+    @include respond(tab-land) {
+      width: 35rem;
+      height: 100vh;
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 500;
+    }
+
     @include respond(phone) {
       width: 100vw;
       height: 100vh;
       display: flex;
       position: fixed;
       top: 0;
-      left: 0;
+      right: 0;
       z-index: 100;
       visibility: hidden;
       opacity: 0;
@@ -179,6 +254,30 @@
         color: $color-white;
         font-size: $nav-font-size;
         font-weight: 500;
+
+        @include respond(tab-port) {
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        @include respond(tab-land) {
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 2rem;
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
 
         @include respond(phone) {
           width: 100%;
@@ -207,6 +306,20 @@
             padding: 2rem;
             border-top: 1px solid $color-primary-light-1;
           }
+          @include respond(tab-port) {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            border-top: 1px solid $color-primary-light-1;
+          }
+          @include respond(tab-land) {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            border-top: 1px solid $color-primary-light-1;
+          }
 
           &:hover,
           &:active {
@@ -219,7 +332,19 @@
         }
 
         li {
+          text-align: center;
           @include respond(phone) {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+
+          @include respond(tab-port) {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          @include respond(tab-land) {
             width: 100%;
             margin: 0;
             padding: 0;
@@ -312,13 +437,13 @@
                 }
               }
             }
-            // &:hover .headernav__sub2 {
-            //   margin-top: -0.25rem;
-            //   transition: all 0.3s ease-in;
-            //   display: block;
-            //   position: absolute;
-            //   opacity: 1;
-            // }
+            &:hover .headernav__sub2 {
+              margin-top: -0.25rem;
+              transition: all 0.3s ease-in;
+              display: block;
+              position: absolute;
+              opacity: 1;
+            }
 
             .l2_item {
               display: flex;
@@ -339,18 +464,18 @@
             text-align: center;
           }
 
-          // &:hover .headernav__sub {
-          //   top: 4.4rem;
-          //   opacity: 1;
-          //   visibility: visible;
+          &:hover .headernav__sub {
+            top: 4.4rem;
+            opacity: 1;
+            visibility: visible;
 
-          //   @include respond(phone) {
-          //     display: block;
-          //     position: relative;
-          //     top: 0;
-          //     height: auto;
-          //   }
-          // }
+            @include respond(phone) {
+              display: block;
+              position: relative;
+              top: 0;
+              height: auto;
+            }
+          }
         }
       }
     }

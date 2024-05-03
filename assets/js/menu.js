@@ -67,7 +67,7 @@ window.addEventListener('resize', resizeHandler);
 let screenSize = window.innerWidth;
 
 function resizeHandler() {
-  if (screenSize < 600) {
+  if (screenSize < 1040) {
     windowUpto600();
   }
 }
