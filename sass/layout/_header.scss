@@ -228,13 +228,14 @@
       width: 100vw;
       height: 100vh;
       display: flex;
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
       z-index: 100;
       visibility: hidden;
       opacity: 0;
       z-index: 500;
+      overflow: scroll;
     }
 
     &--container {
@@ -368,7 +369,8 @@
           @include respond(phone) {
             display: block;
             position: absolute;
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
             border: none;
             opacity: 0;
             top: 0;
@@ -386,6 +388,23 @@
             width: auto;
             position: relative;
 
+            .l2_item {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              gap: 1rem;
+
+              @include respond(phone) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 1rem;
+                width: 100%;
+                padding: 2rem;
+                margin: 0 auto;
+              }
+            }
+
             &:hover {
               background-color: $color-primary-dark-2;
               color: $color-primary-light-1;
@@ -394,7 +413,7 @@
             @include respond(phone) {
               display: block;
               position: relative;
-              width: 100%;
+              width: 80%;
               background-color: $color-primary-dark-2;
               list-style-type: none;
               border-bottom: 1px solid $color-primary-dark-2;
@@ -443,13 +462,6 @@
               display: block;
               position: absolute;
               opacity: 1;
-            }
-
-            .l2_item {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              gap: 1rem;
             }
           }
         }

@@ -1818,13 +1818,14 @@ table {
         width: 100vw;
         height: 100vh;
         display: flex;
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         z-index: 100;
         visibility: hidden;
         opacity: 0;
-        z-index: 500; } }
+        z-index: 500;
+        overflow: scroll; } }
     .header__navigation--container {
       width: 130rem;
       margin: 0 auto; }
@@ -1944,7 +1945,8 @@ table {
             .header__navigation--container .headernav__sub {
               display: block;
               position: absolute;
-              width: 100%;
+              width: 80%;
+              margin: 0 auto;
               border: none;
               opacity: 0;
               top: 0; } }
@@ -1959,6 +1961,20 @@ table {
             list-style-type: none;
             width: auto;
             position: relative; }
+            .header__navigation--container .headernav__sub--l2 .l2_item {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              gap: 1rem; }
+              @media (max-width: 37.5em) {
+                .header__navigation--container .headernav__sub--l2 .l2_item {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  gap: 1rem;
+                  width: 100%;
+                  padding: 2rem;
+                  margin: 0 auto; } }
             .header__navigation--container .headernav__sub--l2:hover {
               background-color: #035761;
               color: #3bd2e3; }
@@ -1966,7 +1982,7 @@ table {
               .header__navigation--container .headernav__sub--l2 {
                 display: block;
                 position: relative;
-                width: 100%;
+                width: 80%;
                 background-color: #035761;
                 list-style-type: none;
                 border-bottom: 1px solid #035761; } }
@@ -2006,11 +2022,6 @@ table {
               display: block;
               position: absolute;
               opacity: 1; }
-            .header__navigation--container .headernav__sub--l2 .l2_item {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              gap: 1rem; }
         .header__navigation--container .headernav__item {
           list-style-type: none;
           display: inline-block;
