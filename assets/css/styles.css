@@ -2047,6 +2047,9 @@ main {
   position: relative;
   margin-top: 21.45rem;
   transition: all 0.3s ease-in; }
+  @media (max-width: 37.5em) {
+    main {
+      margin-top: 11rem; } }
   main h2 {
     color: #3bd2e3;
     font-weight: 500;
@@ -2459,6 +2462,9 @@ article {
 
 .section-home-photo {
   margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .section-home-photo {
+      width: 100%; } }
 
 .photogallery {
   width: 114rem;
@@ -2470,29 +2476,41 @@ article {
   align-content: center;
   flex-wrap: wrap;
   gap: 5rem;
+  padding-bottom: 20rem;
   margin: 0 auto; }
   .photogallery:not(:last-child) {
     padding-bottom: 5rem; }
   @media (max-width: 37.5em) {
     .photogallery {
       width: 100%;
-      padding: 3rem; } }
-  .photogallery__photo {
-    width: calc((100% - 5rem) / 2);
-    height: 35rem;
-    display: block;
-    position: relative;
-    background-color: antiquewhite;
-    overflow: hidden;
-    outline: 0.2rem solid #037f8d;
-    text-align: center; }
+      padding-bottom: 0; } }
+  .photogallery .homepagephoto {
+    width: 30rem;
+    height: auto; }
     @media (max-width: 37.5em) {
-      .photogallery__photo {
-        width: 100%;
-        height: 28rem; } }
-    .photogallery__photo img {
+      .photogallery .homepagephoto {
+        width: 25rem; } }
+    .photogallery .homepagephoto__photo {
       width: 100%;
-      height: auto; }
+      height: 040rem;
+      display: block;
+      position: relative;
+      background-color: antiquewhite;
+      overflow: hidden;
+      outline: 0.2rem solid #037f8d;
+      text-align: center; }
+      @media (max-width: 37.5em) {
+        .photogallery .homepagephoto__photo {
+          width: 100%;
+          height: 28rem; } }
+      .photogallery .homepagephoto__photo img {
+        width: 100%;
+        height: auto; }
+    @media (max-width: 37.5em) {
+      .photogallery .homepagephoto {
+        width: calc((100% - 20rem) / 2);
+        display: block;
+        position: relative; } }
 
 .vision-block {
   width: 100%;

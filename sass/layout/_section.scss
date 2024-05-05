@@ -5,6 +5,10 @@ main {
   margin-top: 21.45rem;
   transition: all 0.3s ease-in;
 
+  @include respond(phone) {
+    margin-top: 11rem;
+  }
+
   h2 {
     color: $color-primary-light-1;
     font-weight: 500;
