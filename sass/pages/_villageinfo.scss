@@ -4,6 +4,10 @@
   display: block;
   position: relative;
   margin: 0 auto;
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 .villageinfo {
   width: $site-content-width;
@@ -374,6 +378,10 @@
   padding: 3rem;
   margin-bottom: 3rem;
 
+  @include respond(phone) {
+    width: 100%;
+  }
+
   &__title {
     width: 100%;
     margin-bottom: 3rem;
@@ -690,6 +698,11 @@
       background-color: $color-grey-light-1;
       padding: 1rem;
       border-radius: 3px;
+
+      @include respond(phone) {
+        width: 100%;
+        text-align: center;
+      }
 
       .force-head {
         text-transform: uppercase;

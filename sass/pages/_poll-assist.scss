@@ -1,0 +1,33 @@
+.pollassist {
+  @include respond(phone) {
+    padding: 3rem;
+  }
+  .pollassistbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 3rem;
+    margin: 3rem 0;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 30rem;
+      text-align: center;
+      background-color: $color-primary-dark-1;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1.5rem 2.5rem;
+      border-radius: 5px;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+  }
+}

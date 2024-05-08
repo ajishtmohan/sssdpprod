@@ -257,6 +257,11 @@ form {
 // POLLING STATION FINDER
 .boothform {
   width: $site-content-width;
+
+  @include respond(phone) {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
   .boothform-flex {
     width: 100%;
     height: auto;
@@ -264,6 +269,13 @@ form {
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
 
     &__item {
       display: block;
@@ -281,6 +293,10 @@ form {
       // margin-bottom: 2.5rem;
       text-align: left;
       text-transform: uppercase;
+
+      @include respond(phone) {
+        text-align: center;
+      }
     }
 
     input[type='submit'] {
@@ -289,6 +305,11 @@ form {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @include respond(phone) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }
@@ -303,6 +324,12 @@ form {
     justify-content: center;
     gap: 3rem;
 
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+    }
+
     &__item {
       display: block;
       position: relative;
@@ -314,6 +341,10 @@ form {
 
     select {
       width: 30rem;
+
+      @include respond(phone) {
+        width: 100%;
+      }
     }
 
     input[type='submit'] {
@@ -322,6 +353,11 @@ form {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @include respond(phone) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 }
@@ -345,6 +381,10 @@ form {
       border-radius: 5px;
       padding: 3rem;
       margin-bottom: 3rem;
+
+      @include respond(phone) {
+        width: 100%;
+      }
 
       &__title {
         width: 100%;
@@ -381,6 +421,10 @@ form {
       border-radius: 5px;
       padding: 3rem;
       margin-bottom: 3rem;
+
+      @include respond(phone) {
+        width: 100%;
+      }
 
       &__title {
         width: 100%;

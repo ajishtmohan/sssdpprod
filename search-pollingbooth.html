@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSSDP Portal</title>
+    <meta name="description" content="" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="SSS District Police" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon-32x32.png" />
+
+    <meta name="theme-color" content="#0cb6c9" />
+  </head>
+
+  <body>
+    <header class="header">
+      <input type="checkbox" class="check" name="" id="nav-toggle" />
+      <label for="nav-toggle" class="icon-burger">
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+      </label>
+
+      <div class="header__logobox">
+        <a href="al-index.html">
+          <img
+            class="header__logobox--img"
+            src="assets/img/appolice_logo.png"
+            alt=""
+          />
+        </a>
+        <a href="al-index.html">
+          <h1 class="header__logobox--title">SSSDP PORTAL</h1>
+        </a>
+      </div>
+      <!-- MENU -->
+      <div class="header__navigation">
+        <div class="header__navigation--container">
+          <ul class="headernav">
+            <li class="headernav__item">
+              <a href="al-ass-const.html">assemblies</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-poll-station.html">Polling Stations</a>
+            </li>
+            <li class="headernav__item">
+              <a href="#">Enforcement ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Cash</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Liquor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">NBWS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">Force Deployment ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2019</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2024</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="al-under-construction.html">training</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-under-construction.html">route maps</a>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">check-posts ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-state</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-district</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">forms ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="#">lor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">deployment</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">poll booth</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">PIP</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">leaders</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MENU -->
+      <div class="welcome">Welcome</div>
+    </header>
+
+<main>
+  <div class="section__title">
+    <h2 class="section__title--text">search polling booth</h2>
+  </div>
+  <section class="section-content-ah">
+    <form class="boothform" action="" method="post" id="boothform">
+      <div class="boothform-flex">
+        <div class="boothform-flex__item">
+          <select
+            class="boothform__select"
+            name="constituency"
+            id="constituency"
+            required
+          >
+            <option
+              disabled
+              selected
+              class="boothform__option--dis"
+              default
+              value=""
+            >
+              ~ select Constituency ~
+            </option>
+            <?php
+              require ('data.php');
+              $assemblies = loadAssembly();
+              foreach ($assemblies as $assembly) {
+                echo '<option class="boothform__option"
+                id="'.$assembly['asmb_id'].'"
+                value="'.$assembly['asmb_id'].'"
+                name="'.$assembly['asmb_id'].'"
+                >'
+                .$assembly['asmb_name'].
+              '</option>';
+              }
+            ?>
+          </select>
+        </div>
+        <div class="boothform-flex__item">
+          <input type="text" autofocus placeholder="pollbooth number" id="pollstn_id" name="pollstn_id" required/>
+        </div>
+        <div class="boothform-flex__item">
+          <input type="submit" value="submit" name="submit"/>
+        </div>
+      </div>
+    </form>
+    
+  </section>
+  <div class="section-home" id="polling_results">
+    <div class="village_info_box" id="pollbooth_no">
+      <div class="villageinfowarn">
+        <div class="villageinfowarn__title">
+          <h2 class="villageinfowarn__title--h2">POLL BOOTH NOT FOUND</h2>
+          <p>
+            A Poll Booth No.
+            <span id="res_poll_num" style="font-weight:bold"></span> in
+            <span id="res_poll_ass" style="font-weight:bold"></span> doesn't exist.
+            <br />
+            Please check entered number.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="v-pollingbooths" id="pollbooth_yes">
+      <div class="v-pollingbooths__title">
+        <h2 class="v-pollingbooths__title--h2">
+          <span id="res_boothnumber_poll"></span></h2>
+          <p class="v-pollingbooths__title--p" id="res_boothnumber_asmb"></p>
+      </div>
+      <div class="booth-container">
+        <div class="boothcard">
+          <div class="boothcard__number">
+            <div class="boothcard__number--text">
+              <span class="boothno">booth number</span>
+              <span class="boothnumber" id="res_boothnumber">134</span>
+              <span class="boothstatus"id="res_booth_sense">normal</span>
+            </div>
+          </div>
+          <div class="boothcard__details">
+            <div class="boothcard__details--name">
+              <p class="boothna">Booth Name</p>
+              <p class="boothname" id="res_boothname">Mandal Parishad Primary School</p>
+            </div>
+            <div class="boothcard__demograph">
+              <p class="demographtitle">Voter Demographics</p>
+              <div class="boothcard__demograph--details">
+                <p class="demoblock">
+                  <span class="demoblock__name">Male</span>
+                  <span class="demoblock__number"id="res_vot_mal">490</span>
+                </p>
+                <p class="demoblock">
+                  <span class="demoblock__name">Female</span>
+                  <span class="demoblock__number"id="res_vot_fem">520</span>
+                </p>
+                <p class="demoblock">
+                  <span class="demoblock__name">Trans</span>
+                  <span class="demoblock__number"id="res_vot_tra">1010</span>
+                </p>
+                <p class="demoblock">
+                  <span class="demoblock__name">Total</span>
+                  <span class="demoblock__number"id="res_vot_tot">1010</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boothcard" id="res_map">
+          <iframe class="boothcard__map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=14.602300,77.796200&amp;hl=en&amp;z=16&amp;output=embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="village_info_box" id="pollinch_no">
+      <div class="villageinfowarn">
+        <div class="villageinfowarn__title">
+          <h2 class="villageinfowarn__title--h2">
+            POLL BOOTH OFFICERS' DETAILS NOT FOUND
+          </h2>
+          <p>
+            The details of Poll Booth Incharge Officers are not available at
+            this moment
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pollingbooths" id="pollinch_yes">
+      <div class="forcedeployment">
+        <div class="forcedeployment__title">
+          <h2 class="forcedeployment__title--h2">force deployment</h2>
+        </div>
+        <div class="forceblockflex">
+          <div class="forceblockflex__item">
+            <p class="force-head" id="asmb_dsp_name"></p>
+            <p class="officer-number" id="asmb_dsp_mob"></p>
+          </div>
+          <div class="forceblockflex__item">
+            <p class="force-head" id="circle_ci_name"></p>
+            <p class="officer-number" id="circle_ci_mob">
+            </p>
+          </div>
+          <div class="forceblockflex__item">
+            <p class="force-head" id="police_si_name"></p>
+            <p class="officer-number" id="police_si_mob"></p>
+          </div>
+        </div>
+      </div>
+      <div class="forcedeployment">
+        <div class="forcedeployment__title">
+          <h2 class="forcedeployment__title--h2">
+            polling booth officers
+          </h2>
+        </div>
+        <div class="forceblockflex">
+          <div class="forceblockflex__item">
+            <p class="force-head">Polling Booth Incharge</p>
+            <p class="officer-name">Venkatesh Rao</p>
+            <p class="officer-number">
+              <a href="tel:9090909090">9090909090</a>
+            </p>
+          </div>
+          <div class="forceblockflex__item">
+            <p class="force-head">QRT</p>
+            <p class="officer-name">Sivashankara</p>
+            <p class="officer-number">
+              <a href="tel:9090909090">9090909090</a>
+            </p>
+          </div>
+          <div class="forceblockflex__item">
+            <p class="force-head">RO</p>
+            <p class="officer-name">Damodhara</p>
+            <p class="officer-number">
+              <a href="tel:9090909090">9090909090</a>
+            </p>
+          </div>
+          <div class="forceblockflex__item">
+            <p class="force-head">PO</p>
+            <p class="officer-name">Damodhara</p>
+            <p class="officer-number">
+              <a href="tel:9090909090">9090909090</a>
+            </p>
+          </div>
+          <div class="forceblockflex__item">
+            <p class="force-head">VRO</p>
+            <p class="officer-name">Damodhara</p>
+            <p class="officer-number">
+              <a href="tel:9090909090">9090909090</a>
+            </p>
+          </div>
+          <div class="forceblockflex__item">
+            <p class="force-head">VRA</p>
+            <p class="officer-name">Damodhara</p>
+            <p class="officer-number">
+              <a href="tel:9090909090">9090909090</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__content">
+    <p class="footer__content--rights">
+      <script>
+        (function () {
+          document.querySelector(
+            '.footer__content--rights'
+          ).textContent = `© All Right Reserved | SSS District Police ${new Date().getFullYear()}`;
+        })();
+      </script>
+    </p>
+    <p class="footer__content--dev">
+      <a href="mailto:ajishtmohan@gmail.com">Contact the Developer</a>
+    </p>
+  </div>
+</footer>
+<script src="assets/js/search_booths_script.js"></script>
+</body>
+</html>

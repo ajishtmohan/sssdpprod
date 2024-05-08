@@ -129,6 +129,9 @@ article ul {
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .pollingbooths {
+      width: 100%; } }
   .pollingbooths__title {
     width: 100%;
     margin-bottom: 3rem; }
@@ -151,6 +154,9 @@ article ul {
   border-radius: 5px; }
   .booth-container:not(:last-child) {
     margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .booth-container #res_map {
+      height: 30rem; } }
   .booth-container .boothcard {
     width: calc((100% - 3rem) / 2);
     height: auto;
@@ -592,6 +598,10 @@ form {
 
 .boothform {
   width: 114rem; }
+  @media (max-width: 37.5em) {
+    .boothform {
+      width: 100%;
+      margin-bottom: 3rem; } }
   .boothform .boothform-flex {
     width: 100%;
     height: auto;
@@ -599,6 +609,12 @@ form {
     flex-direction: row;
     justify-content: center;
     gap: 3rem; }
+    @media (max-width: 37.5em) {
+      .boothform .boothform-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem; } }
     .boothform .boothform-flex__item {
       display: block;
       position: relative; }
@@ -607,12 +623,19 @@ form {
     .boothform .boothform-flex input[type='text'] {
       text-align: left;
       text-transform: uppercase; }
+      @media (max-width: 37.5em) {
+        .boothform .boothform-flex input[type='text'] {
+          text-align: center; } }
     .boothform .boothform-flex input[type='submit'] {
       display: block;
       position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      @media (max-width: 37.5em) {
+        .boothform .boothform-flex input[type='submit'] {
+          left: 50%;
+          transform: translateX(-50%); } }
 
 .routemap {
   width: 114rem; }
@@ -623,6 +646,11 @@ form {
     flex-direction: row;
     justify-content: center;
     gap: 3rem; }
+    @media (max-width: 37.5em) {
+      .routemap .routemap-flex {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem; } }
     .routemap .routemap-flex__item {
       display: block;
       position: relative; }
@@ -630,12 +658,19 @@ form {
       width: 100%; }
     .routemap .routemap-flex select {
       width: 30rem; }
+      @media (max-width: 37.5em) {
+        .routemap .routemap-flex select {
+          width: 100%; } }
     .routemap .routemap-flex input[type='submit'] {
       display: block;
       position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      @media (max-width: 37.5em) {
+        .routemap .routemap-flex input[type='submit'] {
+          left: 50%;
+          transform: translateX(-50%); } }
 
 #polling_results {
   display: block;
@@ -654,6 +689,9 @@ form {
       border-radius: 5px;
       padding: 3rem;
       margin-bottom: 3rem; }
+      @media (max-width: 37.5em) {
+        #polling_results #pollbooth_no .villageinfowarn {
+          width: 100%; } }
       #polling_results #pollbooth_no .villageinfowarn__title {
         width: 100%; }
         #polling_results #pollbooth_no .villageinfowarn__title--h2 {
@@ -679,6 +717,9 @@ form {
       border-radius: 5px;
       padding: 3rem;
       margin-bottom: 3rem; }
+      @media (max-width: 37.5em) {
+        #polling_results #pollinch_no .villageinfowarn {
+          width: 100%; } }
       #polling_results #pollinch_no .villageinfowarn__title {
         width: 100%; }
         #polling_results #pollinch_no .villageinfowarn__title--h2 {
@@ -2049,7 +2090,7 @@ main {
   transition: all 0.3s ease-in; }
   @media (max-width: 37.5em) {
     main {
-      margin-top: 11rem; } }
+      margin-top: 14rem; } }
   main h2 {
     color: #3bd2e3;
     font-weight: 500;
@@ -2077,22 +2118,30 @@ main {
     height: auto;
     margin: 0 auto;
     padding: 5rem 0 3rem; }
-    main .section-content-ah .routemap {
-      width: 100%; }
     @media (max-width: 37.5em) {
       main .section-content-ah {
+        width: 100%;
         padding: 0; } }
+    main .section-content-ah .routemap {
+      width: 100%; }
   main .routedisplay {
     width: 114rem;
     margin: 0 auto;
     display: none;
     opacity: 0;
     transition: all 0.3s ease-in; }
+    @media (max-width: 37.5em) {
+      main .routedisplay {
+        width: 100%;
+        padding: 3rem; } }
     main .routedisplay img {
       width: 80%;
       display: block;
       position: relative;
       margin: 0 auto; }
+      @media (max-width: 37.5em) {
+        main .routedisplay img {
+          width: 100%; } }
 
 .village-block {
   width: 100%; }
@@ -2187,6 +2236,7 @@ article {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    width: 100%;
     display: block;
     position: absolute;
     top: 50%;
@@ -2803,6 +2853,34 @@ article {
           font-size: 1.8rem;
           color: #037f8d; }
 
+@media (max-width: 37.5em) {
+  .pollassist {
+    padding: 3rem; } }
+
+.pollassist .pollassistbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 3rem;
+  margin: 3rem 0; }
+  @media (max-width: 37.5em) {
+    .pollassist .pollassistbtn {
+      flex-direction: column; } }
+  .pollassist .pollassistbtn__item {
+    width: 30rem;
+    text-align: center;
+    background-color: #037f8d;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 2.5rem;
+    border-radius: 5px; }
+    @media (max-width: 37.5em) {
+      .pollassist .pollassistbtn__item {
+        width: 100%; } }
+
 .event {
   width: 100rem;
   margin: 0 auto;
@@ -2857,6 +2935,9 @@ article {
   display: block;
   position: relative;
   margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    .village_info_box {
+      width: 100%; } }
 
 .villageinfo {
   width: 114rem;
@@ -3147,6 +3228,9 @@ article {
   border-radius: 5px;
   padding: 3rem;
   margin-bottom: 3rem; }
+  @media (max-width: 37.5em) {
+    .v-pollingbooths {
+      width: 100%; } }
   .v-pollingbooths__title {
     width: 100%;
     margin-bottom: 3rem; }
@@ -3383,6 +3467,10 @@ article {
       background-color: #f7f7f7f7;
       padding: 1rem;
       border-radius: 3px; }
+      @media (max-width: 37.5em) {
+        .forcedeployment .forceblockflex__item {
+          width: 100%;
+          text-align: center; } }
       .forcedeployment .forceblockflex__item .force-head {
         text-transform: uppercase;
         margin-bottom: 0.5rem;

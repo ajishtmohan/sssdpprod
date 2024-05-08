@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSSDP Portal</title>
+    <meta name="description" content="" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="SSS District Police" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon-32x32.png" />
+
+    <meta name="theme-color" content="#0cb6c9" />
+  </head>
+
+  <body>
+    <header class="header">
+      <input type="checkbox" class="check" name="" id="nav-toggle" />
+      <label for="nav-toggle" class="icon-burger">
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+      </label>
+
+      <div class="header__logobox">
+        <a href="al-index.html">
+          <img
+            class="header__logobox--img"
+            src="assets/img/appolice_logo.png"
+            alt=""
+          />
+        </a>
+        <a href="al-index.html">
+          <h1 class="header__logobox--title">SSSDP PORTAL</h1>
+        </a>
+      </div>
+      <!-- MENU -->
+      <div class="header__navigation">
+        <div class="header__navigation--container">
+          <ul class="headernav">
+            <li class="headernav__item">
+              <a href="al-ass-const.html">assemblies</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-poll-station.html">Polling Stations</a>
+            </li>
+            <li class="headernav__item">
+              <a href="#">Enforcement ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Cash</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Liquor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">NBWS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">Force Deployment ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2019</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2024</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="al-under-construction.html">training</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-under-construction.html">route maps</a>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">check-posts ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-state</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-district</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">forms ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="#">lor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">deployment</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">poll booth</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">PIP</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">leaders</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MENU -->
+      <div class="welcome">Welcome</div>
+    </header>
+
+    <main>
+      <div class="section__title">
+        <h2 class="section__title--text">find routemaps</h2>
+      </div>
+      <section class="section-content-ah">
+        <form class="routemap" action="" method="post" id="routemap">
+          <div class="routemap-flex">
+            <div class="routemap-flex__item">
+              <select
+                class="routemap__select"
+                name="constituency"
+                id="constituency"
+              >
+                <option
+                  disabled
+                  selected
+                  class="routemap__option--dis"
+                  default
+                  value=""
+                >
+                  ~ select Constituency ~
+                </option>
+
+                <?php
+                  require 'DbConnect.php';
+                  $db = new DbConnect;
+                  $conn = $db->connect(); $stmt = $conn->prepare("SELECT
+                DISTINCT asmb_id FROM wp_asmb_routemaps"); $stmt->execute();
+                $asmb_ids = $stmt->fetchAll(PDO::FETCH_ASSOC); // echo
+                json_encode($asmb_ids); echo '
+                <pre>
+';
+                  print_r($asmb_ids);
+                  echo '</pre
+                >
+                '; $assembly_ids = array(); $assembly_arr = array('a',
+                'Rapthadu', 'Madakasira', 'Hindupur', 'Penukonda',
+                'Puttaparthi', 'Dharmavaram', 'Kadiri'); foreach ($asmb_ids as
+                $asmb_id) { array_push($assembly_ids, $asmb_id['asmb_id']); }
+                echo json_encode($assembly_ids); foreach ($assembly_ids as
+                $assembly_id) { echo '
+                <option
+                  value="'.$assembly_id.'"
+                  id="'.$assembly_id.'"
+                  name="'.$assembly_id.'"
+                >
+                  '.$assembly_arr[$assembly_id]. '
+                </option>
+                '; } ?>
+              </select>
+            </div>
+            <div class="routemap-flex__item">
+              <select
+                class="routemap__select"
+                name="routemapno"
+                id="routemapno"
+              >
+                <option
+                  disabled
+                  selected
+                  class="routemap__option--dis"
+                  default
+                  value=""
+                >
+                  ~ select route number ~
+                </option>
+              </select>
+            </div>
+            <div class="routemap-flex__item">
+              <input type="submit" value="submit" />
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="routedisplay" id="routedisplay"></section>
+    </main>
+
+    <script src="assets/js/routemap.js"></script>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content--rights">
+          <script>
+            (function () {
+              document.querySelector(
+                '.footer__content--rights'
+              ).textContent = `© All Right Reserved | SSS District Police ${new Date().getFullYear()}`;
+            })();
+          </script>
+        </p>
+        <p class="footer__content--dev">
+          <a href="mailto:ajishtmohan@gmail.com">Contact the Developer</a>
+        </p>
+      </div>
+    </footer>
+    <script src="assets/js/search_booths_script.js"></script>
+  </body>
+</html>
