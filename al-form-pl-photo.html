@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSSDP Portal</title>
+    <meta name="description" content="" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/cropperjs/cropper.css" />
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/cropperjs/cropper.js"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="SSS District Police" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+
+    <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon-32x32.png" />
+
+    <meta name="theme-color" content="#0cb6c9" />
+  </head>
+
+  <body>
+    <header class="header">
+      <input type="checkbox" class="check" name="" id="nav-toggle" />
+      <label for="nav-toggle" class="icon-burger">
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+        <div class="icon-burger__line"></div>
+      </label>
+
+      <div class="header__logobox">
+        <a href="al-index.html">
+          <img
+            class="header__logobox--img"
+            src="assets/img/appolice_logo.png"
+            alt=""
+          />
+        </a>
+        <a href="al-index.html">
+          <h1 class="header__logobox--title">SSSDP PORTAL</h1>
+        </a>
+      </div>
+      <!-- MENU -->
+      <div class="header__navigation">
+        <div class="header__navigation--container">
+          <ul class="headernav">
+            <li class="headernav__item">
+              <a href="al-ass-const.html">assemblies</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-poll-station.html">Polling Stations</a>
+            </li>
+            <li class="headernav__item">
+              <a href="#">Enforcement ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Cash</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">Liquor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">NBWS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">Force Deployment ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2019</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">2024</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="al-under-construction.html">training</a>
+            </li>
+            <li class="headernav__item">
+              <a href="al-under-construction.html">route maps</a>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">check-posts ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-state</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="al-under-construction.html">inter-district</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="headernav__item">
+              <a href="#">forms ↓</a>
+              <ul class="headernav__sub">
+                <li class="headernav__sub--l2">
+                  <a href="#">lor</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">deployment</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">poll booth</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">PIP</a>
+                </li>
+                <li class="headernav__sub--l2">
+                  <a href="#">leaders</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="welcome">welcome</div>
+      <!-- MENU -->
+    </header>
+
+    <main>
+      <section class="sectionhome">
+        <div class="section__title">
+          <h2 class="section__title--text">Uplaod PL Photo</h2>
+        </div>
+        <article>
+          <div class="section-content">
+            <form action="" method="post" id="pl_form">
+              <div class="pu_pl">
+                <section class="section_form">
+                  <h2 class="form_h2 u-center-text">Choose PL</h2>
+                  <div class="pu_pl_flex">
+                    <div class="pu_pl_flex__item">
+                      <label for="v_form_constituency"
+                        >assembly constituency</label
+                      >
+                      <select name="" id="v_form_constituency" required>
+                        <option
+                          disabled
+                          selected
+                          class="boothform__option--dis"
+                          default
+                          value=""
+                        >
+                          ~ select constituency ~
+                        </option>
+                        <?php
+                          require ('data.php');
+                          $assemblies = loadAssembly();
+                          foreach ($assemblies as $assembly) {
+                            echo '<option class="boothform__option"
+                            id="'.$assembly['asmb_id'].'"
+                            value="'.$assembly['asmb_id'].'"
+                            name="'.$assembly['asmb_id'].'"
+                            >'
+                            .$assembly['asmb_name'].
+                          '</option>';
+                          }
+                        ?>
+                      </select>
+                    </div>
+      
+                    <div class="pu_pl_flex__item">
+                      <label for="v_form_police">Police Station</label>
+                      <select name="" id="v_form_police" required>
+                        <option
+                          disabled
+                          selected
+                          class="boothform__option--dis"
+                          default
+                          value=""
+                        >
+                          ~ select Police Station ~
+                        </option>
+                      </select> 
+                    </div>
+      
+                    <div class="pu_pl_flex__item">
+                      <label for="v_form_village">Village Name</label>
+                      <select name="" id="v_form_village" required>
+                        <option
+                          disabled
+                          selected
+                          class="boothform__option--dis"
+                          default
+                          value=""
+                        >
+                          ~ select Village ~
+                        </option>
+                      </select>
+                    </div>
+      
+                    <div class="pu_pl_flex__item">
+                      <label for="v_form_village_pl">Political Leader</label>
+                      <select name="" id="v_form_village_pl" required>
+                        <option
+                          disabled
+                          selected
+                          class="boothform__option--dis"
+                          default
+                          value=""
+                        >
+                          ~ select Political Leader ~
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </section>
+      
+                <section class="section_form">
+                  <h2 class="form_h2 u-center-text">Choose PL Photo</h2>
+                  <div class="pu_pl_det">
+                    <div class="pu_pl_det__photo">
+                      <div class="pu_pl_det__photo--frame">
+                        <img src="assets/img/profile.jpg" alt="" id="pil_photo" />
+                      </div>
+                      <input
+                        type="file"
+                        accept="image/png, image/jpg, image/jpeg"
+                        id="upload_image"
+                      />
+                    </div>
+                    
+                  </div>
+                </section>
+              </div>
+    
+              <div class="server_report">&nbsp;</div>
+              <div class="formbtns">
+                <input type="reset" value="reset" />
+                <input type="submit" value="submit" />
+              </div>
+            </form>
+            <div class="modal">
+              <div class="modal__crop">
+                <h2 class="u-center-text">crop image</h2>
+                <div class="photos">
+                  <div class="photos__orig">
+                    <img src="" id="pl_sample_image" />
+                  </div>
+                </div>
+                <div class="modal__crop--footer">
+                  <button type="button" id="cancel">Cancel</button>
+                  <button type="button" id="crop">Crop</button>
+                </div>
+              </div>
+              <div class="modal__confirm">
+                <div class="warningflex">
+                  <div class="warningflex__item1">
+                    <div class="warningflex__item--frame"></div>
+                  </div>
+                  <div class="warningflex__item2">
+                    <h2 class="u-center-text u-red">warning!</h2>
+                    <p class="u-center-text">Photo for Sreenivasulu is already been uploaded. Do you want to replace it?</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content--rights">
+          <script>
+            (function () {
+              document.querySelector(
+                '.footer__content--rights'
+              ).textContent = `© All Right Reserved | SSS District Police ${new Date().getFullYear()}`;
+            })();
+          </script>
+        </p>
+        <p class="footer__content--dev">
+          <a href="mailto:ajishtmohan@gmail.com">Contact the Developer</a>
+        </p>
+      </div>
+    </footer>
+    <!-- <script async src="assets/js/cropper.min.js"></script> -->
+    <script async src="assets/js/cropper_img.js"></script>
+  </body>
+</html>

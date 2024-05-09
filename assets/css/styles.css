@@ -102,6 +102,9 @@ article ul {
 .u-right-text {
   text-align: right; }
 
+.u-red {
+  color: #c91f0c; }
+
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
@@ -820,20 +823,76 @@ form {
     margin-bottom: 3rem; }
 
 .modal {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: calc(100vh - 21.5rem);
-  background-color: #000;
+  background-color: #f7f7f7f7;
   z-index: 9;
   scroll-behavior: smooth; }
-  .modal__content {
+  .modal__crop {
     width: 50%;
     min-width: 65rem;
     height: auto;
     background-color: #f7f7f7f7;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+    border-radius: 5px; }
+    .modal__crop h2 {
+      margin-bottom: 3rem; }
+    .modal__crop .photos {
+      height: 35rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 3rem; }
+      .modal__crop .photos__orig {
+        width: 100%;
+        position: relative; }
+        .modal__crop .photos__orig img {
+          display: block;
+          object-fit: contain; }
+      .modal__crop .photos__crop {
+        width: 30%; }
+        .modal__crop .photos__crop .preview {
+          display: block;
+          position: relative;
+          width: 200px;
+          height: 300px; }
+    .modal__crop--footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 3rem; }
+      .modal__crop--footer button {
+        width: 10rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.6rem;
+        color: #3bd2e3;
+        border-radius: 5px;
+        border: 2px solid #88e6f1;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 1rem 1.5rem;
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500; }
+  .modal__confirm {
+    width: 50%;
+    min-width: auto;
+    height: auto;
+    background-color: #fff;
     display: block;
     position: absolute;
     top: 50%;
@@ -841,50 +900,17 @@ form {
     transform: translate(-50%, -50%);
     padding: 3rem;
     border-radius: 5px; }
-    .modal__content h2 {
-      margin-bottom: 3rem; }
-    .modal__content .photos {
-      height: 35rem;
+    .modal__confirm .warningflex {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      gap: 3rem;
-      margin-bottom: 3rem; }
-      .modal__content .photos__orig {
-        width: 100%;
-        position: relative; }
-        .modal__content .photos__orig img {
+      gap: 3rem; }
+      .modal__confirm .warningflex__item1 {
+        width: 29rem; }
+        .modal__confirm .warningflex__item1--frame {
+          width: 100%;
+          height: 35rem;
           display: block;
-          object-fit: contain; }
-      .modal__content .photos__crop {
-        width: 30%; }
-        .modal__content .photos__crop .preview {
-          display: block;
-          position: relative;
-          width: 200px;
-          height: 300px; }
-  .modal__footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem; }
-    .modal__footer button {
-      width: 10rem;
-      font-family: "Montserrat", sans-serif;
-      font-size: 1.6rem;
-      color: #3bd2e3;
-      border-radius: 5px;
-      border: 2px solid #88e6f1;
-      outline: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      padding: 1rem 1.5rem;
-      transition: all 0.2s ease-in;
-      cursor: pointer;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 500; }
+          position: relative; }
 
 .pipdetails {
   width: 100%;
@@ -897,7 +923,7 @@ form {
   .pipdetails__photo {
     width: calc((100% - 6rem) / 3); }
     .pipdetails__photo--frame {
-      width: 100%rem;
+      width: 100%;
       height: 35rem;
       background-color: white;
       border-radius: 5px;
@@ -1220,6 +1246,36 @@ form {
   .policebtn input[type='radio'] {
     display: none;
     padding: 0; }
+
+.pu_pl {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 5px;
+  gap: 3rem;
+  padding: 2rem; }
+  .pu_pl .pu_pl_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+
+.pu_pl_det {
+  width: 100%; }
+  .pu_pl_det__photo {
+    width: 100%;
+    display: block; }
+    .pu_pl_det__photo--frame {
+      width: 29rem;
+      height: 35rem;
+      background-color: white;
+      border-radius: 5px;
+      margin: 0 auto 3rem;
+      overflow: hidden; }
+      .pu_pl_det__photo--frame img {
+        width: 100%;
+        height: auto; }
+    .pu_pl_det__photo #upload_image {
+      display: none; }
 
 .enforcement-flex {
   width: 114rem;
