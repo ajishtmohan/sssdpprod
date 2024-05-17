@@ -2481,6 +2481,9 @@ article {
   padding: 10rem 5rem;
   background-color: #f7f7f7f7;
   transition: all 0.5s ease-in; }
+  @media (max-width: 37.5em) {
+    .container {
+      width: 100%; } }
   .container h2 {
     margin-bottom: 2rem;
     transition: all 0.5s ease-in; }
@@ -2488,6 +2491,9 @@ article {
     width: 114rem;
     margin: 0 auto;
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .container__site {
+        width: 100%; } }
     .container__site img {
       transition: all 0.5s ease-in; }
     .container__site p {
@@ -2500,6 +2506,9 @@ article {
       gap: 3rem;
       margin-top: 3rem;
       transition: all 0.5s ease-in; }
+      @media (max-width: 37.5em) {
+        .container__site .whatsnew {
+          flex-direction: column; } }
       .container__site .whatsnew__item {
         width: calc((100% - 6rem) / 3);
         height: 36rem;
@@ -2508,6 +2517,9 @@ article {
         cursor: pointer;
         border-radius: 5px;
         overflow: hidden; }
+        @media (max-width: 37.5em) {
+          .container__site .whatsnew__item {
+            width: 100%; } }
         .container__site .whatsnew__item:hover .dark-overlay {
           height: 14rem; }
         .container__site .whatsnew__item:hover .blue-overlay {
@@ -2643,6 +2655,10 @@ article {
   position: relative; }
   .vision-block:not(:last-child) {
     margin-bottom: 10rem; }
+  @media (max-width: 37.5em) {
+    .vision-block {
+      flex-direction: column;
+      margin-bottom: 3rem; } }
   .vision-block__item {
     width: calc((100% - 3rem) / 2);
     height: 38rem;
@@ -2651,6 +2667,9 @@ article {
     align-content: center;
     text-align: left;
     transition: all 0.5s ease-in-out; }
+    @media (max-width: 37.5em) {
+      .vision-block__item {
+        width: 100%; } }
 
 .mission-block {
   width: 100%;
@@ -2661,6 +2680,9 @@ article {
   position: relative; }
   .mission-block:not(:last-child) {
     margin-bottom: 10rem; }
+  @media (max-width: 37.5em) {
+    .mission-block {
+      flex-direction: column-reverse; } }
   .mission-block__item {
     width: calc((100% - 3rem) / 2);
     height: 38rem;
@@ -2669,6 +2691,9 @@ article {
     align-content: center;
     text-align: left;
     transition: all 0.5s ease-in-out; }
+    @media (max-width: 37.5em) {
+      .mission-block__item {
+        width: 100%; } }
 
 .sm-block {
   width: 100%;

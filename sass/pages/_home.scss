@@ -43,6 +43,10 @@
   background-color: $color-grey-light-1;
   transition: all 0.5s ease-in;
 
+  @include respond(phone) {
+    width: 100%;
+  }
+
   h2 {
     margin-bottom: 2rem;
     transition: all 0.5s ease-in;
@@ -52,6 +56,10 @@
     width: $site-content-width;
     margin: 0 auto;
     text-align: center;
+
+    @include respond(phone) {
+      width: 100%;
+    }
 
     img {
       transition: all 0.5s ease-in;
@@ -70,6 +78,10 @@
       margin-top: 3rem;
       transition: all 0.5s ease-in;
 
+      @include respond(phone) {
+        flex-direction: column;
+      }
+
       &__item {
         width: calc((100% - 6rem) / 3);
         height: 36rem;
@@ -78,6 +90,10 @@
         cursor: pointer;
         border-radius: 5px;
         overflow: hidden;
+
+        @include respond(phone) {
+          width: 100%;
+        }
 
         &:hover .dark-overlay {
           height: 14rem;
@@ -268,6 +284,11 @@
     margin-bottom: 10rem;
   }
 
+  @include respond(phone) {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
   &__item {
     width: calc((100% - 3rem) / 2);
     height: 38rem;
@@ -276,6 +297,10 @@
     align-content: center;
     text-align: left;
     transition: all 0.5s ease-in-out;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 }
 
@@ -290,6 +315,10 @@
     margin-bottom: 10rem;
   }
 
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
+
   &__item {
     width: calc((100% - 3rem) / 2);
     height: 38rem;
@@ -298,6 +327,10 @@
     align-content: center;
     text-align: left;
     transition: all 0.5s ease-in-out;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 }
 
