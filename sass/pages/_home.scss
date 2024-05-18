@@ -6,36 +6,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.homepagephoto {
-  border: 2px soild $color-primary;
-  transition: all 0.5s ease-in;
-  opacity: 0;
-  transform: translateY(3rem);
-
-  &__photo {
-    width: 30rem;
-    height: 40rem;
-    display: block;
-    object-fit: cover;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    outline: 0.2rem solid $color-primary-dark-1;
-
-    img {
-      width: 100%;
-      // height: 100%;
-    }
-  }
-
-  &__text {
-    text-align: center;
-    h3 {
-      color: $color-secondary-dark;
-      font-size: 1.7rem;
-    }
-  }
-}
-
 .container {
   width: 100%;
   height: auto;
@@ -45,6 +15,7 @@
 
   @include respond(phone) {
     width: 100%;
+    padding: 3rem;
   }
 
   h2 {
@@ -54,11 +25,25 @@
 
   &__site {
     width: $site-content-width;
+    display: block;
+    position: relative;
     margin: 0 auto;
     text-align: center;
 
     @include respond(phone) {
       width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .sm-icon {
+      width: 40rem;
+
+      @include respond(phone) {
+        width: 100%;
+      }
     }
 
     img {
@@ -191,11 +176,6 @@
       margin: 0 auto;
       line-height: 3rem;
     }
-
-    img {
-      width: 100%;
-      margin-bottom: 3rem;
-    }
   }
 }
 
@@ -212,6 +192,7 @@
 
   @include respond(phone) {
     width: 100%;
+    height: calc(100vh - 11rem);
   }
 }
 
@@ -233,30 +214,39 @@
 
   @include respond(phone) {
     width: 100%;
+    height: calc(100vh - 8.7rem);
     padding-bottom: 0;
+    gap: 2rem;
   }
 
   .homepagephoto {
     width: 30rem;
     height: auto;
+    border: 2px soild $color-primary;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    transform: translateY(3rem);
 
     @include respond(phone) {
-      width: 25rem;
+      width: calc((100% - 6rem) / 2);
+      height: auto;
+      display: block;
+      position: relative;
     }
 
     &__photo {
-      width: 100%;
-      height: 040rem;
+      width: 30rem;
+      height: 40rem;
       display: block;
-      position: relative;
-      background-color: antiquewhite;
+      object-fit: cover;
       overflow: hidden;
+      margin-bottom: 2rem;
       outline: 0.2rem solid $color-primary-dark-1;
-      text-align: center;
 
       @include respond(phone) {
         width: 100%;
-        height: 28rem;
+        height: 25rem;
+        outline: 0.1rem solid $color-primary-dark-1;
       }
 
       img {
@@ -265,10 +255,12 @@
       }
     }
 
-    @include respond(phone) {
-      width: calc((100% - 20rem) / 2);
-      display: block;
-      position: relative;
+    &__text {
+      text-align: center;
+      h3 {
+        color: $color-secondary-dark;
+        font-size: 1.7rem;
+      }
     }
   }
 }
@@ -286,7 +278,9 @@
 
   @include respond(phone) {
     flex-direction: column;
-    margin-bottom: 3rem;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__item {
@@ -300,6 +294,9 @@
 
     @include respond(phone) {
       width: 100%;
+
+      img {
+      }
     }
   }
 }

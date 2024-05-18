@@ -2162,7 +2162,7 @@ main {
   transition: all 0.3s ease-in; }
   @media (max-width: 37.5em) {
     main {
-      margin-top: 14rem; } }
+      margin-top: 11rem; } }
   main h2 {
     color: #3bd2e3;
     font-weight: 500;
@@ -2454,27 +2454,6 @@ article {
   min-height: calc(100vh - 20rem);
   transition: all 0.5s ease-in-out; }
 
-.homepagephoto {
-  border: 2px soild #0cb6c9;
-  transition: all 0.5s ease-in;
-  opacity: 0;
-  transform: translateY(3rem); }
-  .homepagephoto__photo {
-    width: 30rem;
-    height: 40rem;
-    display: block;
-    object-fit: cover;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    outline: 0.2rem solid #037f8d; }
-    .homepagephoto__photo img {
-      width: 100%; }
-  .homepagephoto__text {
-    text-align: center; }
-    .homepagephoto__text h3 {
-      color: #c91f0c;
-      font-size: 1.7rem; }
-
 .container {
   width: 100%;
   height: auto;
@@ -2483,17 +2462,27 @@ article {
   transition: all 0.5s ease-in; }
   @media (max-width: 37.5em) {
     .container {
-      width: 100%; } }
+      width: 100%;
+      padding: 3rem; } }
   .container h2 {
     margin-bottom: 2rem;
     transition: all 0.5s ease-in; }
   .container__site {
     width: 114rem;
+    display: block;
+    position: relative;
     margin: 0 auto;
     text-align: center; }
     @media (max-width: 37.5em) {
       .container__site {
         width: 100%; } }
+    .container__site img {
+      width: 100%; }
+    .container__site .sm-icon {
+      width: 40rem; }
+      @media (max-width: 37.5em) {
+        .container__site .sm-icon {
+          width: 100%; } }
     .container__site img {
       transition: all 0.5s ease-in; }
     .container__site p {
@@ -2584,9 +2573,6 @@ article {
     .container__site p {
       margin: 0 auto;
       line-height: 3rem; }
-    .container__site img {
-      width: 100%;
-      margin-bottom: 3rem; }
 
 .lightblue {
   background-color: rgba(59, 210, 227, 0.2); }
@@ -2598,7 +2584,8 @@ article {
   margin-bottom: 3rem; }
   @media (max-width: 37.5em) {
     .section-home-photo {
-      width: 100%; } }
+      width: 100%;
+      height: calc(100vh - 11rem); } }
 
 .photogallery {
   width: 114rem;
@@ -2617,34 +2604,43 @@ article {
   @media (max-width: 37.5em) {
     .photogallery {
       width: 100%;
-      padding-bottom: 0; } }
+      height: calc(100vh - 8.7rem);
+      padding-bottom: 0;
+      gap: 2rem; } }
   .photogallery .homepagephoto {
     width: 30rem;
-    height: auto; }
+    height: auto;
+    border: 2px soild #0cb6c9;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    transform: translateY(3rem); }
     @media (max-width: 37.5em) {
       .photogallery .homepagephoto {
-        width: 25rem; } }
+        width: calc((100% - 6rem) / 2);
+        height: auto;
+        display: block;
+        position: relative; } }
     .photogallery .homepagephoto__photo {
-      width: 100%;
-      height: 040rem;
+      width: 30rem;
+      height: 40rem;
       display: block;
-      position: relative;
-      background-color: antiquewhite;
+      object-fit: cover;
       overflow: hidden;
-      outline: 0.2rem solid #037f8d;
-      text-align: center; }
+      margin-bottom: 2rem;
+      outline: 0.2rem solid #037f8d; }
       @media (max-width: 37.5em) {
         .photogallery .homepagephoto__photo {
           width: 100%;
-          height: 28rem; } }
+          height: 25rem;
+          outline: 0.1rem solid #037f8d; } }
       .photogallery .homepagephoto__photo img {
         width: 100%;
         height: auto; }
-    @media (max-width: 37.5em) {
-      .photogallery .homepagephoto {
-        width: calc((100% - 20rem) / 2);
-        display: block;
-        position: relative; } }
+    .photogallery .homepagephoto__text {
+      text-align: center; }
+      .photogallery .homepagephoto__text h3 {
+        color: #c91f0c;
+        font-size: 1.7rem; }
 
 .vision-block {
   width: 100%;
@@ -2657,8 +2653,9 @@ article {
     margin-bottom: 10rem; }
   @media (max-width: 37.5em) {
     .vision-block {
-      flex-direction: column;
-      margin-bottom: 3rem; } }
+      flex-direction: column; }
+      .vision-block:not(:last-child) {
+        margin-bottom: 3rem; } }
   .vision-block__item {
     width: calc((100% - 3rem) / 2);
     height: 38rem;

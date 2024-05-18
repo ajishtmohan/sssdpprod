@@ -6,7 +6,7 @@ main {
   transition: all 0.3s ease-in;
 
   @include respond(phone) {
-    margin-top: 14rem;
+    margin-top: 11rem;
   }
 
   h2 {
