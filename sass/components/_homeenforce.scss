@@ -12,6 +12,13 @@
   gap: 2rem;
   padding-bottom: 5rem;
 
+  @include respond(phone) {
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+
   &__item {
     display: block;
     flex-direction: row;
@@ -22,6 +29,10 @@
     border-radius: 5px;
     text-decoration: none;
     transition: all 0.1s ease-in;
+
+    @include respond(phone) {
+      width: calc((100% - 2rem) / 2);
+    }
 
     &:hover {
       background-color: $color-primary-dark-2;
@@ -88,6 +99,11 @@
   border-radius: 5px;
   border: 1px solid $color-primary-dark-2;
   background-color: $color-grey-light-1;
+
+  @include respond(phone) {
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+  }
 
   &__map {
     width: 100%;

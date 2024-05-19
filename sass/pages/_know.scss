@@ -6,6 +6,10 @@
   border-radius: 5px;
   margin-bottom: 3rem;
 
+  @include respond(phone) {
+    width: 100%;
+  }
+
   h3 {
     color: $color-secondary-dark;
     font-weight: 500;
@@ -37,6 +41,10 @@
     justify-content: center;
     gap: 3rem;
 
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
     &__item {
       width: calc((100% - 3rem) / 2);
       height: auto;
@@ -45,6 +53,14 @@
       overflow: hidden;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
       transition: all 0.1s ease-in;
+
+      @include respond(phone) {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
 
       &:hover {
         box-shadow: 0 0.6rem 0.3rem rgba(0, 0, 0, 0.05);

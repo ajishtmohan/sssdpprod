@@ -1,9 +1,11 @@
 .section-home {
   width: 100%;
   min-height: calc(100vh - 20rem);
-  // display: none;
-  // opacity: 0;
   transition: all 0.5s ease-in-out;
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 .container {

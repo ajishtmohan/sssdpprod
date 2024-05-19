@@ -9,9 +9,20 @@
   border-radius: 5px;
   margin-bottom: 3rem;
 
+  @include respond(phone) {
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    margin: 2rem;
+    margin-top: 2rem;
+  }
+
   &__h2 {
     // display: block;
     text-align: center;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
 
   .policestn {
@@ -20,6 +31,11 @@
     flex-wrap: wrap;
     gap: 2rem;
 
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
     &__item {
       width: calc((100% - 4rem) / 3);
       background-color: $color-white;
@@ -27,6 +43,10 @@
       display: flex;
       gap: 1.5rem;
       flex-direction: row;
+
+      @include respond(phone) {
+        width: 100%;
+      }
 
       &--no {
         text-align: right;

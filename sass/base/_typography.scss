@@ -8,6 +8,21 @@ body {
 }
 
 article {
+  width: 100%;
+  @include u-center-div;
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  h2 {
+    color: $color-primary;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
   .articleimg {
     max-width: 100%;
   }
@@ -21,8 +36,9 @@ article {
     }
 
     @include respond(phone) {
-      font-size: 3.5rem;
-      line-height: 4rem;
+      font-size: 2.5rem;
+      line-height: normal;
+      margin-bottom: 1rem;
     }
   }
 
@@ -36,7 +52,7 @@ article {
     }
 
     @include respond(phone) {
-      font-size: $mobile-font-size;
+      font-size: $default-font-size;
       line-height: 3rem;
     }
   }
@@ -51,7 +67,7 @@ article {
 
     li {
       @include respond(phone) {
-        font-size: $mobile-font-size;
+        font-size: $default-font-size;
         margin-left: 0rem;
         margin-bottom: 0.5rem;
       }
