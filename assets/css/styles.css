@@ -65,7 +65,7 @@ article {
   @media (max-width: 37.5em) {
     article {
       width: 100%;
-      padding: 3rem; } }
+      padding: 1.5rem; } }
   article h2 {
     color: #0cb6c9;
     font-weight: 500;
@@ -377,7 +377,7 @@ article {
   @media (max-width: 37.5em) {
     .constnavflex {
       width: 100%;
-      gap: 3rem; } }
+      gap: 1.5rem; } }
   .constnavflex__el {
     width: calc((100% - 10rem) / 3);
     height: 12rem;
@@ -391,7 +391,9 @@ article {
     @media (max-width: 37.5em) {
       .constnavflex__el {
         width: 100%;
-        height: 10rem; } }
+        height: auto;
+        font-size: 1.4rem;
+        padding: 3rem; } }
     .constnavflex__el:hover {
       background-color: #037f8d; }
     .constnavflex__el--text {
@@ -1684,6 +1686,11 @@ table {
   justify-content: center;
   gap: 5rem;
   margin: 0 auto; }
+  @media (max-width: 37.5em) {
+    .villagesearch {
+      width: 100%;
+      padding: 1.5rem;
+      gap: 1.5rem; } }
   .villagesearch button[type='submit'] {
     width: calc((100% - 10rem) / 3);
     height: 10rem;
@@ -1704,6 +1711,10 @@ table {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.2s ease-in; }
+    @media (max-width: 37.5em) {
+      .villagesearch .radioholder {
+        width: 100%;
+        height: 6rem; } }
     .villagesearch .radioholder:hover {
       background-color: #035761; }
     .villagesearch .radioholder label h2 {
@@ -2049,17 +2060,17 @@ table {
           transition: all 0.3s ease-in; }
         .header__navigation--container .headernav li {
           text-align: center; }
-          @media (max-width: 37.5em) {
-            .header__navigation--container .headernav li {
-              width: 100%;
-              margin: 0;
-              padding: 0; } }
           @media (max-width: 56.25em) {
             .header__navigation--container .headernav li {
               width: 100%;
               margin: 0;
               padding: 0; } }
           @media (max-width: 75em) {
+            .header__navigation--container .headernav li {
+              width: 100%;
+              margin: 0;
+              padding: 0; } }
+          @media (max-width: 37.5em) {
             .header__navigation--container .headernav li {
               width: 100%;
               margin: 0;
@@ -2135,6 +2146,14 @@ table {
               opacity: 0;
               cursor: pointer;
               transition: all 0.3s ease-in; }
+              @media (max-width: 37.5em) {
+                .header__navigation--container .headernav__sub--l2 .headernav__sub2 {
+                  width: 100%;
+                  z-index: 10;
+                  position: relative;
+                  left: 0;
+                  border-top: 3px solid #c91f0c;
+                  border-bottom: 3px solid #c91f0c; } }
               .header__navigation--container .headernav__sub--l2 .headernav__sub2--l3 {
                 display: block;
                 color: #fff;
@@ -2147,6 +2166,13 @@ table {
                 list-style-type: none;
                 min-width: 17rem;
                 position: relative; }
+                @media (max-width: 37.5em) {
+                  .header__navigation--container .headernav__sub--l2 .headernav__sub2--l3 label {
+                    font-size: 1.8rem; } }
+                @media (max-width: 37.5em) {
+                  .header__navigation--container .headernav__sub--l2 .headernav__sub2--l3 {
+                    padding: 1.8rem;
+                    background-color: #037f8d; } }
                 .header__navigation--container .headernav__sub--l2 .headernav__sub2--l3:hover {
                   background-color: #024148;
                   color: #3bd2e3; }
@@ -2158,6 +2184,10 @@ table {
               display: block;
               position: absolute;
               opacity: 1; }
+              @media (max-width: 37.5em) {
+                .header__navigation--container .headernav__sub--l2:hover .headernav__sub2 {
+                  display: block;
+                  position: relative; } }
         .header__navigation--container .headernav__item {
           list-style-type: none;
           display: inline-block;
@@ -2201,7 +2231,8 @@ main {
     @media (max-width: 37.5em) {
       main .section-content {
         padding: 0;
-        width: 100%; } }
+        width: 100%;
+        overflow-x: scroll; } }
   main .section-content-site-width {
     width: 130rem;
     min-height: calc(100vh - 27.5rem);
@@ -2209,7 +2240,9 @@ main {
     margin: 0 auto; }
     @media (max-width: 37.5em) {
       main .section-content-site-width {
-        padding: 0; } }
+        width: 100%;
+        padding: 0;
+        overflow-x: scroll; } }
   main .section-content-ah {
     width: 114rem;
     display: block;
@@ -2246,6 +2279,9 @@ main {
   width: 100%; }
   .village-block:not(:last-child) {
     margin-bottom: 3rem; }
+    @media (max-width: 37.5em) {
+      .village-block:not(:last-child) {
+        margin-bottom: 1.5rem; } }
 
 .section-header {
   width: 114rem;
@@ -2324,8 +2360,8 @@ main {
     transform: translate(-50%, -50%); }
     @media (max-width: 37.5em) {
       .section__title--text {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2rem;
+        line-height: 2rem;
         font-weight: 400; } }
 
 .warning {
@@ -2810,6 +2846,9 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 3rem; }
+  @media (max-width: 37.5em) {
+    .pipinfoflex {
+      width: 100%; } }
   .pipinfoflex__item {
     width: 100%;
     height: auto;
@@ -2819,12 +2858,20 @@ main {
     border-radius: 5px;
     padding: 3rem;
     background-color: #f7f7f7f7; }
+    @media (max-width: 37.5em) {
+      .pipinfoflex__item {
+        flex-direction: column;
+        padding: 1.5rem; } }
     .pipinfoflex__item--photo {
       width: 28%;
       display: block;
       height: 100%;
       border-radius: 3px;
       overflow: hidden; }
+      @media (max-width: 37.5em) {
+        .pipinfoflex__item--photo {
+          width: 100%;
+          margin-bottom: 1.5rem; } }
       .pipinfoflex__item--photo img {
         width: 100%; }
     .pipinfoflex__item--details {
@@ -2832,6 +2879,9 @@ main {
       display: block;
       height: 100%;
       border-radius: 3px; }
+      @media (max-width: 37.5em) {
+        .pipinfoflex__item--details {
+          width: 100%; } }
       .pipinfoflex__item--details .namedetailsflex {
         width: 100%;
         height: auto;
@@ -2840,6 +2890,11 @@ main {
         justify-content: space-between;
         gap: 3rem;
         margin-bottom: 3rem; }
+        @media (max-width: 37.5em) {
+          .pipinfoflex__item--details .namedetailsflex {
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem; } }
         .pipinfoflex__item--details .namedetailsflex__item {
           background-color: #fff;
           padding: 1rem 1.5rem;
@@ -2847,8 +2902,14 @@ main {
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
         .pipinfoflex__item--details .namedetailsflex__name, .pipinfoflex__item--details .namedetailsflex__fname {
           width: 45%; }
+          @media (max-width: 37.5em) {
+            .pipinfoflex__item--details .namedetailsflex__name, .pipinfoflex__item--details .namedetailsflex__fname {
+              width: 100%; } }
         .pipinfoflex__item--details .namedetailsflex__age {
           width: 10%; }
+          @media (max-width: 37.5em) {
+            .pipinfoflex__item--details .namedetailsflex__age {
+              width: 100%; } }
       .pipinfoflex__item--details .ageadddetailsflex {
         width: 100%;
         height: auto;
@@ -2856,18 +2917,29 @@ main {
         flex-direction: row;
         gap: 3rem;
         margin-bottom: 3rem; }
+        @media (max-width: 37.5em) {
+          .pipinfoflex__item--details .ageadddetailsflex {
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem; } }
         .pipinfoflex__item--details .ageadddetailsflex__phone {
           width: 28%;
           background-color: #fff;
           padding: 1rem 1.5rem;
           border-radius: 3px;
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+          @media (max-width: 37.5em) {
+            .pipinfoflex__item--details .ageadddetailsflex__phone {
+              width: 100%; } }
         .pipinfoflex__item--details .ageadddetailsflex__address {
           width: 72%;
           background-color: #fff;
           padding: 1rem 1.5rem;
           border-radius: 3px;
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+          @media (max-width: 37.5em) {
+            .pipinfoflex__item--details .ageadddetailsflex__address {
+              width: 100%; } }
       .pipinfoflex__item--details .crimedetails {
         width: 100%;
         height: auto;
@@ -2876,6 +2948,9 @@ main {
         border-radius: 3px;
         box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
         margin-bottom: 3rem; }
+        @media (max-width: 37.5em) {
+          .pipinfoflex__item--details .crimedetails {
+            margin-bottom: 1.5rem; } }
       .pipinfoflex__item--details .chargesheetflex {
         width: 100%;
         height: auto;
@@ -2885,12 +2960,20 @@ main {
         flex-wrap: wrap;
         gap: 3rem;
         margin-bottom: 3rem; }
+        @media (max-width: 37.5em) {
+          .pipinfoflex__item--details .chargesheetflex {
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem; } }
         .pipinfoflex__item--details .chargesheetflex__item {
           width: calc((100% - 3rem) / 2);
           background-color: #fff;
           padding: 1rem 1.5rem;
           border-radius: 3px;
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+          @media (max-width: 37.5em) {
+            .pipinfoflex__item--details .chargesheetflex__item {
+              width: 100%; } }
       .pipinfoflex__item--details .category {
         width: 100%;
         height: auto;
@@ -2899,6 +2982,9 @@ main {
         border-radius: 3px;
         box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
         margin-bottom: 3rem; }
+        @media (max-width: 37.5em) {
+          .pipinfoflex__item--details .category {
+            margin-bottom: 1.5rem; } }
       .pipinfoflex__item--details .bindover {
         width: 100%;
         height: auto;
@@ -2908,12 +2994,20 @@ main {
         flex-wrap: wrap;
         gap: 3rem;
         margin-bottom: 3rem; }
+        @media (max-width: 37.5em) {
+          .pipinfoflex__item--details .bindover {
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem; } }
         .pipinfoflex__item--details .bindover__item {
           width: calc((100% - 3rem) / 2);
           background-color: #fff;
           padding: 1rem 1.5rem;
           border-radius: 3px;
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+          @media (max-width: 37.5em) {
+            .pipinfoflex__item--details .bindover__item {
+              width: 100%; } }
       .pipinfoflex__item--details .polpartyflex {
         width: 100%;
         height: auto;
@@ -2928,6 +3022,9 @@ main {
           padding: 1rem 1.5rem;
           border-radius: 3px;
           box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+          @media (max-width: 37.5em) {
+            .pipinfoflex__item--details .polpartyflex__item {
+              width: 100%; } }
 
 .asmbpolicestn {
   width: 114rem;
@@ -3079,12 +3176,24 @@ main {
   background-color: #f7f7f7f7;
   border-radius: 5px;
   padding: 3rem; }
+  @media (max-width: 37.5em) {
+    .villageinfo {
+      width: 100%;
+      padding: 1.5rem; } }
   .villageinfo__title {
     width: 100%;
     margin-bottom: 3rem; }
+    @media (max-width: 37.5em) {
+      .villageinfo__title {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.5rem; } }
     .villageinfo__title--h2 {
       margin-bottom: 1rem;
       text-align: center; }
+      @media (max-width: 37.5em) {
+        .villageinfo__title--h2 {
+          margin-bottom: 0.5rem; } }
   .villageinfo .villageDesc {
     width: 100%;
     height: auto;
@@ -3093,8 +3202,14 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem; }
+    @media (max-width: 37.5em) {
+      .villageinfo .villageDesc {
+        gap: 1.5rem; } }
     .villageinfo .villageDesc:not(:last-child) {
       margin-bottom: 3rem; }
+      @media (max-width: 37.5em) {
+        .villageinfo .villageDesc:not(:last-child) {
+          margin-bottom: 1.5rem; } }
     .villageinfo .villageDesc__item {
       width: calc((100% - 9rem) / 4);
       display: block;
@@ -3102,6 +3217,14 @@ main {
       padding: 1rem 1.5rem;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
       border-radius: 5px; }
+      @media (max-width: 37.5em) {
+        .villageinfo .villageDesc__item {
+          width: calc((100% - 1.5rem) / 2); } }
+      .villageinfo .villageDesc__item .prop {
+        font-size: 1.6rem; }
+        @media (max-width: 37.5em) {
+          .villageinfo .villageDesc__item .prop {
+            font-size: 1.4rem; } }
   .villageinfo .predominant {
     width: 100%;
     height: auto;
@@ -3110,12 +3233,23 @@ main {
     flex-wrap: wrap;
     align-items: stretch;
     gap: 3rem; }
+    @media (max-width: 37.5em) {
+      .villageinfo .predominant {
+        gap: 1.5rem; } }
     .villageinfo .predominant__item1 {
       width: calc((100% - 3rem) / 2);
       padding: 1rem 1.5rem;
       background-color: #fff;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
       border-radius: 5px; }
+      @media (max-width: 37.5em) {
+        .villageinfo .predominant__item1 {
+          width: 100%; } }
+      .villageinfo .predominant__item1 .prop {
+        font-size: 1.6rem; }
+        @media (max-width: 37.5em) {
+          .villageinfo .predominant__item1 .prop {
+            font-size: 1.4rem; } }
     .villageinfo .predominant__item2 {
       width: calc((100% - 3rem) / 2);
       padding: 1rem 1.5rem;
@@ -3125,6 +3259,14 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
+      .villageinfo .predominant__item2 .prop {
+        font-size: 1.6rem; }
+        @media (max-width: 37.5em) {
+          .villageinfo .predominant__item2 .prop {
+            font-size: 1.4rem; } }
+      @media (max-width: 37.5em) {
+        .villageinfo .predominant__item2 {
+          width: 100%; } }
       .villageinfo .predominant__item2--caste {
         display: inline-block;
         position: relative;
@@ -3190,8 +3332,17 @@ main {
   margin: 0 auto;
   border-radius: 5px;
   padding: 3rem; }
+  @media (max-width: 37.5em) {
+    .polpeopleinfo {
+      width: 100%;
+      padding: 1.5rem; } }
   .polpeopleinfo__title {
     width: 100%; }
+    @media (max-width: 37.5em) {
+      .polpeopleinfo__title {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem; } }
     .polpeopleinfo__title--h2red {
       margin-bottom: 1rem;
       text-align: center;
@@ -3210,6 +3361,9 @@ main {
     flex-wrap: wrap;
     gap: 3rem;
     margin-top: 3rem; }
+    @media (max-width: 37.5em) {
+      .polpeopleinfo .polpeopleinfocardflex {
+        margin-top: 1.5rem; } }
     .polpeopleinfo .polpeopleinfocardflex__item {
       width: calc((100% - 3rem) / 2);
       display: block;
@@ -3217,6 +3371,10 @@ main {
       border-radius: 5px;
       padding: 2rem;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05); }
+      @media (max-width: 37.5em) {
+        .polpeopleinfo .polpeopleinfocardflex__item {
+          width: 100%;
+          padding: 1.5rem; } }
       .polpeopleinfo .polpeopleinfocardflex__item .politicperson {
         width: 100%;
         height: auto;
@@ -3363,10 +3521,15 @@ main {
   @media (max-width: 37.5em) {
     .v-pollingbooths {
       width: 100%;
-      padding: 2rem; } }
+      padding: 1.5rem; } }
   .v-pollingbooths__title {
     width: 100%;
     margin-bottom: 3rem; }
+    @media (max-width: 37.5em) {
+      .v-pollingbooths__title {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        margin-bottom: 1.5rem; } }
     .v-pollingbooths__title--h2 {
       margin-bottom: 1rem;
       text-align: center; }
@@ -3423,13 +3586,17 @@ main {
         .v-pollingbooths .v-boothcard__number--text .boothno {
           margin-bottom: 1rem;
           display: block; }
+          @media (max-width: 37.5em) {
+            .v-pollingbooths .v-boothcard__number--text .boothno {
+              font-size: 1.4rem;
+              line-height: 1.4rem; } }
         .v-pollingbooths .v-boothcard__number--text .boothnumber {
           display: block;
           font-size: 4rem;
           color: #000; }
           @media (max-width: 37.5em) {
             .v-pollingbooths .v-boothcard__number--text .boothnumber {
-              font-size: 5rem; } }
+              font-size: 3rem; } }
         .v-pollingbooths .v-boothcard__number--text .boothstatus {
           text-transform: uppercase;
           font-size: 2rem;
@@ -3437,6 +3604,10 @@ main {
           color: #037f8d;
           display: block;
           margin-top: 1rem; }
+          @media (max-width: 37.5em) {
+            .v-pollingbooths .v-boothcard__number--text .boothstatus {
+              margin-top: 0.5rem;
+              font-size: 1.4rem; } }
     .v-pollingbooths .v-boothcard__details {
       width: calc(100% - 15rem);
       height: auto;
@@ -3465,6 +3636,10 @@ main {
           display: block;
           position: relative;
           height: auto; }
+          @media (max-width: 37.5em) {
+            .v-pollingbooths .v-boothcard__details--name .boothna {
+              margin-top: 0.5rem;
+              font-size: 1.4rem; } }
         .v-pollingbooths .v-boothcard__details--name .boothname {
           font-size: 2.5rem;
           line-height: 3rem;
@@ -3472,8 +3647,8 @@ main {
           text-transform: capitalize; }
           @media (max-width: 37.5em) {
             .v-pollingbooths .v-boothcard__details--name .boothname {
-              font-size: 2.5rem;
-              line-height: 3rem; } }
+              font-size: 1.8rem;
+              line-height: 2.2rem; } }
       .v-pollingbooths .v-boothcard__details .boothlink {
         width: 100%;
         height: auto;

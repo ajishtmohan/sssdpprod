@@ -334,11 +334,6 @@
 
         li {
           text-align: center;
-          @include respond(phone) {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-          }
 
           @include respond(tab-port) {
             width: 100%;
@@ -346,6 +341,12 @@
             padding: 0;
           }
           @include respond(tab-land) {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+
+          @include respond(phone) {
             width: 100%;
             margin: 0;
             padding: 0;
@@ -433,6 +434,15 @@
               cursor: pointer;
               transition: all 0.3s ease-in;
 
+              @include respond(phone) {
+                width: 100%;
+                z-index: 10;
+                position: relative;
+                left: 0;
+                border-top: 3px solid $color-secondary-dark;
+                border-bottom: 3px solid $color-secondary-dark;
+              }
+
               &--l3 {
                 display: block;
                 color: $color-white;
@@ -445,6 +455,17 @@
                 list-style-type: none;
                 min-width: 17rem;
                 position: relative;
+
+                label {
+                  @include respond(phone) {
+                    font-size: 1.8rem;
+                  }
+                }
+
+                @include respond(phone) {
+                  padding: 1.8rem;
+                  background-color: $color-primary-dark-1;
+                }
 
                 &:hover {
                   background-color: darken($color-primary-dark-2, 5);
@@ -462,6 +483,11 @@
               display: block;
               position: absolute;
               opacity: 1;
+
+              @include respond(phone) {
+                display: block;
+                position: relative;
+              }
             }
           }
         }

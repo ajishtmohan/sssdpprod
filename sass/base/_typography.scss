@@ -13,7 +13,7 @@ article {
 
   @include respond(phone) {
     width: 100%;
-    padding: 3rem;
+    padding: 1.5rem;
   }
 
   h2 {

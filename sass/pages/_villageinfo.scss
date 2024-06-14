@@ -18,13 +18,28 @@
   border-radius: 5px;
   padding: 3rem;
 
+  @include respond(phone) {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
   &__title {
     width: 100%;
     margin-bottom: 3rem;
 
+    @include respond(phone) {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
+
     &--h2 {
       margin-bottom: 1rem;
       text-align: center;
+
+      @include respond(phone) {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
@@ -37,8 +52,16 @@
     flex-wrap: wrap;
     gap: 3rem;
 
+    @include respond(phone) {
+      gap: 1.5rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: 3rem;
+
+      @include respond(phone) {
+        margin-bottom: 1.5rem;
+      }
     }
 
     &__item {
@@ -48,6 +71,19 @@
       padding: 1rem 1.5rem;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
       border-radius: 5px;
+
+      @include respond(phone) {
+        // width: 100%;
+        width: calc((100% - 1.5rem) / 2);
+      }
+
+      .prop {
+        font-size: $default-font-size;
+
+        @include respond(phone) {
+          font-size: 1.4rem;
+        }
+      }
     }
   }
 
@@ -60,12 +96,28 @@
     align-items: stretch;
     gap: 3rem;
 
+    @include respond(phone) {
+      gap: 1.5rem;
+    }
+
     &__item1 {
       width: calc((100% - 3rem) / 2);
       padding: 1rem 1.5rem;
       background-color: $color-white;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
       border-radius: 5px;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      .prop {
+        font-size: $default-font-size;
+
+        @include respond(phone) {
+          font-size: 1.4rem;
+        }
+      }
     }
 
     &__item2 {
@@ -77,6 +129,18 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+
+      .prop {
+        font-size: $default-font-size;
+
+        @include respond(phone) {
+          font-size: 1.4rem;
+        }
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
 
       &--caste {
         display: inline-block;
@@ -164,8 +228,19 @@
   border-radius: 5px;
   padding: 3rem;
 
+  @include respond(phone) {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
   &__title {
     width: 100%;
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
 
     &--h2red {
       margin-bottom: 1rem;
@@ -190,6 +265,10 @@
     gap: 3rem;
     margin-top: 3rem;
 
+    @include respond(phone) {
+      margin-top: 1.5rem;
+    }
+
     &__item {
       width: calc((100% - 3rem) / 2);
       display: block;
@@ -197,6 +276,11 @@
       border-radius: 5px;
       padding: 2rem;
       box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.05);
+
+      @include respond(phone) {
+        width: 100%;
+        padding: 1.5rem;
+      }
 
       .politicperson {
         width: 100%;
@@ -380,12 +464,18 @@
 
   @include respond(phone) {
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   &__title {
     width: 100%;
     margin-bottom: 3rem;
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
 
     &--h2 {
       margin-bottom: 1rem;
@@ -456,6 +546,11 @@
         .boothno {
           margin-bottom: 1rem;
           display: block;
+
+          @include respond(phone) {
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+          }
         }
 
         .boothnumber {
@@ -464,7 +559,7 @@
           color: $color-black;
 
           @include respond(phone) {
-            font-size: 5rem;
+            font-size: 3rem;
           }
         }
 
@@ -475,6 +570,11 @@
           color: $color-primary-dark-1;
           display: block;
           margin-top: 1rem;
+
+          @include respond(phone) {
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+          }
         }
       }
     }
@@ -511,6 +611,11 @@
           display: block;
           position: relative;
           height: auto;
+
+          @include respond(phone) {
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+          }
         }
 
         .boothname {
@@ -520,8 +625,8 @@
           text-transform: capitalize;
 
           @include respond(phone) {
-            font-size: 2.5rem;
-            line-height: 3rem;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
           }
         }
       }

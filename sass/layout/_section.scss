@@ -27,6 +27,7 @@ main {
     @include respond(phone) {
       padding: 0;
       width: 100%;
+      overflow-x: scroll;
     }
   }
 
@@ -37,7 +38,9 @@ main {
     margin: 0 auto;
 
     @include respond(phone) {
+      width: 100%;
       padding: 0;
+      overflow-x: scroll;
     }
   }
   .section-content-ah {
@@ -88,6 +91,10 @@ main {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
@@ -183,8 +190,8 @@ main {
     transform: translate(-50%, -50%);
 
     @include respond(phone) {
-      font-size: 3rem;
-      line-height: 3rem;
+      font-size: 2rem;
+      line-height: 2rem;
       font-weight: 400;
     }
   }
